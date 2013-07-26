@@ -13340,3 +13340,573 @@ Served asset /dots/dot_green.gif - 304 Not Modified (0ms)
 
 Started GET "/assets/logos/logo_purdy.gif" for 127.0.0.1 at 2013-07-24 22:23:57 -0700
 Served asset /logos/logo_purdy.gif - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/products/index" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header_links.html.erb (0.9ms)
+  Rendered layouts/_default_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/purdy.css?body=1" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /purdy.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/over.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /over.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/javascripts.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /javascripts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/nav/navtopover.gif" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /nav/navtopover.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/buts/but_go.gif" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /buts/but_go.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/PageTitles/products_superior.gif" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /PageTitles/products_superior.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-07-25 21:11:22 -0700
+Served asset /buts/but_search.gif - 304 Not Modified (1ms)
+
+
+Started GET "/vas/index" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Processing by VasController#index as HTML
+  Rendered vas/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header_links.html.erb (0.4ms)
+  Rendered layouts/_default_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/purdy.css?body=1" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /purdy.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/over.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /over.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/javascripts.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /javascripts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/PageTitles/vas_vas.gif" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /PageTitles/vas_vas.gif - 200 OK (6ms)
+
+
+Started GET "/assets/nav/navtopover.gif" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /nav/navtopover.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /buts/but_search.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_go.gif" for 127.0.0.1 at 2013-07-25 21:11:30 -0700
+Served asset /buts/but_go.gif - 304 Not Modified (0ms)
+
+
+Started GET "/products/displays/vas.cfm" for 127.0.0.1 at 2013-07-25 21:14:08 -0700
+
+ActionController::RoutingError (No route matches [GET] "/products/displays/vas.cfm"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/shayne/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/shayne/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/shayne/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/shayne/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/vas/index" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Processing by VasController#index as HTML
+  Rendered vas/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header_links.html.erb (0.4ms)
+  Rendered layouts/_default_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/javascripts.js?body=1" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /javascripts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/purdy.css?body=1" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /purdy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/over.js?body=1" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /over.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nav/navtopover.gif" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /nav/navtopover.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /buts/but_search.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_go.gif" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /buts/but_go.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/PageTitles/vas_vas.gif" for 127.0.0.1 at 2013-07-25 21:19:22 -0700
+Served asset /PageTitles/vas_vas.gif - 304 Not Modified (0ms)
+
+
+Started GET "/wnew/index" for 127.0.0.1 at 2013-07-25 21:19:32 -0700
+
+LoadError (Expected /home/shayne/Documents/PurdyCode/PurdySite/app/controllers/wnew_controller.rb to define WnewController):
+  activesupport (3.2.13) lib/active_support/dependencies.rb:503:in `load_missing_constant'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3768897021495655600__call__1724360083985878575__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/shayne/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/shayne/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/shayne/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/shayne/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/shayne/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/shayne/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/wnew/index" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Processing by WnewController#index as HTML
+  Rendered wnew/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header_links.html.erb (0.4ms)
+  Rendered layouts/_default_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/purdy.css?body=1" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /purdy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/over.js?body=1" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /over.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/javascripts.js?body=1" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /javascripts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav/navtopover.gif" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /nav/navtopover.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/PageTitles/whatsnew_whatsnew.gif" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /PageTitles/whatsnew_whatsnew.gif - 200 OK (7ms)
+
+
+Started GET "/assets/buts/but_go.gif" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /buts/but_go.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-07-25 21:20:11 -0700
+Served asset /buts/but_search.gif - 304 Not Modified (0ms)
+
+
+Started GET "/wnew/index" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Processing by WnewController#index as HTML
+  Rendered wnew/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header_links.html.erb (0.4ms)
+  Rendered layouts/_default_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/purdy.css?body=1" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /purdy.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/javascripts.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /javascripts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/over.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /over.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nav/navtopover.gif" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /nav/navtopover.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /buts/but_search.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_go.gif" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /buts/but_go.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/PageTitles/whatsnew_whatsnew.gif" for 127.0.0.1 at 2013-07-25 21:23:03 -0700
+Served asset /PageTitles/whatsnew_whatsnew.gif - 304 Not Modified (0ms)
+
+
+Started GET "/wnew/index" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Processing by WnewController#index as HTML
+  Rendered wnew/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header_links.html.erb (0.5ms)
+  Rendered layouts/_default_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/purdy.css?body=1" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /purdy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/javascripts.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /javascripts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/over.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /over.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /buts/but_search.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nav/navtopover.gif" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /nav/navtopover.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_go.gif" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /buts/but_go.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/PageTitles/whatsnew_whatsnew.gif" for 127.0.0.1 at 2013-07-25 21:23:05 -0700
+Served asset /PageTitles/whatsnew_whatsnew.gif - 304 Not Modified (0ms)
+
+
+Started GET "/wnew/index" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Processing by WnewController#index as HTML
+  Rendered wnew/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header_links.html.erb (0.4ms)
+  Rendered layouts/_default_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/javascripts.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /javascripts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/purdy.css?body=1" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /purdy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/over.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /over.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nav/navtopover.gif" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /nav/navtopover.gif - 304 Not Modified (3ms)
+
+
+Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /buts/but_search.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_go.gif" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /buts/but_go.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/PageTitles/whatsnew_whatsnew.gif" for 127.0.0.1 at 2013-07-25 21:28:28 -0700
+Served asset /PageTitles/whatsnew_whatsnew.gif - 304 Not Modified (0ms)
+
+
+Started GET "/wnew/index" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Processing by WnewController#index as HTML
+  Rendered wnew/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_links.html.erb (0.5ms)
+  Rendered layouts/_default_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/purdy.css?body=1" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /purdy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/javascripts.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /javascripts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/over.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /over.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nav/navtopover.gif" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /nav/navtopover.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/buts/but_go.gif" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /buts/but_go.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /buts/but_search.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/PageTitles/whatsnew_whatsnew.gif" for 127.0.0.1 at 2013-07-25 21:28:29 -0700
+Served asset /PageTitles/whatsnew_whatsnew.gif - 304 Not Modified (0ms)
+
+
+Started GET "/wnew/index" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Processing by WnewController#index as HTML
+  Rendered wnew/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header_links.html.erb (0.4ms)
+  Rendered layouts/_default_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/purdy.css?body=1" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /purdy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/javascripts.js?body=1" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /javascripts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/over.js?body=1" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /over.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nav/navtopover.gif" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /nav/navtopover.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/PageTitles/whatsnew_whatsnew.gif" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /PageTitles/whatsnew_whatsnew.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_go.gif" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /buts/but_go.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-07-25 21:31:39 -0700
+Served asset /buts/but_search.gif - 304 Not Modified (0ms)
