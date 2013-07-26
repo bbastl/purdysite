@@ -1,0 +1,14 @@
+<div id="header_container">
+	<div id="blue_line"></div>
+	<div id="logo"></div>
+	<div id="navbar_header">
+		<div class="links">
+			<%= render partial: "layouts/header_links"%>
+		</div>
+		<div class="search_form">
+			<%= image_tag "buts/but_search.gif", :width=>"86", :height=>"20" %>
+			<input name="SEARCHSTRING" value ="" maxlength=35 type="text" size=8 style="FONT-SIZE: 12px; WIDTH: 8em; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">
+			<input type="image" name="catalog search" border="0" src="<%= asset_path "buts/but_go.gif", :width=>"23", :height=>"20" %>" >
+		</div>
+	</div>
+</div>
