@@ -1,5 +1,6 @@
 PurdySite::Application.routes.draw do
   get 'products/index'
+  get ':controller/:action'
   get 'vas/index'
   get 'wnew/index'
   # The priority is based upon order of creation:

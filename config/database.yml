@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: PurdySite_development
+  database: purdysite_development
   pool: 5
   username: purdy
   password: purdy
@@ -41,7 +41,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: PurdySite_test
+  database: purdysite_test
   pool: 5
   username: purdy
   password: purdy
