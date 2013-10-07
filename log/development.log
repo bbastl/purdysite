@@ -23827,3 +23827,4 @@ Served asset /buts/but_go.gif - 304 Not Modified (0ms)
 
 Started GET "/assets/buts/but_search.gif" for 127.0.0.1 at 2013-09-07 14:59:47 -0700
 Served asset /buts/but_search.gif - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
