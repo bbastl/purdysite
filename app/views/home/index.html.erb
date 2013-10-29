@@ -1,0 +1,51 @@
+<style>
+  #header_container { width:764px; height:320px; background:url(<%= asset_path "home/home_head.jpg" %>) no-repeat left bottom;}
+</style>
+
+<div id="main_content">
+  
+<img src="/images/um.gif" width="1" height="8"><br>
+<div style="margin-left:15px;">          
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><%= image_tag "home/home_bar1.gif", usemap: "#Top" %></td>
+          </tr>
+          <tr>
+            <td background="<%= asset_path "home/bg_home.gif" %>"><div align="center"><%= image_tag "home/home_bar2.jpg" %></div></td>
+          </tr>
+          <tr>
+            <td background="<%= asset_path "home/bg_home.gif" %>"><table width="725" border="0" cellspacing="0" cellpadding="10">
+              <tr valign="top">
+                <td width="148"> <a href="/products/displays">Click here</a> to see our full line of LCDs: color TFTs, monochrome graphic and alphanumeric modules, 7-segment LCDs, and accessories. </td>
+                <td width="144"> <a href="/products/interfan">Click here</a> to see our thermal management products including AC and DC fans and blowers, heat sink fans, finger guards and filters. </td>
+                <td width="147"><a href="/products/and_opto">Check out</a> our LED displays and high performance LED lamps, offering a full assortment of colors, sizes, shapes, and intensities.</td>
+                <td width="145"><a href="/products/switches">Click here</a> to see our line of thumbwheel, rotary DIP code, and codicount 7-segment LED display switches, and our IP67 keypads. </td>
+                <td width="141"><a href="/products/fiber/default.cfm">Click here</a> to see our fiber optic components including modems, fibers, cable, cable assemblies, and connectors.</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><%= image_tag "home/home_bar3.gif", usemap: "#Bottom" %></td>
+          </tr>
+        </table>
+
+        <map name="Top">
+          <area shape="rect" coords="4,4,146,28" href="/products/displays">
+          <area shape="rect" coords="148,4,291,30" href="/products/interfan">
+          <area shape="rect" coords="295,4,435,29" href="/products/opto/default.cfm">
+          <area shape="rect" coords="439,3,581,30" href="/products/switches/default.cfm">
+          <area shape="rect" coords="584,4,729,29" href="/products/fiber/default.cfm">
+        </map>
+        <map name="Bottom">
+          <area shape="rect" coords="11,6,125,35" href="/products/displays">
+          <area shape="rect" coords="160,4,273,34" href="/products/interfan">
+          <area shape="rect" coords="297,4,427,32" href="/products/opto/default.cfm">
+          <area shape="rect" coords="458,5,561,31" href="/products/switches/default.cfm">
+          <area shape="rect" coords="594,9,717,30" href="/products/fiber/default.cfm">
+        </map>
+        <map name="Map">
+          <area shape="rect" coords="691,222,744,230" href="/vas/default.cfm">
+        </map>
+  </div>
+
+</div>

@@ -3,6 +3,11 @@ PurdySite::Application.routes.draw do
   get ':controller/:action'
   get 'vas/index'
   get 'wnew/index'
+
+  get 'about_us' => 'about#index'
+  get 'contact_us' => 'about#contact'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -52,7 +57,7 @@ PurdySite::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 
