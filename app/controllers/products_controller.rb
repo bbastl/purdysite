@@ -63,6 +63,36 @@ class ProductsController < ApplicationController
 
 	end
 
+	def amber_leds
 
+	end
+
+	def yellow_leds
+
+	end
+
+	def green_leds
+
+	end
+
+	def blue_leds
+
+	end
+
+	def shaped_leds
+
+	end
+
+	def dual_color_leds
+
+	end
+
+	def segment_leds
+
+	end
+
+	def vas_leds
+
+	end
 
 end

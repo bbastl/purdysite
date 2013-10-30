@@ -6,6 +6,7 @@ PurdySite::Application.routes.draw do
 
   get 'about_us' => 'about#index'
   get 'contact_us' => 'about#contact'
+  get 'contact' => 'about#contact'
 
 
   # The priority is based upon order of creation:
