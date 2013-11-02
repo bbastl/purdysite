@@ -41,4 +41,67 @@
             <p><strong>If you would like to download a data sheet:</strong></p>
 
     </div>
+
+    <div id="catalog">
+        <p><a href="/pdf/LCD-SFC.pdf" target="_blank"><strong><font size="2">LCD Short Form Catalog</a> - Download Complete Short Form Catalog</font></strong></p>
+            <a name="Table"></a> <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="TableBorderColor"><table border="0" cellspacing="1">
+                      <tr>
+                        <td width="134" class="TableTextHeader">Part Number<br>
+                          Click for PDF </td>
+                        <td align="center" class="TableTextHeader">Screen<br>
+                          Diagonal<br>
+                          (inches)</td>
+                        <td align="center" class="TableTextHeader">Pixel<br>
+                          Count (1) <br>
+                          W x H</td>
+                        <td align="center" class="TableTextHeader">Brightness<br>
+                          Nits<br>
+                          (cd/m 2 ) </td>
+                        <td align="center" class="TableTextHeader">Pixel Pitch<br>
+                          (mm) W x H</td>
+                        <td align="center" class="TableTextHeader">Active Area
+                          (mm) W x H</td>
+                        <td align="center" class="TableTextHeader">Overall<br>
+                          Dimension<br>
+                          (mm)<br>
+                          W x H x D</td>
+                        <td align="center" class="TableTextHeader">Driving Voltage<br>
+                          (V)</td>
+                        <td align="center" class="TableTextHeader">Input Signal
+                          (2) </td>
+                        <td align="center" class="TableTextHeader">Sample<br>
+                          Price</td>
+      <td align="center" class="TableTextHeader">Stock Check</td>
+                            <td class="TableTextHeader"><div align="center">Order
+                            <br>
+                            Sample</div></td>
+                          </tr>
+                      <tr bgclolor="#ffffff">
+                            <td colspan="12" bgcolor="#ffffff" class="TableTextBold">Poly-Silicon and Amorphous-Silicon Color TFT Displays</td>
+                          </tr>
+          <% ProductDisplaysTftmodule.to_display.each do |product| %>
+             <tr bgcolor="#ffffff">
+                          <td width="170" class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a></td>
+
+                          <td class="TableText"><div align="center"><%= product.screen %></div></td>
+                          <td class="TableText"><div align="center"><%= product.pixel %></div></td>
+                          <td class="TableText"><div align="center"><%= product.brightness %></div></td>
+                          <td class="TableText"><div align="center"><%= product.pixel_pitch %></div></td>
+                          <td class="TableText"><div align="center"><%= product.active %></div></td>
+                          <td class="TableText"><div align="center"><%= product.overall %></div></td>
+                          <td class="TableText"><div align="center"><%= product.driving %></div></td>
+                          <td class="TableText"><div align="center"><%= product.input_signal %></div></td>
+                          
+                            <td class="TableText" align="right"><div align="center">$<%= product.product_price %></div></td>
+      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&&pq=Search" target="_blank">Inventory</a>
+</td>
+                            <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id %>&&prod_type=tftmonit"><%= image_tag "buts/order.gif" %></a></div></td>
+          
+                        </tr>
+                      <% end %>
+
+                  </table>
+    </div>
 </div>

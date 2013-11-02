@@ -24,4 +24,77 @@
             <p> Not looking for an Intelligent Graphic Display? Go <a href="/products/displays">back</a>
               to see other LCD options. </p>
     </div>
+    <div id="catalog">
+      <p><a href="/pdf/LCD-SFC.pdf" target="_blank"><strong><font size="2">LCD Short Form Catalog</a> – Download Complete Short Form Catalog</font></strong></p>
+            <a name="Table"></a> <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="TableBorderColor"><table border="0" cellspacing="1">
+                      <tr>
+                        <td width="120" rowspan="2" class="TableTextHeader">Part
+                          Number<br>
+                          Click for PDF </td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Pixel
+                          Count<br>
+                          W x H</td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Pixel
+                          Pitch<br>
+                          (mm)<br>
+                          W x H </td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Viewing
+                          Area<br>
+                          (mm) W x H</td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Overall
+                          Dimension<br>
+                          (mm) W x H x D</td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Driving
+                          Voltage<br>
+                          (V)</td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Built-In<br>
+                          Controller</td>
+                        <td colspan="2" align="center" class="TableTextHeader">Backlight</td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Contrast
+                          Ratio</td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Sample Price</td>
+      <td rowspan="2" align="center" class="TableTextHeader">Stock Check</td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Order
+                          <br>
+                          Sample</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="TableTextHeader">-30</td>
+                        <td align="center" class="TableTextHeader">-EL</td>
+                      </tr>
+                      
+                      
+                      <tr bgclolor="#ffffff">
+                          <td colspan="12" bgcolor="#ffffff" class="TableTextBold">STN, FSTN, BST</td>
+                      </tr>                      
+              <% ProductDisplaysIntgraph.to_display.each do |product| %>        
+             <tr bgcolor="#ffffff">
+                          <td nowrap class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></A>
+                          </td>
+                          <td align="center" class="TableText"><div align="center"><%= product.pixel %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.pixel_pitch %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.viewing %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.overall %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.driving %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.built %></div></td>
+                          <% if product.backlight_30 == "LED" || product.backlight_el == "LED"%>
+                           <td colspan ="2" align="center" class="TableText">LED&nbsp;</td>
+                         <% else %>
+                              <td align="center" class="TableText"><%= product.backlight_30 %></td>
+                              <td align="center" class="TableText"><%= product.backlight_el %></td>
+                         <% end %>
+
+                        <td align="center" class="TableText"><div align="center"><%= product.contrast %></div></td>
+                          
+                            <td class="TableText" align="right"><div align="center">$<%= product.product_price %></div></td>
+      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&pq=Search" target="_blank">Inventory</a></td>
+                            <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id %>&prod_type=intgraph"><%= image_tag "buts/order.gif" %></a></div></td>
+
+                    </tr>
+                    <% end %>
+                </table>
+
+    </div>
 </div>
