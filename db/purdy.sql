@@ -148,7 +148,7 @@ CREATE TABLE product (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     led character varying(100),
     lens character varying(100),
     peak character varying(100),
@@ -173,7 +173,7 @@ CREATE TABLE product_displays_intchar (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     news text,
     lcd character varying(100),
     lines character varying(100),
@@ -201,7 +201,7 @@ CREATE TABLE product_displays_intgraph (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     pixel character varying(100),
     pixel_pitch character varying(100),
     viewing character varying(100),
@@ -229,7 +229,7 @@ CREATE TABLE product_displays_prototyping (
     product_name character varying(100),
     news text,
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     description text,
     product_price character varying(10),
     product_sh character varying(10),
@@ -249,7 +249,7 @@ CREATE TABLE product_displays_segment (
     product_name character varying(100),
     news text,
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     display character varying(100),
     digit character varying(100),
     package character varying(100),
@@ -263,7 +263,7 @@ CREATE TABLE product_displays_segment (
 ALTER TABLE public.product_displays_segment OWNER TO postgres;
 
 --
--- Name: product_displays_tftmodules; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+-- Name: product_displays_tftmodules; item_type: TABLE; Schema: public; Owner: postgres; Tablespace: 
 --
 
 CREATE TABLE product_displays_tftmodules (
@@ -271,7 +271,7 @@ CREATE TABLE product_displays_tftmodules (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     screen character varying(100),
     pixel character varying(100),
     brightness character varying(100),
@@ -298,7 +298,7 @@ CREATE TABLE product_displays_tftmonitors (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     screen character varying(100),
     pixel character varying(100),
     brightness character varying(100),
@@ -324,7 +324,7 @@ CREATE TABLE product_fans_accessories (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     news text,
     fan_compat character varying(100),
     construction character varying(100),
@@ -346,7 +346,7 @@ CREATE TABLE product_fans_axial_ac (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     news text,
     frame character varying(100),
     voltage character varying(100),
@@ -374,7 +374,7 @@ CREATE TABLE product_fans_axial_dc (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+   item_type character varying(100),
     news text,
     frame character varying(100),
     voltage character varying(100),
@@ -396,7 +396,7 @@ CREATE TABLE product_fans_axial_dc (
 ALTER TABLE public.product_fans_axial_dc OWNER TO postgres;
 
 --
--- Name: product_fibre_connectors; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+-- Name: product_fibre_connectors; item_type: TABLE; Schema: public; Owner: postgres; Tablespace: 
 --
 
 CREATE TABLE product_fibre_connectors (
@@ -404,7 +404,7 @@ CREATE TABLE product_fibre_connectors (
     product_name character varying(100),
     news text,
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     polish text,
     connector text,
     product_price character varying(10),
@@ -424,7 +424,7 @@ CREATE TABLE product_fibre_modems (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     news text,
     data text,
     wavelength character varying(100),
@@ -451,7 +451,7 @@ CREATE TABLE product_led_blue_white (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     led character varying(100),
     lens character varying(100),
     peak character varying(100),
@@ -477,7 +477,7 @@ CREATE TABLE product_leds_dual_color (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     led text,
     lens character varying(100),
     peak character varying(100),
@@ -504,7 +504,7 @@ CREATE TABLE product_leds_green (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     led text,
     lens character varying(100),
     peak character varying(100),
@@ -531,7 +531,7 @@ CREATE TABLE product_leds_green_segment (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     led text,
     face character varying(100),
     display character varying(100),
@@ -558,7 +558,7 @@ CREATE TABLE product_leds_orange_amber (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     led text,
     lens character varying(100),
     peak character varying(100),
@@ -585,7 +585,7 @@ CREATE TABLE product_leds_red (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     led text,
     lens character varying(100),
     peak character varying(100),
@@ -612,7 +612,7 @@ CREATE TABLE product_leds_special_shape (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     led text,
     lens character varying(100),
     peak character varying(100),
@@ -639,7 +639,7 @@ CREATE TABLE product_leds_yellow (
     product_name character varying(100),
     product_line character varying(100),
     news text,
-    type character varying(100),
+    item_type character varying(100),
     led text,
     lens character varying(100),
     peak character varying(100),
@@ -665,7 +665,7 @@ CREATE TABLE product_switches_keypads (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     news text,
     description text,
     key_config character varying(100),
@@ -688,7 +688,7 @@ CREATE TABLE product_switches_keypads2 (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     news text,
     description text,
     forp character varying(100),
@@ -709,7 +709,7 @@ CREATE TABLE product_switches_led (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     news text,
     description text,
     characters character varying(100),
@@ -734,7 +734,7 @@ CREATE TABLE product_switches_rotary (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     news text,
     knob character varying(100),
     description text,
@@ -756,7 +756,7 @@ CREATE TABLE product_switches_thumb (
     product_id integer NOT NULL,
     product_name character varying(100),
     product_line character varying(100),
-    type character varying(100),
+    item_type character varying(100),
     news text,
     description text,
     positions character varying(100),
@@ -951,7 +951,7 @@ COPY order_details (orderid, product_id, product_name, orderprice, firstname, la
 -- Data for Name: product; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product (product_id, product_name, product_line, news, type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf) FROM stdin;
+COPY product (product_id, product_name, product_line, news, item_type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf) FROM stdin;
 \.
 
 
@@ -959,7 +959,7 @@ COPY product (product_id, product_name, product_line, news, type, led, lens, pea
 -- Data for Name: product_displays_intchar; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_displays_intchar (product_id, product_name, product_line, type, news, lcd, lines, character_size, viewing, outline, driving, backlight, built, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_displays_intchar (product_id, product_name, product_line, item_type, news, lcd, lines, character_size, viewing, outline, driving, backlight, built, product_price, product_sh, pdf, sort) FROM stdin;
 1	AND671GST	AND Displays	STN, FSTN, BST	N		1 x 16	3.07 x 6.56	64.5 x 13.8	80 x 36 x 11.3	5	-	HD44780	0	0	AND671GST.pdf	10
 2	AND671GST-LED	AND Displays	STN, FSTN, BST	N		1 x 16	3.07 x 6.56	64.5 x 13.8	80 x 36 x 16	5	LED	HD44780	0	0	AND671GST.pdf	11
 3	AND471GST	AND Displays	STN, FSTN, BST	N		2 x 16	4.84 x 9.66	99 x 24	122 x 44 x 11.3	5	-	HD44780	0	0	AND471GST.pdf	13
@@ -1004,7 +1004,7 @@ COPY product_displays_intchar (product_id, product_name, product_line, type, new
 -- Data for Name: product_displays_intgraph; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_displays_intgraph (product_id, product_name, product_line, news, type, pixel, pixel_pitch, viewing, overall, driving, built, backlight_30, backlight_el, contrast, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_displays_intgraph (product_id, product_name, product_line, news, item_type, pixel, pixel_pitch, viewing, overall, driving, built, backlight_30, backlight_el, contrast, product_price, product_sh, pdf, sort) FROM stdin;
 28	AND1743MST-LED	AND Displays	Y	STN, FSTN, BST	240 x 64	0.50 x 0.50	132 x 76	170 x 95 x 14	+5	T6963C	6:1	LED				AND1743MST-LED.pdf	13
 21	AND1264WGST-LED	AND Displays	Y	STN, FSTN, BST	128 x 64	0.52 x 0.52	72.0 x 40.0	87 x 70 x 12.7	+5	T6963C	LED		7:1	call	10	AND1264WGST-LED.pdf	2
 29	AND1742MST2	AND Displays	N	STN, FSTN, BST	240 x 128	0.51 x 0.51	134 x 76	180 x 110 x 15.1	+5	RAIO	6:1	CCFL				AND1742MST2.pdf	15
@@ -1038,7 +1038,7 @@ COPY product_displays_intgraph (product_id, product_name, product_line, news, ty
 -- Data for Name: product_displays_prototyping; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_displays_prototyping (product_id, product_name, news, product_line, type, description, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_displays_prototyping (product_id, product_name, news, product_line, item_type, description, product_price, product_sh, pdf, sort) FROM stdin;
 23	AND-TFT-5VX-4HB-KIT	Y	AND Displays		5" VGA TFT color lCD monitor with 1,000 nit CCFL backlight -- NTSC plug-and-play prototyping kit with control circuitry, DC/AC inverter, 12VDC power supply & cabling	499	10	AND-TFT-5VX-4HB-KIT.pdf	9
 30	AND-TFT35VX-UHB-LED-KIT	Y	AND Displays		3.5" VGA TFT color LCD monitor with 1,000 nit LED backlight -- NTSC plug-and-play prototyping kit with control circuitry, inverter, 12VDC power supply & cabling	299	10.00		5
 4	AND-TFT-35XS-LED-KIT	N	AND Displays	Prototyping Kits	3.5" QVGA TFT color LCD monitor with 250 nit LED backlight -- NTSC plug-and-play prototyping kit with control circuitry, inverter, 12VDC power supply & cabling	188	10	AND-TFT-35XS-LED-KIT.pdf	3
@@ -1066,7 +1066,7 @@ COPY product_displays_prototyping (product_id, product_name, news, product_line,
 -- Data for Name: product_displays_segment; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_displays_segment (product_id, product_name, news, product_line, type, display, digit, package, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_displays_segment (product_id, product_name, news, product_line, item_type, display, digit, package, product_price, product_sh, pdf, sort) FROM stdin;
 1	FE1901	N	AND Displays	Seven Segment Displays	FE-01.jpg	0.5	1.1 x 1.2	0	0	FE1901.pdf	1
 2	FE0201	N	AND Displays	Seven Segment Displays	FE-02.jpg	0.5	2.0 x 1.2	0	0	FE0201.pdf	2
 3	FE0203	N	AND Displays	Seven Segment Displays	FE-03.jpg	0.5	2.0 x 1.2	0	0	FE0203.pdf	3
@@ -1085,7 +1085,7 @@ COPY product_displays_segment (product_id, product_name, news, product_line, typ
 -- Data for Name: product_displays_tftmodules; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_displays_tftmodules (product_id, product_name, product_line, news, type, screen, pixel, brightness, pixel_pitch, active, overall, driving, input_signal, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_displays_tftmodules (product_id, product_name, product_line, news, item_type, screen, pixel, brightness, pixel_pitch, active, overall, driving, input_signal, product_price, product_sh, pdf, sort) FROM stdin;
 25	ANDpSi089C362S	AND Displays	Y	Poly-Silicon Color TFT Displays	8.9	1024 x 600	250	0.1905 x 0.1890	195.07 x 113.40	219.5 x 134.5 x 5.2	3.3	LVDS 6-bit interface	574	10	ANDpSi089C362S.pdf	8
 38	ANDpSi121C250F-HB	AND Displays	Y	Poly-Silicon Color TFT Displays	12.1	1024 x 768	400	0.24 x 0.24	246.7 x 184.32	278.3 x 209 x 12	3.3	LVDS 6-bit interface				14
 3	ANDpSi056ET0S-HB	AND Diplays	N	Poly-Silicon Color TFT Displays	5.6	1024 x 600	250	0.120 x 0.120	122.88 x 72	141.8 x 84.4 x 7.5	3.3	LVDS 6-bit interface	499	10	ANDpSi056ET1S-HB.pdf	4
@@ -1107,7 +1107,7 @@ COPY product_displays_tftmodules (product_id, product_name, product_line, news, 
 -- Data for Name: product_displays_tftmonitors; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_displays_tftmonitors (product_id, product_name, product_line, news, type, screen, pixel, brightness, pixel_pitch, active, overall, driving, input_signal, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_displays_tftmonitors (product_id, product_name, product_line, news, item_type, screen, pixel, brightness, pixel_pitch, active, overall, driving, input_signal, product_price, product_sh, pdf, sort) FROM stdin;
 62	AND-TFT-43LP	AND Displays	Y	TFT Monitor	4.3	480 x 272	500	0.198 x 0.198	95.04 x 53.856	105.5 x 67.2 x 2.9	12.0	VGA, NTSC, PAL			AND-TFT-43LP.pdf	8
 43	PC-TFT-25XS	AND Displays	Y	TFT Monitor Interface Board	2.5	160 x 234	250	0.1025 x 0.163	49.68 x 37.44	60.6 x 48.4 x 3.45	12.0	NTSC, PAL 	42	10	PC-TFT-25XS.pdf	21
 61	AND-TFT-7LP	AND Displays	Y	TFT Monitor	7.0	800 x 480	250	0.1905 x 0.1905	152.4 x 91.44	165 x 104 x 6.2	12.0	NTSC/PAL			AND-TFT-7LP.pdf	18
@@ -1140,7 +1140,7 @@ COPY product_displays_tftmonitors (product_id, product_name, product_line, news,
 -- Data for Name: product_fans_accessories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_fans_accessories (product_id, product_name, product_line, type, news, fan_compat, construction, product_price, product_sh, description, pdf, sort) FROM stdin;
+COPY product_fans_accessories (product_id, product_name, product_line, item_type, news, fan_compat, construction, product_price, product_sh, description, pdf, sort) FROM stdin;
 1	5514	Interfan	Metal Finger guards	N	40 mm	Nickel chrome plated wire guards, spot welded	0	0		Finger_Guards.pdf	1
 2	5516	Interfan	Metal Finger guards	N	60 mm	Nickel chrome plated wire guards, spot welded	0	0		Finger_Guards.pdf	2
 3	5508	Interfan	Metal Finger guards	N	80 mm	Nickel chrome plated wire guards, spot welded	0	0		Finger_Guards.pdf	3
@@ -1167,7 +1167,7 @@ COPY product_fans_accessories (product_id, product_name, product_line, type, new
 -- Data for Name: product_fans_axial_ac; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_fans_axial_ac (product_id, product_name, product_line, type, news, frame, voltage, airflow, inputp, speed, noise, weight, construction, guard, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_fans_axial_ac (product_id, product_name, product_line, item_type, news, frame, voltage, airflow, inputp, speed, noise, weight, construction, guard, product_price, product_sh, pdf, sort) FROM stdin;
 1	PM033-115-8025B-4	Interfan	AC Fans	Y	80 x 80 x 25 (3.2 x 3.2 x 1.0)	115	33	10.0	2700	33	8	Aluminum housing,  plastic impeller,  ball sleeve bearing 22AWG wire leads	5508 80FP-45 5505	0	0	PM033.pdf	1
 2	PM033-230-8025B-4	Interfan	AC Fans	Y	80 x 80 x 25 (3.2 x 3.2 x 1.0)	230	33	10.0	2700	33	8	Aluminum housing,  plastic impeller,  ball sleeve bearing 22AWG wire leads	5508<br>80FP-45<br> 5505	0	0	PM033.pdf	2
 3	PM037-115-8038BT-4	Interfan	AC Fans	N	80 x 80 x 38 (3.2 x 3.2 x 1.5)	115	37	12.0	2700	39	10.3	Aluminum alloy housing,  plastic impeller,  sealed ball bearing,  terminal block	5508<br>80FP-45	0	0	PM037.pdf	3
@@ -1191,7 +1191,7 @@ COPY product_fans_axial_ac (product_id, product_name, product_line, type, news, 
 -- Data for Name: product_fans_axial_dc; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_fans_axial_dc (product_id, product_name, product_line, type, news, frame, voltage, airflow, inputp, inputc, speed, noise, weight, construction, guard, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_fans_axial_dc (product_id, product_name, product_line, item_type, news, frame, voltage, airflow, inputp, inputc, speed, noise, weight, construction, guard, product_price, product_sh, pdf, sort) FROM stdin;
 2	PO002-05D-2510B-4	Interfan	DC Fans (Brushless)	N	25 x 25 x 10 (1.0 x 1.0 x 0.4)	5	2.3	0.35	80	10000	25	0.3	Plastic housing and impeller, sealed ball bearing, 28AWG wire leads	N/A	0	0	PO002(25x10).pdf	1
 3	PO002-12D-2510B-4	Interfan	DC Fans (Brushless)	N	25 x 25 x 10 (1.0 x 1.0 x 0.4)	12	2.3	0.96	80	10000	25	0.3	Plastic housing and impeller, sealed ball bearing, 28AWG wire leads	N/A	0	0	PO002(25x10).pdf	2
 4	PO004-05D-3010B-4	Interfan	DC Fans (Brushless)	N	30 x 30 x 10	5	4.1	0.35	70	8000	24	0.3	Plastic housing and impeller, sealed ball bearing, 28AWG wire leads	N/A	0	0	PO004.pdf	3
@@ -1235,7 +1235,7 @@ COPY product_fans_axial_dc (product_id, product_name, product_line, type, news, 
 -- Data for Name: product_fibre_connectors; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_fibre_connectors (product_id, product_name, news, product_line, type, polish, connector, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_fibre_connectors (product_id, product_name, news, product_line, item_type, polish, connector, product_price, product_sh, pdf, sort) FROM stdin;
 1	Singlemode and Multimode Glass Fiber Assemblies and Connectors	n	Interoptics	Glass Fiber Cable Assemblies	Standard, Super, Ultra & Angle	Simplex & Duplex		10	connectors.pdf	1
 2	Simplex and Duplex Plastic Fiber Assemblies and Connectors	n	Interoptics	Plastic Fiber Cable Custom Assemblies	Standard	SMA, ST, FC, EIAJ digital Audio, JIS Industrial		10	connectors.pdf	2
 \.
@@ -1245,7 +1245,7 @@ COPY product_fibre_connectors (product_id, product_name, news, product_line, typ
 -- Data for Name: product_fibre_modems; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_fibre_modems (product_id, product_name, product_line, type, news, data, wavelength, fibers, mounting, sizem, operating, connectors, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_fibre_modems (product_id, product_name, product_line, item_type, news, data, wavelength, fibers, mounting, sizem, operating, connectors, product_price, product_sh, pdf, sort) FROM stdin;
 1	RS-232, 4-channel full duplex	Interoptics		n	DC to 64 KB/s	850nm	2	25-pin connector	2.13  W x 2.21 L x 0.63 H",-20C to '+70C,Optical: SMA or ST,495,10,opto-232C.pdf,1\r\n2,RS-422 (Data Lines Only) full duplex,Interoptics,",n,DC to 5 MB/s,850nm,2,25-pin connector,"2.13  W x 2.21 L x 0.63 H	-20C to '+70C	Optical: SMA or ST	262	10	opto-rs422.pdf	2
 4	Centronics Terminal & Printer Units 15,000 lines/minute	Interoptics		n	30 KB/s	850nm	2	25-pin connector	50	-20C to '+70C	Optical: SMA or ST	792	10	opto-3800.pdf	4
 \.
@@ -1255,7 +1255,7 @@ COPY product_fibre_modems (product_id, product_name, product_line, type, news, d
 -- Data for Name: product_led_blue_white; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_led_blue_white (product_id, product_name, product_line, news, type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf) FROM stdin;
+COPY product_led_blue_white (product_id, product_name, product_line, news, item_type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf) FROM stdin;
 1	AND190HBA		N	T-3 Package (10 mm)									0	0	
 2	AND190HBB			T-3 Package (10 mm)									0	0	
 3	AND410HB			T-1 3/4 Package (5 mm)									0	0	
@@ -1288,7 +1288,7 @@ COPY product_led_blue_white (product_id, product_name, product_line, news, type,
 -- Data for Name: product_leds_dual_color; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_leds_dual_color (product_id, product_name, product_line, news, type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_leds_dual_color (product_id, product_name, product_line, news, item_type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
 1	AND2451RGL	AND Optoelectronics	N	Dual Color LEDs	Red/Green	Milky, Diffused	700/567	0.7/0.8	1.2/2.7	10	120	GaAsP/GaP	0	0	AND2451.pdf	1
 2	AND126SG	AND Optoelectronics	N	Dual Color LEDs	Red/Green	Milky, Diffused	635/565	12/12	14/14	10	60	GaAsP/GaP	0	0	AND126SG.pdf	2
 3	AND116SG	AND Optoelectronics	N	Dual Color LEDs	Red/Green	Milky, Diffused	635/565	10/10	12/12	10	70	GaAsP/GaP	0	0	AND116SG.pdf	3
@@ -1301,7 +1301,7 @@ COPY product_leds_dual_color (product_id, product_name, product_line, news, type
 -- Data for Name: product_leds_green; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_leds_green (product_id, product_name, product_line, news, type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_leds_green (product_id, product_name, product_line, news, item_type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
 1	AND190HGP	AND Optoelectronics	N	T-3 Package (10mm)	Green	Clear	574	1,200	2,000	20	8	InGaAIP	0	0	AND190HGP.pdf	1
 2	AND190GCP	AND Optoelectronics	N	T-3 Package (10mm)	Green	Clear	576	370	700	20	8	GaP	0	0	AND190GCP.pdf	2
 4	AND412HG	AND Optoelectronics	Y	T-1 3/4 Package (5mm)	Green	Clear	505	1,250	2,200	20	12	InGaN	0	0	AND412HG.pdf	4
@@ -1334,7 +1334,7 @@ COPY product_leds_green (product_id, product_name, product_line, news, type, led
 -- Data for Name: product_leds_green_segment; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_leds_green_segment (product_id, product_name, product_line, news, type, led, face, display, characteristics, luminous, ifma, polarity, material, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_leds_green_segment (product_id, product_name, product_line, news, item_type, led, face, display, characteristics, luminous, ifma, polarity, material, product_price, product_sh, pdf, sort) FROM stdin;
 1	AND2307SAL	AND Optoelectronics	N	7 Segments	Red	Red	2.3	RHDP, 10 pin	7.5	10	C-A	GaAsP	0	0	AND2307.pdf	1
 2	AND2307SCL	AND Optoelectronics	N	7 Segments	Red	Red	2.3	RHDP, 10 pin	7.5	10	C-C	GaAsP	0	0	AND2307.pdf	2
 3	AND1510SAL	AND Optoelectronics	N	7 Segments	Red	Red	1.5	RHDP, 10 pin	4.6	10	C-A	GaAsP	0	0	AND1510.pdf	3
@@ -1361,7 +1361,7 @@ COPY product_leds_green_segment (product_id, product_name, product_line, news, t
 -- Data for Name: product_leds_orange_amber; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_leds_orange_amber (product_id, product_name, product_line, news, type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_leds_orange_amber (product_id, product_name, product_line, news, item_type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
 1	AND190HAP	AND Optoelectronics	N	T-3 Package (10mm)	Amber	Clear	612	4,500	8,000	20	6	InGaAIP	0	0	AND190HAP.pdf	1
 2	AND190HOP	AND Optoelectronics	N	T-3 Package (10mm)	Orange	Clear	620	4,000	6,000	20	6	InGaAIP	0	0	AND190HOP.pdf	2
 3	AND157HAP	AND Optoelectronics	N	T-1 3/4 Package (5mm)	Amber	Clear	612	1,200	2,000	20	20	InGaAIP	0	0	AND157HAP.pdf	3
@@ -1379,7 +1379,7 @@ COPY product_leds_orange_amber (product_id, product_name, product_line, news, ty
 -- Data for Name: product_leds_red; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_leds_red (product_id, product_name, product_line, news, type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_leds_red (product_id, product_name, product_line, news, item_type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
 1	AND190CRP	AND Optoelectronics	N	T-3 Package (10mm)	Red	Clear	660	6000	11000	20	8	GaAlAs	0	0	AND190CRP.pdf	2
 2	AND191CRP	AND Optoelectronics	N	T-3 Package (10mm)	Red	White Diffused	660	180	600	20	20	GaAlAs	0	0	AND191CRP.pdf	3
 3	AND190HRP	AND Optoelectronics	n	T-3 Package (10mm)	Red	Clear	644	5600	10000	20	8	InGaAlP	0	10	AND190HRP.pdf	4
@@ -1421,7 +1421,7 @@ COPY product_leds_red (product_id, product_name, product_line, news, type, led, 
 -- Data for Name: product_leds_special_shape; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_leds_special_shape (product_id, product_name, product_line, news, type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_leds_special_shape (product_id, product_name, product_line, news, item_type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
 1	AND205RA	AND Optoelectronics	N	Special Shape Package	Red	Red, Diffused	700	0.5	1	10	1 x 5	GaP	0	0	AND205RA.pdf	1
 2	AND208RA	AND Optoelectronics	N	Special Shape Package	Red	Red, Diffused	700	0.5	1	10	2 x 5	GaP	0	0	AND208RA.pdf	2
 3	AND211RA	AND Optoelectronics	N	Special Shape Package	Red	Red, Diffused	700	0.5	1	10	2 x 4	GaP	0	0	AND211RA.pdf	3
@@ -1446,7 +1446,7 @@ COPY product_leds_special_shape (product_id, product_name, product_line, news, t
 -- Data for Name: product_leds_yellow; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_leds_yellow (product_id, product_name, product_line, news, type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_leds_yellow (product_id, product_name, product_line, news, item_type, led, lens, peak, lmin, typ, ifma, total, material, product_price, product_sh, pdf, sort) FROM stdin;
 1	AND190HYP	AND Optoelectronics	N	T-3 Package (10mm)	Yellow	Clear	590	4500	6300	20	6	InGaAIP	0	0	AND190HYP.pdf	1
 2	AND180HYP	AND Optoelectronics	Y	T-1 3/4 Package (5mm)	Yellow	Clear	590	2,500	4,000	20	6	AIGaInP	0	0	AND180HYPnew.pdf	2
 3	ANDS4E38XX16	AND Optoelectronics	N	T-1 3/4 Package (5mm)	Yellow	Clear	590	2500	3200	20	16	InGaAIP	0	0	ANDS4E38XX16.pdf	3
@@ -1474,7 +1474,7 @@ COPY product_leds_yellow (product_id, product_name, product_line, news, type, le
 -- Data for Name: product_switches_keypads; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_switches_keypads (product_id, product_name, product_line, type, news, description, key_config, key_type, dimensions, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_switches_keypads (product_id, product_name, product_line, item_type, news, description, key_config, key_type, dimensions, product_price, product_sh, pdf, sort) FROM stdin;
 1	KNM20S14	Interswitch	IP67 Keypads	n	1x4 monoblock immersion proof keypad, with springless mechanical contacts, including key tops and mounting hardware	1x4	Flush	32.4x89.5x18.5	58	10	Monobloc_1x4.pdf	1
 2	KNM30S14	Interswitch	IP67 Keypads	n	1x4 monoblock immersion proof keypad, with springless mechanical contacts, including key tops and mounting hardware	1x4	Raised	34.4x91.6x23.8	58	10	Monobloc_1x4.pdf	2
 3	KNM20S34	Interswitch	IP67 Keypads	n	3x4 monoblock immersion proof keypad, springless mechanical contacts, without mounting hardware or key tops	3x4	Flush	70.5x89.5x18.5	87	10	Monobloc_3x4.pdf	3
@@ -1488,7 +1488,7 @@ COPY product_switches_keypads (product_id, product_name, product_line, type, new
 -- Data for Name: product_switches_keypads2; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_switches_keypads2 (product_id, product_name, product_line, type, news, description, forp, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_switches_keypads2 (product_id, product_name, product_line, item_type, news, description, forp, product_price, product_sh, pdf, sort) FROM stdin;
 1	KKE1B-ACCC	Interswitch	IP67 Keypads Accessories	n	Set of 16 key tops 0-9 / A-F	All	0	10		1
 2	KKE1B-ADDD	Interswitch	IP67 Keypads Accessories	n	Set of 16 key tops 0-15	All	0	10		2
 3	KKE1B-AGGG	Interswitch	IP67 Keypads Accessories	n	Set of 26 key tops A-Z	All	0	10		3
@@ -1513,7 +1513,7 @@ COPY product_switches_keypads2 (product_id, product_name, product_line, type, ne
 -- Data for Name: product_switches_led; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_switches_led (product_id, product_name, product_line, type, news, description, characters, available, maximum, supply, dimensions, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_switches_led (product_id, product_name, product_line, item_type, news, description, characters, available, maximum, supply, dimensions, product_price, product_sh, pdf, sort) FROM stdin;
 1	100 Series	Interswitch		n	Small size front mounted display module with 9mm character height, compatible with Interswitch Series V thumbwheel switches	0-9	BCD, CMOS and TTL logic	36	5, 12 or 24	8 x 26.5 x 48.5-79	86	10		1
 2	300 Series	Interswitch		n	Small size front mounted display module with 9mm character height, compatible with Interswitch Series U thumbwheel switches	0-9	BCD	40		8 x 33 x 51-66	98	10		2
 3	500 Series	Interswitch		n	Medium size front mounted display module with 9mm character height, compatible with Interswitch Series H thumbwheel switches and combinable with Series H, M and S	0-9	BCD	50		10 x 33 x 40-74	98	10		3
@@ -1526,7 +1526,7 @@ COPY product_switches_led (product_id, product_name, product_line, type, news, d
 -- Data for Name: product_switches_rotary; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_switches_rotary (product_id, product_name, product_line, type, news, knob, description, number, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_switches_rotary (product_id, product_name, product_line, item_type, news, knob, description, number, product_price, product_sh, pdf, sort) FROM stdin;
 1	RDS10-112	Interswitch		N	Flat/Flush Shaft	BCD Real Code	10	0	0	rotary-flat.pdf	1
 2	RDS10-122	Interswitch		N	Flat/Flush Shaft	BCD Complement	10	0	0	rotary-flat.pdf	2
 3	RDS16-112	Interswitch		N	Flat/Flush Shaft	Hexadecimal	16	0	0	rotary-flat.pdf	3
@@ -1551,7 +1551,7 @@ COPY product_switches_rotary (product_id, product_name, product_line, type, news
 -- Data for Name: product_switches_thumb; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY product_switches_thumb (product_id, product_name, product_line, type, news, description, positions, available, maximum, working, dimensions, product_price, product_sh, pdf, sort) FROM stdin;
+COPY product_switches_thumb (product_id, product_name, product_line, item_type, news, description, positions, available, maximum, working, dimensions, product_price, product_sh, pdf, sort) FROM stdin;
 2	B Series	Interswitch		N	Medium size front mounted thumbwheel switch	10, 16	See A Series	pmaximum	42	12.5 x 58 x 57.1	73	10	B-Series.pdf	2
 4	E Series	Interswitch		n	Small size rear mounted thumbwheel switch	10	Dec 0-9, BCD pos & neg, Single pole, Resistance	1	42	16 x 18 x 31.5	49	10		4
 5	G Series	Interswitch		n	Very large size front mounted thumbwheel switch	10	2-pole, BCD pos, BCD + 2 inputs	2	42	20 x 76 x 79	122	10	G-Series.pdf	5
