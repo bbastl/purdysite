@@ -18,7 +18,7 @@ development:
   database: purdysite_development
   pool: 5
   username: purdy
-  password: purdy
+  password: p@ssw0rd
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -44,7 +44,7 @@ test:
   database: purdysite_test
   pool: 5
   username: purdy
-  password: purdy
+  password: p@ssw0rd
 
 production:
   adapter: postgresql

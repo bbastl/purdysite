@@ -26,4 +26,48 @@
 
 
         </div>
+        <div id="catalog">
+
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="TableBorderColor"><table border="0" cellspacing="1">
+                    <tr>
+                        <td width="87" class="TableTextHeader">Part Number<br>
+                          Click for PDF </td>
+                        <td width="167" class="TableTextHeader">Display Font</td>
+                        <td width="84" class="TableTextHeader">Digit Height in
+                          Inches</td>
+                        <td width="157" class="TableTextHeader">Package Dimensions
+                          in Inches <br>
+                          (Length x Width)</td>
+                        <td width="37" class="TableTextHeader"><div align="center">Sample<br>
+                            Price</div></td>
+                        <td align="center" class="TableTextHeader">Stock Check</td>
+                        <td width="39" class="TableTextHeader"><div align="center">Order
+                            <br>
+                            Sample</div></td>
+                    </tr>
+                    <% ProductDisplaysSegment.to_display.each do |product| %>
+                    <tr bgcolor="#ffffff">
+                          <td align="center" class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a><span class="TableTextNEW">
+                            <span class="TableTextNEW">
+                            
+                            </span></strong></td>
+                          <td align="center" class="TableText"><img src="http://www.purdyelectronics.com/images/displays/<%= product.display%>"> </td>
+                          <td align="center" class="TableText"><div align="center"><%= product.digit %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.package %></div></td>
+                          
+                            <td class="TableText" align="right"><div align="center">$<%= product.product_price %></div></td>
+      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&&pq=Search" target="_blank">Inventory</a></td>
+                            <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id %>&prod_type=segment"><%= image_tag "buts/order.gif" %></a></div></td>
+          
+                        </tr>
+                      <% end %>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+        </div>
 </div>
