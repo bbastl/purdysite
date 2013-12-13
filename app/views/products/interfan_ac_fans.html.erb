@@ -41,6 +41,68 @@
               call us or <a href="mailto:customerservice@purdyelectronics.com">email</a>
               your requirements to us. </p>
     <p>
+          </div>
+         <div id="catalog"> 
 
-    </div>
+        <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="TableBorderColor"><table border="0" cellspacing="1">
+                      <tr>
+                        <td colspan="13" bgcolor="#ffffff" class="TableTextBold">AC Fans</td>
+                      </tr>
+                      <tr>
+                        <td width="88" valign="top" class="TableTextHeader">Frame
+                          Size<br>
+                          H x W x D<br>
+                          mm (inches)</td>
+                        <td nowrap class="TableTextHeader">Model<br>
+                          Click for PDF</td>
+                        <td width="44" align="center" class="TableTextHeader">Voltage
+                          (V)</td>
+                        <td width="40" align="center" class="TableTextHeader">Airflow<br>
+                          (CFM)</td>
+                        <td width="39" align="center" class="TableTextHeader">Input<br>
+                          Power<br>
+                          (Watts)</td>
+                        <td width="35" align="center" class="TableTextHeader">Speed<br>
+                          (RPM)</td>
+                        <td width="48" align="center" class="TableTextHeader">Noise
+                          Level<br>
+                          (dBA)</td>
+                        <td width="38" align="center" class="TableTextHeader">Weight<br>
+                          (Oz)</td>
+                        <td width="222" align="center" class="TableTextHeader">Construction</td>
+                        <td width="46" align="center" class="TableTextHeader">Guard<br>
+                          Filter<br>
+                          Cord</td>
+                        <td width="46" align="center" class="TableTextHeader">Sample
+                          Price</td>
+          <td align="center" class="TableTextHeader">Stock Check</td>
+          <td class="TableTextHeader"><div align="center">Order<br>Sample</div></td></tr>
+           
+           <% ProductFansAc.to_display.each do |product| %>
+            <tr align="left" bgcolor="#ffffff">
+            <td  class="TableText">80 x 80 x 25 (3.2 x 3.2 x 1.0)</td>
+            <td nowrap class="TableTextBold"><a href="/pdf/<%= product.product_name %>" target="_blank"><%= product.pdf %></a>  
+                  NEW!
+                </td>
+            <td align="center" class="TableText"><%= product.voltage %></td>
+            <td align="center" class="TableText"><%= product.airflow %></td>
+            <td align="center" class="TableText"><%= product.inputp %></td>
+            <td align="center" class="TableText"><%= product.speed %></td>
+            <td align="center" class="TableText"><%= product.noise %></td>
+            <td align="center" class="TableText"><%= product.weight %></td>
+            <td align="center" class="TableText"><%= product.construction %></td>
+            <td align="center" class="TableText"><%= product.guard %></td>
+    
+      <td class="TableText" align="right"><div align="center">$<%= product.product_price %></div></td>
+      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&pq=Search" target="_blank">Inventory</a></td>
+      <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id %>&prod_type=axialac"><%= image_tag "buts/order.gif" %></a></div></td>
+      
+          </tr>
+          <% end %>
+          </table>
+          </div>
+
+
 </div>

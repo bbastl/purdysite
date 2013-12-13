@@ -9,6 +9,8 @@ PurdySite::Application.routes.draw do
   get 'contact' => 'about#contact'
   get 'warranty' => 'about#warranty'
   get 'privacy' => 'about#privacy'
+  get 'feedback' => 'about#feedback'
+  get 'sitemap' => 'about#sitemap'
 
 
   # The priority is based upon order of creation:

@@ -1,0 +1,82 @@
+  <div id="main_content">
+            <%= render partial: "about_links" %> 
+<div class="content">
+
+           <form name="frmfeed" action="/process_feedback" method="post">
+		    <table border=0 width=413 cellpadding=1 cellspacing=1>
+              <tr>
+                <td valign="top" colspan=2 nowrap><font color="#FF0000">* Required</font></td>
+              </tr>
+              <tr>
+                <td width="211" valign="top">&nbsp;</td>
+                <td width="195" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td valign="top"><strong>Name<font color="#FF0000">*</font></strong></td>
+                <td valign="top"><input name="txtname" type="text" id="txtname" onFocus="this.select()" size="25" maxsize="50">
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><strong>E-mail<font color="#FF0000">*</font></strong></td>
+                <td valign="top"><input name="txtemail" type="text" id="txtemail" onFocus="this.select()" size="25" maxsize="50">
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><strong>Do you like the new website?</strong></td>
+                <td><input name="LikeSite" type="radio" value="Yes">
+                  Yes
+                    <input name="LikeSite" type="radio" value="No">
+                No</td>
+              </tr>
+              <tr>
+                <td valign="top">&nbsp;</td>
+                <td valign="top"><textarea name="txtlikesite" cols="25" id="txtlikesite" onFocus="this.select()" maxsize="50"></textarea></td>
+              </tr>
+              <tr>
+                <td valign="top"><strong><img src="/images/um.gif" width="1" height="8">Does it function well for your needs?</strong></td>
+                <td><input name="FunctionWell" type="radio" value="Yes">
+Yes
+  <input name="FunctionWell" type="radio" value="No">
+No</td>
+              </tr>
+              <tr>
+                <td valign="top">&nbsp;</td>
+                  <td valign="top"><textarea name="txtFunctionWell" cols="25" id="txtFunctionWell" onFocus="this.select()" maxsize="50"></textarea></td>
+              </tr>
+              <tr>
+                <td valign="top"><strong>Is there a page or a function that isn't working?</strong></td>
+                <td><input name="FunctionNotWorking" type="radio" value="Yes">
+Yes
+  <input name="FunctionNotWorking" type="radio" value="No">
+No</td>
+              </tr>
+              <tr>
+                <td valign="top">&nbsp;</td>
+                <td valign="top"><textarea name="txtNotWorking" cols="25" id="txtNotWorking" onFocus="this.select()" maxsize="50"></textarea></td>
+              </tr>
+              <tr>
+                <td valign="top"><strong>Do you have a recommendation on how to improve upon this site?</strong></td>
+                <td valign="top">&nbsp;                </td>
+              </tr>
+              <tr>
+                <td valign="top">&nbsp;</td>
+                <td valign="top"><textarea name="txtrecommend" cols="25" id="txtrecommend" onFocus="this.select()" maxsize="50"></textarea></td>
+              </tr>
+              <tr>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td valign="top">&nbsp;</td>
+                <td valign="top"><input type="reset" name="Reset" value="Reset">
+                <input type="button" name="Submit" value="Submit" onClick="check()"></td>
+              </tr>
+            </table>
+			</form>            
+          <p>Thank you for taking the time to answer our questions and give us your feedback; we appreciate your thoughts and concerns. If you would prefer to send an email with your comments, please do so <a href="mailto:webmaster@purdyelectronics.com?subject=Website%20Feedback">here</a>.</p></td>
+          <td width="100"><img src="/images/um.gif" width="50" height="1"></td>
+        </tr>
+      </table>
+
+</div>
+</div>
