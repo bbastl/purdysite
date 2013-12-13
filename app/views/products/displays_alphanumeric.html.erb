@@ -25,4 +25,58 @@
 
 
         </div>
+        <div id="catalog">
+          <table border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td class="TableBorderColor"><table border="0" cellspacing="1" id="thetable">
+                      <tr> 
+                        <td nowrap class="TableTextHeader">Part Number<br>
+                          Click for PDF </td>
+                        <!--<td align="center" class="TableTextHeader">LCD<br>
+                          Technology</td>-->
+                        <td align="center" class="TableTextHeader">Lines x Characters</td>
+                        <td align="center" class="TableTextHeader">Character Size<br>
+                          (mm) W x H</td>
+                        <td align="center" class="TableTextHeader">Viewing Area<br>
+                          (mm) W x H</td>
+                        <td align="center" class="TableTextHeader">Outline Dimensions<br>
+                          (mm) W x H x D</td>
+                        <td align="center" class="TableTextHeader">Driving Voltage 
+                          (V)</td>
+                        <td align="center" class="TableTextHeader">Backlight</td>
+                        <td align="center" class="TableTextHeader">Built-in Controller</td>
+                        <td align="center" class="TableTextHeader">Sample Price</td>
+                        <td align="center" class="TableTextHeader">Stock Check</td>
+                        <td align="center" class="TableTextHeader">Order <br>
+                          Sample</td>
+                      </tr>
+                      <tr bgclolor="#ffffff">
+                        <td colspan="12" bgcolor="#ffffff" class="TableTextBold">STN, FSTN, BST</td>
+                      </tr>
+                      <% ProductDisplaysIntchar.to_display.each do |product| %>
+                      <tr> 
+                          <td nowrap class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a><span class="TableTextNEW">
+                            <span class="TableTextNEW"> 
+                            
+                              NEW! </strong></td>
+                          <!--<td align="center"><div align="center"></div></td>-->
+                          <td align="center" class="TableText"><div align="center"><%= product.lines %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.character_size %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.viewing %></div></td>
+                          <td align="center" class="TableText">
+                              <div align="center"><%= product.outline %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.driving %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.backlight %></div></td>
+                          <td align="center" class="TableText"><div align="center"><%= product.built %></div></td>
+                          
+                            <td align="right" class="TableText"><div align="center">$<%= product.product_price %></div></td>
+      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&pq=Search" target="_blank">Inve</td>
+                            <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id %>&prod_type=intchar"><%= image_tag "buts/order.gif" %></a></div></td>
+          
+                        </tr>
+
+                      <% end %>
+                  </table>
+
+        </div>
 </div>
