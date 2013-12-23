@@ -25,4 +25,62 @@
 
 
     </div>
+
+        <div id="catalog"> 
+
+      <p><a href="/pdf/LED-SFC.pdf" target="_blank"><strong><font size="2">LED Short Form Catalog</a> - Download Complete Short Form Catalog</font></strong></p>
+
+              <table class="catalogTable" width="100%" border="0" cellpadding="1" cellspacing="1">
+                <tr> 
+                  <td rowspan="2" class="TableTextHeader">Type</td>
+                  <td rowspan="2" class="TableTextHeader">Part Number<br>
+                    Click for PDF</td>
+                  <td rowspan="2" align="center" class="TableTextHeader">LED Color</td>
+                  <td rowspan="2" align="center" class="TableTextHeader">Lens 
+                    Color</td>
+                  <td rowspan="2" align="center" class="TableTextHeader"><img src="/images/symbol1.gif" alt="symbol1.gif (854 bytes)" width="10" height="10"> 
+                    <br>
+                    Peak<br>
+                    (nm)</td>
+                  <td colspan="2" align="center" class="TableTextHeader">Luminous 
+                    Intensity, I v (mcd)</td>
+                  <td rowspan="2" align="center" class="TableTextHeader">(I F 
+                    -mA)</td>
+                  <td rowspan="2" align="center" class="TableTextHeader">Total 
+                    Angle<br>
+                    (degree)</td>
+                  <td rowspan="2" align="center" class="TableTextHeader">Material</td>
+                  <td rowspan="2" align="center" class="TableTextHeader">Sample 
+                    Price</td>
+      <td rowspan="2" align="center" class="TableTextHeader">Stock Check</td>
+                            <td rowspan="2" width="10%" class="TableTextHeader"><div align="center">Order<br>Sample</div></td>
+                          </tr>
+                <tr> 
+                  <td align="center" class="TableTextHeader">Min</td>
+                            <td align="center" class="TableTextHeader">Typ</td>
+                          </tr>
+          
+          <% ProductLedsGreen.to_display.each do |product| %>   
+             <tr align="left" bgcolor="#ffffff"> 
+                    <td align="center" class="TableText"><%= product.item_type%></td>
+                    <td nowrap class="TableTextBold"><a href="/pdf/<%= product.pdf%>" target="_blank"><%= product.product_name%></a> </td>
+                    <td align="center" class="TableText"><%= product.led%></td>
+                    <td align="center" class="TableText"><%= product.lens%></td>
+                    <td align="center" class="TableText"><%= product.peak%></td>
+                    <td align="center" class="TableText"><%= product.lmin%></td>
+                    <td align="center" class="TableText"><%= product.typ%></td>
+                    <td align="center" class="TableText"><%= product.ifma%></td>
+                    <td align="center" class="TableText"><%= product.total%></td>
+                    <td align="center" class="TableText"><%= product.material%></td>
+      
+          <td class="TableText" align="right"><div align="center">$<%= product.product_price %></div></td>
+      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name%>&pq=Search" target="_blank">Inventory</a></td>
+          <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id%>&prod_type=green"><%= image_tag "buts/order.gif" %></a></div></td>
+          
+                  </tr>
+        <% end %>
+                 
+      </table>
+
+    </div>
 </div>
