@@ -33,6 +33,7 @@
     <p><a href="/pdf/LED-SFC.pdf" target="_blank"><strong><font size="2">LED Short Form Catalog</a> - Download Complete Short Form Catalog</font></strong></p>
         <table class="catalogTable" width="100%" border="0" cellpadding="1" cellspacing="1">
 <tr> 
+                        <td class="TableTextHeader">Type</td>
                         <td class="TableTextHeader"><a name="pgfId-55278"></a><a name="Red"></a>Part 
                           Number<br>
                           Click for PDF</td>
@@ -53,19 +54,20 @@
                       </tr>
            <% ProductLedsSegment.to_display.each do |product| %>
              <tr align="left" bgcolor="#ffffff"> 
-              <td nowrap class="TableTextBold"><a href="/pdf/AND2307.pdf" target="_blank">AND2307SAL</a>  </td>
-            <td align="center" class="TableText">Red</td>
-            <td align="center" class="TableText">Red</td>
-            <td align="center" class="TableText">2.3</td>
-            <td align="center" class="TableText">RHDP, 10 pin</td>
-            <td align="center" class="TableText">7.5</td>
-            <td align="center" class="TableText">10</td>
-            <td align="center" class="TableText">C-A</td>
-            <td align="center" class="TableText">GaAsP</td>
+             <td align="center" class="TableText"><%= product.item_type%></td>
+              <td nowrap class="TableTextBold"><a href="/pdf/AND2307.pdf" target="_blank"><%= product.product_name%></a>  </td>
+            <td align="center" class="TableText"><%= product.led%></td>
+            <td align="center" class="TableText"><%= product.face%></td>
+            <td align="center" class="TableText"><%= product.display%></td>
+            <td align="center" class="TableText"><%= product.characteristics%></td>
+            <td align="center" class="TableText"><%= product.luminous%></td>
+            <td align="center" class="TableText"><%= product.ifma%></td>
+            <td align="center" class="TableText"><%= product.polarity%></td>
+            <td align="center" class="TableText"><%= product.material%></td>
   
       <td class="TableText" align="right"><div align="center">$0</div></td>
-      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=AND2307SAL&&pq=Search" target="_blank">Inventory</a></td>
-      <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=1&&prod_type=greensegment"><img src="/images/buts/order.gif" width="34" height="14" border="0"></a></div></td>
+      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name%>&pq=Search" target="_blank">Inventory</a></td>
+      <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id%>&&prod_type=greensegment"><%= image_tag "buts/order.gif" %></a></div></td>
       
           </tr>
         <% end %>
