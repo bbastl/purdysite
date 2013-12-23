@@ -29,9 +29,35 @@
               added services</a> for custom cable and connector assemblies.</p>
             <p><strong> Check out our offerings of fan finger guards, filters 
               and cords below:</strong></p>
-<p><strong>If you would like to download a data sheet:</strong></p>
+      <p><strong>If you would like to download a data sheet:</strong></p>
 
+        <a href="/pdf/FAN-SFC.pdf" target="_blank"><strong><font size="2">Fan Short Form Catalog</a> – Download Complete Short Form Catalog</font></strong></p>
+           <table border="0" cellspacing="1">
+            <tr> 
+              <td class="TableTextHeader">Product Type</td>
+              <td class="TableTextHeader">Part Number</td>
+              <td class="TableTextHeader">Fan Compatability</td>
+              <td class="TableTextHeader">Construction</td>
+              <td class="TableTextHeader">Sample Price</td>
+              <td align="center" class="TableTextHeader">Stock Check</td>
+              <td class="TableTextHeader"><div align="center">Order<br>Sample</div></td></tr>
+                              </tr>
+          <% ProductFansAccessory.to_display.each do |product| %>    
+                 <tr align="left" bgcolor="#ffffff"> 
+              <td class="TableTextBold"><%= product.item_type %></td>
+              <td class="TableText"><center><strong><A HREF="/pdf/<%= product.pdf %><" target="_blank"><%= product.product_name %></a><span class="TableTextNEW"> 
+            </strong></center></td>
+              <td class="TableText"><center><%= product.fan_compat %></center></td>
+              <td class="TableText"><center><%= product.construction %></center></td>
+                              
+                                <td class="TableText" align="right"><div align="center">$<%= product.product_price %></div></td>
+          <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&pq=Search" target="_blank">Inventory</a></td>
+                                <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id %>&prod_type=accessories"><%= image_tag "buts/order.gif" %></a></div></td>
+          
+            </tr>
+          <% end %>
 
+          </table>
 
     </div>
 </div>
