@@ -95,4 +95,27 @@ class ProductsController < ApplicationController
 
 	end
 
+	def interswitch
+
+	end
+
+	def switch_thumb
+
+	end
+
+	def switch_rotary
+
+	end
+
+	def switch_led
+
+	end
+
+	def switch_keypads
+
+	end
+
+	def switch_vas
+
+	end
 end
