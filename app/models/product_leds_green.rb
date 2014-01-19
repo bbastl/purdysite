@@ -1,4 +1,5 @@
 class ProductLedsGreen < ActiveRecord::Base
+	self.inheritance_column = :_type_disabled
 	self.table_name = "product_leds_green"
 
 	def self.to_display
