@@ -12,7 +12,7 @@ PurdySite::Application.routes.draw do
   get 'feedback' => 'about#feedback'
   get 'sitemap' => 'about#sitemap'
 
-
+  patch 'admin/product_update' => 'admin#product_update'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
