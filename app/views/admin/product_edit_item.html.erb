@@ -1,0 +1,23 @@
+<%= @product_data.attribute_names %>
+
+<%=flash[:alert]%>
+
+<%= form_for @product_data, url: {controller: "admin", action: "product_update", product_type: @product} do |f| %>
+<table>
+<% @product_data.attribute_names.each do |attribute| %> 
+	<tr>
+	<% if attribute %>
+		<td><%= attribute %></td>
+			<td><%= f.text_field attribute.to_sym %></td>
+	<% end %>
+	</tr>
+	<tr>
+
+<% end %>
+	</tr>
+		<td><button name="subject" type="submit" value="update">update</button></td> 
+	</tr>
+</table>
+<input type="hidden" name="product_type" value="<%= @product %>"/>
+<input type="hidden" name="product_id" value="<%= @product_data.product_id%>"/>
+<% end %>

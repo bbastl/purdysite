@@ -1,0 +1,584 @@
+
+<Script Language= JavaScript>
+		
+		
+		
+		function CheckNumeric(strVal)
+		{
+			var strValidChars = "0123456789 -";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+		function CheckAlpha(strVal)
+		{
+			var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+		function CheckAlphaNumeric(strVal)
+		{
+			var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'.,)(&/\- @#$&*=[]";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+		function CheckAlphaNum(strVal)
+		{
+			var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_- ";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+
+
+function isEmail(s)
+{  
+    var i = 1;
+    var sLength = s.length;
+
+    // look for @
+    while ((i < sLength) && (s.charAt(i) != "@"))
+    { i++
+    }
+
+    if ((i >= sLength) || (s.charAt(i) != "@")) return false;
+    else i += 2;
+
+    // look for .
+    while ((i < sLength) && (s.charAt(i) != "."))
+    { i++
+    }
+
+    // there must be at least one character after the .
+    if ((i >= sLength - 1) || (s.charAt(i) != ".")) return false;
+    else return true;
+}
+</script>
+<html>
+<head>
+<title>Purdy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	background-image:    url("images/bg/bg.gif");
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<script language="JavaScript">
+function validate()
+{
+
+	var strDate;
+	var strCurrDate;
+	strCurrDate = new Date();
+
+	strMonth = document.form1.ExpiryMonth.value;
+	strYear = document.form1.ExpiryYear.value;
+
+//	alert(strDate);
+//	alert(strCurrDate.getMonth());
+//	return;
+
+	//alert("validate");
+	if(document.getElementById('txtFName').value == "")
+	{
+		alert("FirstName cannot be blank");
+		document.getElementById('txtFName').focus();
+		return;
+	}
+	else if(CheckAlpha(document.getElementById('txtFName').value) == false)
+	{
+		alert("Invalid First Name");
+		document.getElementById('txtFName').focus();
+		return;
+	}
+	if(document.getElementById('txtLName').value == "")
+	{
+		alert("LastName cannot be blank");
+		document.getElementById('txtLName').focus();
+		return;
+	}
+	else if(CheckAlpha(document.getElementById('txtLName').value) == false)
+	{
+		alert("Invalid Last Name");
+		document.getElementById('txtLName').focus();
+		return;
+	}
+	if(document.getElementById('company').value == "")
+	{
+		document.getElementById('company').value = "-";
+	}
+
+	if(document.getElementById('txtAdd1').value == "")
+	{
+		alert("Address1 cannot be blank");
+		document.getElementById('txtAdd1').focus();
+		return;
+	}
+	if(document.getElementById('txtCity').value == "")
+	{
+		alert("City cannot be blank");
+		document.getElementById('txtCity').focus();
+		return;
+	}
+	else if(CheckAlphaNum(document.getElementById('txtCity').value) == false)
+	{
+		alert("Invalid City");
+		document.getElementById('txtCity').focus();
+		return;
+	}
+	if(document.getElementById('txtState').value == "")
+	{
+		alert("State cannot be blank");
+		document.getElementById('txtState').focus();
+		return;
+	}
+	else if(CheckAlphaNum(document.getElementById('txtState').value) == false)
+	{
+		alert("Invalid State");
+		document.getElementById('txtState').focus();
+		return;
+	}
+	if(document.getElementById('txtCountry').value == "")
+	{
+		alert("Country cannot be blank");
+		document.getElementById('txtCountry').focus();
+		return;
+	}
+	else if(CheckAlphaNum(document.getElementById('txtCountry').value) == false)
+	{
+		alert("Invalid Country");
+		document.getElementById('txtCountry').focus();
+		return;
+	}
+	if(document.getElementById('txtZip').value == "")
+	{
+		alert("ZipCode cannot be blank");
+		document.getElementById('txtZip').focus();
+		return;
+	}
+	if(document.getElementById('txtPhone').value == "")
+	{
+		alert("Phone Number cannot be blank");
+		document.getElementById('txtPhone').focus();
+		return;
+	}
+	if(document.getElementById('txtFax').value == "")
+	{
+		alert("Fax Number cannot be blank");
+		document.getElementById('txtFax').focus();
+		return;
+	}
+	if(document.getElementById('txtEmail').value == "")
+	{
+		alert("Email Address cannot be blank");
+		document.getElementById('txtEmail').focus();
+		return;
+	}
+
+
+	else if(isEmail(document.getElementById('txtEmail').value) == false)
+	{
+		alert("Invalid Email ID");
+		document.getElementById('txtEmail').focus();
+		return;
+	}
+
+	if(document.getElementById('cmdservice').value != "")
+	{
+
+		if(document.getElementById('txtshipping').value == "")
+		{
+			alert("Please Enter Shipping Account Number.");
+			document.getElementById('txtshipping').focus();
+			return;
+		}
+		if(document.getElementById('cmdtype').value == "")
+		{
+			alert("Please Select Service Type.");
+			document.getElementById('cmdtype').focus();
+			return;
+		}
+
+	}
+
+	if(document.getElementById('txtshipping').value != "")
+	{
+		if(document.getElementById('cmdservice').value == "")
+		{
+			alert("Please Select Preferred Carrier.");
+			document.getElementById('cmdservice').focus();
+			return;
+		}
+		if(document.getElementById('cmdtype').value == "")
+		{
+			alert("Please Select Service Type.");
+			document.getElementById('cmdtype').focus();
+			return;
+		}
+
+	}
+
+
+	if(document.getElementById('cmdtype').value != "")
+	{
+
+		if(document.getElementById('cmdservice').value == "")
+		{
+			alert("Please Select Preferred Carrier.");
+			document.getElementById('cmdservice').focus();
+			return;
+		}
+		if(document.getElementById('txtshipping').value == "")
+		{
+			alert("Please Enter Shipping Account Number.");
+			document.getElementById('txtshipping').focus();
+			return;
+		}
+	}
+
+	if(document.getElementById('txtHolder').value == "")
+	{
+		alert("Please put in the Card Holder's Name");
+		document.getElementById('txtHolder').focus();
+		return;
+	}
+	else if(CheckAlpha(document.getElementById('txtHolder').value) == false)
+	{
+		alert("Invalid Card Holder's Name");
+		document.getElementById('txtHolder').focus();
+		return;
+	}
+	if(document.getElementById('txtCCNumber').value == "")
+	{
+		alert("Credit Card Number cannot be blank");
+		document.getElementById('txtCCNumber').focus();
+		return;
+	}
+
+	if(strYear < strCurrDate.getYear())
+	{
+		if(strMonth < strCurrDate.getMonth())
+		{
+			alert("Your card has already expired.\n\n Please check the expiry date");
+			document.getElementById('ExpiryMonth').focus();
+			return;
+		}
+	}
+	if(strMonth == "0")
+	{
+		document.getElementById('hMonth').value = "January";
+	}
+	if(strMonth == "1")
+	{
+		document.getElementById('hMonth').value = "February";
+	}
+	if(strMonth == "2")
+	{
+		document.getElementById('hMonth').value = "March";
+	}
+	if(strMonth == "3")
+	{
+		document.getElementById('hMonth').value = "April";
+	}
+	if(strMonth == "4")
+	{
+		document.getElementById('hMonth').value = "May";
+	}
+	if(strMonth == "5")
+	{
+		document.getElementById('hMonth').value = "June";
+	}
+	if(strMonth == "6")
+	{
+		document.getElementById('hMonth').value = "July";
+	}
+	if(strMonth == "7")
+	{
+		document.getElementById('hMonth').value = "August";
+	}
+	if(strMonth == "8")
+	{
+		document.getElementById('hMonth').value = "September";
+	}
+	if(strMonth == "9")
+	{
+		document.getElementById('hMonth').value = "October";
+	}
+	if(strMonth == "10")
+	{
+		document.getElementById('hMonth').value = "Novermber";
+	}
+	if(strMonth == "11")
+	{
+		document.getElementById('hMonth').value = "December";
+	}
+
+	document.form1.submit();
+}
+
+
+</script>
+
+ <div id="main_content">
+            <%= render partial: "about/about_links" %> 
+<div class="content">
+
+            <%= image_tag "PageTitles/about_orderasample.gif" %>
+
+   <p><img src="images/um.gif" width="454" height="1"><br>
+  Please note that this sample offer is available only to design engineers with a current design project and is subject to qualification by our staff. If you do not fit this requirement, please contact one of our <a href="/distributors" target="_blank">Distributors</a> to order the product, or call us (408-523-8283) or email us at <A href="mailto:customerservice@purdyelectronics.com">customerservice@purdyelectronics.com</A> for further assistance.</p>
+            <p> Please fill in the following form to complete your purchase:<BR>
+            </p>
+            <form name="form1" method="post" action="orderprocess.cfm">
+              <table width="454" border="0">
+                <tr>
+                  <td colspan="2"><span class="TableTextNEW">Order Details</span><br>
+                      <span class="TableText">(Additional shipping fees charged for domestic priority or international)</span></td>
+                </tr>
+                <tr align="center">
+                  <td colspan="2"> 
+                      <table width="354" border="0" bgcolor="#FFFFFF">
+
+                        <tr>
+                          <td width="183" class="TableTextBold">Product Name</td>
+                          <td width="161" class="TableTextBold">Price</td>
+                        </tr>
+                        <tr>
+                          <td><%= @product_data.product_name %></td>
+                          <td>$<%= @product_data.product_price %></td>
+                        </tr>
+                        <tr>
+                          <td>Shipping &amp; Handling Charges</td>
+                          <td>$<%= @product_data.product_sh %></td>
+                        </tr>
+                        <tr>
+                          <td align="right"><strong>Total Amount :&nbsp;</strong></td>
+                          <td><strong>$<%= (@product_data.product_price.to_i + @product_data.product_sh.to_i) %></strong></td>
+                        </tr>
+                      </table>
+		      
+                    <div align="center"></div></td>
+                </tr>
+                <tr>
+                  <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="TableTextNEW">Shipping Details</td>
+                </tr>
+                <tr>
+                  <td width="142" valign="top">First Name:</td>
+                  <td width="302"><input name="txtFName" type="text" id="txtFName" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Last Name:</td>
+                  <td><input name="txtLName" type="text" id="txtLName" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Company Name</td>
+                  <td><input name="company" type="text" id="company" maxlength="15">		  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Address1 :</td>
+                  <td><textarea name="txtAdd1" id="txtAdd1" onFocus="this.select()"></textarea>                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Address2 :</td>
+                  <td><textarea name="txtAdd2" id="txtAdd2" onFocus="this.select()"></textarea>
+                    (optional) </td>
+                </tr>
+                <tr>
+                  <td valign="top">City :</td>
+                  <td><input name="txtCity" type="text" id="txtCity" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">State :</td>
+                  <td><input name="txtState" type="text" id="txtState" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Country :</td>
+                  <td><input name="txtCountry" type="text" id="txtCountry" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Zip/Postal Code:</td>
+                  <td><input name="txtZip" type="text" id="txtZip" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Phone :</td>
+                  <td><input name="txtPhone" type="text" id="txtPhone" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Fax :</td>
+                  <td><input name="txtFax" type="text" id="txtFax" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Email :</td>
+                  <td><input name="txtEmail" type="text" id="txtEmail" onFocus="this.select()">                  </td>
+                </tr>
+		<tr>
+                     <td valign="top">&nbsp;</td>
+                     <td>&nbsp;</td>
+                   </tr>
+                 <tr>
+                     <td colspan="2" valign="top"> <span class="TableTextNEW">Priority / International Shipping Payment</span> <br>
+Shipping and handling charges cover only domestic orders shipped UPS Ground.&nbsp; If you require international shipping or priority domestic shipping, please fill in your shipping account number and your preferred method of shipment below. </td>
+                    </tr>
+		     <tr>
+                     <td valign="top">&nbsp;</td>
+                     <td>&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td valign="top">Preferred Carrier</td>
+                     <td><select name="cmdservice" id="cmdservice">
+                       <option value="">Select</option>
+		       <option value="UPS">UPS</option>
+                       <option value="FedEx">FedEx</option>
+                       <option value="DHL">DHL</option>
+                     </select></td>
+                   </tr>
+
+                   <tr>
+                     <td valign="top">Shipping Acct Number </td>
+                     <td><input name="txtshipping" type="text" id="txtshipping" onFocus="this.select()"></td>
+                   </tr>
+                   <tr>
+                     <td valign="top">Service Type</td>
+                     <td> <select name="cmdtype" id="cmdtype">
+                      <option value="">Select</option>
+                          <option value="Domestic Overnight">Domestic Overnight</option>
+                          <option value="Domestic 2 Day">Domestic 2 Day</option>
+                          <option value="Domestic 3 Day">Domestic 3 Day</option>
+                          <option value="International Priority Air">International Priority Air</option>
+                          <option value="International Standard">International Standard</option>
+			  </select>			</td>
+                   </tr>
+                   <tr>
+                     <td valign="top">&nbsp;</td>
+                     <td>&nbsp;</td>
+                   </tr>
+		   
+                <tr>
+                  <td colspan="2" class="TableTextNEW">Payment Details:</td>
+                </tr>
+                <tr>
+                  <td valign="top">Card Holder :</td>
+                  <td><input name="txtHolder" type="text" id="txtHolder" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Credit Card Number:</td>
+                  <td><input name="txtCCNumber" type="text" id="txtCCNumber" onFocus="this.select()">                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">Credit Card Type:</td>
+                  <td><select name="CCType" id="CCType">
+                      <option value="Master">Master</option>
+                      <option value="Visa">Visa</option>
+                      <option value="AMEX">American Express</option>
+                    </select> </td>
+                </tr>
+                <tr>
+                  <td valign="top">Expiry Date :</td>
+                  <td><select name="ExpiryMonth" id="ExpiryMonth">
+                      <option value="0">1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                      <option value="4">5</option>
+                      <option value="5">6</option>
+                      <option value="6">7</option>
+                      <option value="7">8</option>
+                      <option value="8">9</option>
+                      <option value="9">10</option>
+                      <option value="10">11</option>
+                      <option value="11">12</option>
+                    </select>
+                    /
+                    <select name="ExpiryYear" id="ExpiryYear">
+                      <option value="2012">2012</option>
+                      <option value="2013">2013</option>
+                      <option value="2014">2014</option>
+                      <option value="2015">2015</option>
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                    </select>
+                    (mm/yyyy)
+                     </td>
+                </tr>
+		
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td><input name="bSubmit" onClick="validate()" type="button" id="bSubmit" value="Submit">				  </td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+    <input type="hidden" name="hMonth" id="hMonth">
+    <input type="hidden" name="servertype" id="servertype" value="New">
+    
+      <input type="hidden" name="hTotal" id="hTotal" value="57">
+      <input type="hidden" name="hProd_id" id="hProd_id" value="41">
+      <input type="hidden" name="hProd_name" id="hProd_name" value="ANDpSi020TD-LED">
+     <input type="hidden" name="hProd_price" id="hProd_name" value="47">
+      <input type="hidden" name="hprodline" value="" id="hprodline">
+    
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</form></td>
+        </tr>
+      </table>
+
+</div>
+
+</div>

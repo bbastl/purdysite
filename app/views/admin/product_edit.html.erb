@@ -1,0 +1,17 @@
+<style>
+#admin_products  {border-collapse:collapse; margin:10px;}
+#admin_products td {border: 1px solid black; padding:3px;}
+</style>
+<%= @product %>
+<table id="admin_products">
+<% @products.each do |prod| %>
+	<tr>
+		<td><%= prod.product_id %></td>
+		<td><%= prod.product_name %></td>
+		<td><%= prod.description %>
+		<td><%= prod.product_line %></td>
+		<td><a href="/admin/product_edit_item?product_type=<%=@product%>&product_id=<%= prod.product_id %>">edit</a></td>
+		<td><a href="/admin/product_delete_item?product_type=<%=@product%>&product_id=<%= prod.product_id %>">delete</a></td>
+	</tr>
+<% end %>
+</table> 
