@@ -1,0 +1,21 @@
+Product_ID|Product_Name|Product_Line|News|Type|Led|Lens|Peak|Lmin|Typ|Ifma|Total|Material|Product_Price|Product_SH|PDF|Sort
+1|AND190HYP|AND Optoelectronics|N|T-3 Package (10mm)|Yellow|Clear|590|4500|6300|20|6|InGaAIP|0|0|AND190HYP.pdf|1
+2|AND180HYP|AND Optoelectronics|Y|T-1 3/4 Package (5mm)|Yellow|Clear|590|2,500|4,000|20|6|AIGaInP|0|0|AND180HYPnew.pdf|2
+3|ANDS4E38XX16|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Clear|590|2500|3200|20|16|InGaAIP|0|0|ANDS4E38XX16.pdf|3
+4|ANDS4E38XX20|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Clear|590|2000|3000|20|20|InGaAIP|0|0|ANDS4E38XX20.pdf|4
+5|AND180AYP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Clear|590|1600|2500|20|6|InGaAlP|0|0|AND180AYP.pdf|5
+6|AND157HYP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Clear|590|1200|2500|20|15|InGaAIP|0|0|AND157HYP-.pdf|6
+7|AND156EYP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Clear|590|300|700|20|50|InGaAIP|0|0|AND156EYP.pdf|7
+8|AND181YP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Yellow, Clear|590|37|75|10|15|GaAsP|0|0|AND181YP.pdf|10
+9|AND113Y|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Yellow, Clear|590|20|50|10|30|GaAsP|0|0|AND113Y-YP.pdf|12
+10|AND113YP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Yellow, Clear|590|20|50|10|30|GaAsP|0|0|AND113Y-YP.pdf|11
+11|AND114Y|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Yellow, Diffused|590|5|18|10|60|GaAsP|0|0|AND114Y-YP.pdf|13
+12|AND114YP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Yellow, Diffused|590|5|18|10|60|GaAsP|0|0|AND114Y-YP.pdf|14
+13|AND262YAP|AND Optoelectronics|N|T-1 Package (3mm)|Yellow|Clear|595|72|120|20|36|InGaAlP|0|0|AND262YAP.pdf|15
+14|AND123Y|AND Optoelectronics|N|T-1 Package (3mm)|Yellow|Yellow, Clear|590|10|45|10|50|GaAsP|0|0|AND123Y.pdf|16
+15|AND124Y|AND Optoelectronics|Y|T-1 Package (3mm)|Yellow|Yellow, Diffused|590|8|20|10|60|GaAsP|0|0|AND124Y.pdf|17
+16|AND4YA (Flat)|AND Optoelectronics|N|T-1 Package (3mm) Surface Mount|Yellow|Clear|590|58|80|20|140|InGaAIP|0|0|AND4YA.pdf|18
+17|AND5YA (domed)|AND Optoelectronics|N|T-1 Package (3mm) Surface Mount|Yellow|Clear|590|395|625|20|30|InGaAIP|0|0|AND5YA.pdf|19
+18|AND7YA (Flat LP)|AND Optoelectronics|N|T-1 Package (3mm) Surface Mount|Yellow|Clear|589|90|135|20|120|InGaAIP|0|0|AND7YA.pdf|20
+21|AND156QYP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Yellow|Clear|590|3,600|4,000|20|30|InGaAiP|0|0|AND156QYP.pdf|8
+24|AND156SYP|AND Optoelectronics|Y|T-1 3/4 Package (5mm)|Super Yellow|Clear|589|4500|6200|20|30|AlGaInP|||AND156SYP-B.pdf|9

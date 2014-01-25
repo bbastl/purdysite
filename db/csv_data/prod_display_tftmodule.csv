@@ -1,0 +1,15 @@
+Product_ID|Product_Name|Product_line|News|Type|Screen|Pixel|Brightness|Pixel_Pitch|Active|Overall|Driving|Input_Signal|Product_Price|Product_SH|PDF|Sort
+25|ANDpSi089C362S|AND Displays|Y|Poly-Silicon Color TFT Displays|8.9|1024 x 600|250|0.1905 x 0.1890|195.07 x 113.40|219.5 x 134.5 x 5.2|3.3|LVDS 6-bit interface|574|10|ANDpSi089C362S.pdf|8
+38|ANDpSi121C250F-HB|AND Displays|Y|Poly-Silicon Color TFT Displays|12.1|1024 x 768|400|0.24 x 0.24|246.7 x 184.32|278.3 x 209 x 12|3.3|LVDS 6-bit interface||||14
+3|ANDpSi056ET0S-HB|AND Diplays|N|Poly-Silicon Color TFT Displays|5.6|1024 x 600|250|0.120 x 0.120|122.88 x 72|141.8 x 84.4 x 7.5|3.3|LVDS 6-bit interface|499|10|ANDpSi056ET1S-HB.pdf|4
+39|AND-TFT-35VX-UHB-TS|AND Displays|Y|Poly-Silicon Color TFT Displays|3.5|640 x 480|1,300|0.1125 x 0.1095|72.0 x 52.56|84.25 x 65.4 x 4.55|5.0|Digital 6-bit interface|||AND-TFT-35VX-UHB-TS.pdf|2
+5|ANDpSi08C351-HB|AND Diplays|N|Poly-Silicon Color TFT Displays|8.4|800 x 600|350|0.213 x 0.213|170.4 x 127.8|200 x 150 x 12|3.3|Digital 6-bit interface|437|10|ANDpSi08C351-HB.pdf|7
+41|AND104X02-HB|AND Displays|Y|Poly-Silicon Color TFT Displays|10.4|1024 x 768|340|0.2055 x 0.2055|210.43 x 157.8|238.6 x 173.2 x 4.3|3.3|LVDS 6-bit interface|||AND104X02-HB.pdf|10
+12|AND065A041F-HB2|AND Diplays|N|Poly-Silicon Color TFT Displays|6.5|640 x 480|400|0.207 x 0.207|132.48 x 99.36|153 x 118 x 11|3.3|Digital 6-bit interface|526|10|AND065A041F-HB2.pdf|6
+35|AND035VX-UHB-LED|AND Displays|Y|Poly-Silicon Color TFT Displays|3.5|640 x 480|1,300 or 50+/-|0.1125 x 0.1095|72.0 x 52.56|84.25 x 65.4 x 3.45|5.0|Digital 6-bit interface|199|10|AND035VX-UHB-LED.pdf|1
+37|ANDpSi064VT-HB-LED|AND Displays|Y|Poly-Silicon Color TFT Displays|6.4|640x 480|400|0.203 x 0.203|129.6 x 97.44|175.4 x 126.9 x 12.5|5.0|LVDS 6-bit interface|||AND064VT8-HB-LED.pdf|5
+17|AND12C285-DHB|AND Diplays|n|Amorphous-Silicon Color TFT Displaysys|12.1|800 x 600|500|0.3075 x 0.3075|246.0 x 184.5|290 x 220 x 15|5|Digital 6-bit interface|488|10|AND12C285-DHB.pdf|11
+18|AND12C285-4HB|AND Diplays|N|Poly-Silicon Color TFT Displays|12.1|800 x 600|850|0.3075 x 0.3075|246.0 x 184.5|290 x 220 x 17|5.0|Digital 6-bit interface|651|10|AND12C285-4HB.pdf|12
+19|AND12C285-DHB||N|Poly-Silicon Color TFT Displays|12.1|800 x 600|500|0.3075 x 0.3075|246.0 x 184.5|290 x 220 x 15|5.0|Digital 6-bit interface|451|10|AND12C285-4HB.pdf|11
+23|AND050VL-LED|AND Displays|Y|Poly-Silicon Color TFT Displays|5.0|640 x 480|450|0.159 x 0.156|101.76 x 74.88|120.7 x 92.8 x 12.5|5.0|LVDS 6-bit interface|206|10|AND050VL-LED.pdf|3
+24|ANDpSi089C362S-4HB|AND Displays|Y|Poly-Silicon Color TFT Displays|8.9|1024 x 600|800|0.1605 x 0.1890|195.07 x 113.40|219.5 x 134.5 x 8.4|3.3|LVDS 6-bit interface|749|10|ANDpSi089C362S-4HB.pdf|9

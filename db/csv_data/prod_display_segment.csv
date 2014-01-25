@@ -10,14 +10,3 @@ Product_ID|Product_Name|News|Product_Line|Type|Display|Digit|Package|Product_Pri
 9|FE0601|N|AND Displays|Seven Segment Displays|FE-07.jpg|0.7|3.7 x 1.2|0|0|FE0601.pdf|10
 10|FE1001|N|AND Displays|Seven Segment Displays|FE-08.jpg|0.5|3.7 x 1.2|0|0|FE1001.pdf|11
 11|FE0501W|Y|AND Displays||FE-02.jpg|0.7|2.75 x 1.5||||5
-1|FE1901|N|AND Displays|Seven Segment Displays|FE-01.jpg|0.5|1.1 x 1.2|0|0|FE1901.pdf|1
-2|FE0201|N|AND Displays|Seven Segment Displays|FE-02.jpg|0.5|2.0 x 1.2|0|0|FE0201.pdf|2
-3|FE0203|N|AND Displays|Seven Segment Displays|FE-03.jpg|0.5|2.0 x 1.2|0|0|FE0203.pdf|3
-4|FE0202|N|AND Displays|Seven Segment Displays|FE-04.jpg|0.5|2.0 x 1.2|0|0|FE0202.pdf|4
-5|FE0502|N|AND Displays|Seven Segment Displays|FE-04.jpg|0.7|2.75 x 1.5|0|0|FE0502.pdf|6
-6|FE0206|N|AND Displays|Seven Segment Displays|FE-05.jpg|0.5|2.0 x 1.2|0|0|FE0206.pdf|7
-7|FE0208|N|AND Displays|Seven Segment Displays|FE-06.jpg|0.4|2.0 x 1.2|0|0|FE0208.pdf|8
-8|FE0401|N|AND Displays|Seven Segment Displays|FE-07.jpg|0.5|2.75 x 1.2|0|10|FE0401.pdf|9
-9|FE0601|N|AND Displays|Seven Segment Displays|FE-07.jpg|0.7|3.7 x 1.2|0|0|FE0601.pdf|10
-10|FE1001|N|AND Displays|Seven Segment Displays|FE-08.jpg|0.5|3.7 x 1.2|0|0|FE1001.pdf|11
-11|FE0501W|Y|AND Displays||FE-02.jpg|0.7|2.75 x 1.5||||5

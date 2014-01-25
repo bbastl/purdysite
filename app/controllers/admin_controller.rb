@@ -26,4 +26,16 @@ class AdminController < ApplicationController
  		flash[:alert] = "UPDATED"
  		redirect_to "/admin/product_edit_item?product_type=#{params[:product_type]}&product_id=#{params[:product_id]}"
  	end
+
+ 	def order_index
+
+ 	end
+
+ 	def order_edit
+
+ 	end
+
+ 	def order_update
+
+ 	end
 end

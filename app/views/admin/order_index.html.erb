@@ -1,0 +1,593 @@
+<script language="JavaScript">
+
+function Check(tosubmit)
+{
+
+		var ssearch;
+		var sstatus;
+		var sflag;
+		var frmonth;
+		var fryear;
+		var frday;
+		var tomonth;
+		var toyear;
+		var today;
+		var frdate;
+		var todate;
+
+		frmonth = document.frmsearch.selFrMnth.value;
+		frday = document.frmsearch.selFrDay.value;
+		fryear = document.frmsearch.selFrYr.value;
+		frdate = fryear+"/"+frmonth+"/"+frday;
+
+		tomonth = document.frmsearch.selToMnth.value;
+		today = document.frmsearch.selToDay.value;
+		toyear = document.frmsearch.selToYr.value;
+		todate = toyear+"/"+tomonth+"/"+today;
+
+		sflag = document.getElementById('hFlag');
+		ssearch = document.getElementById('search');
+		sstatus = document.getElementById('status');
+
+
+		document.frmsearch.sDate.value=frdate;
+		document.frmsearch.eDate.value=todate;
+		
+		
+		sflag.value = "yes"
+
+		if (tosubmit == "srch")
+		{
+		document.frmsearch.target="";
+		document.frmsearch.FrMnth.value=document.frmsearch.selFrMnth.value
+		document.frmsearch.FrDay.value=document.frmsearch.selFrDay.value
+		document.frmsearch.FrYr.value=document.frmsearch.selFrYr.value
+		document.frmsearch.ToMnth.value=document.frmsearch.selToMnth.value
+		document.frmsearch.ToDay.value=document.frmsearch.selToDay.value
+		document.frmsearch.ToYr.value=document.frmsearch.selToYr.value
+
+		document.frmsearch.action="search.cfm?sort=OrderId&order=asc&chkval=yes";
+		document.frmsearch.submit();
+		}
+		if (tosubmit == "print")
+		{
+		document.frmsearch.target="_blank";
+		document.frmsearch.action="print.cfm";
+		}
+		if (tosubmit == "export")
+		{
+		document.frmsearch.target="_blank";
+		document.frmsearch.action="excel.cfm";
+		}
+}
+
+function changedate()
+{
+	tomonth=document.frmsearch.selToMnth.value
+	today=document.frmsearch.selToDay.value
+	toyear=document.frmsearch.selToYr.value
+	var mnth_names = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+
+	ddate=tomonth+"/"+today+"/"+toyear
+	dt1=new Date(ddate)
+	newdate = new Date().setDate(dt1.getDate()-7)
+	newdate = new Date(newdate)
+
+	newday=newdate.getDate()
+	newmonth=newdate.getMonth()
+	newyear=newdate.getYear()
+
+	document.frmsearch.selFrDay.value=newday
+	document.frmsearch.selFrYr.value=newyear
+	document.frmsearch.selFrMnth.value=newmonth+1
+}
+
+
+function Check3(tosubmit)
+{
+	var sflag;
+
+
+		sflag = document.getElementById('xFlag');
+
+		if (tosubmit == "detail")
+		{
+		frmsearch3.submit();
+		}
+}
+function CheckNumeric(strVal)
+		{
+			var strValidChars = "0123456789 -";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+		function CheckAlpha(strVal)
+		{
+			var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+		function CheckAlphaNumeric(strVal)
+		{
+			var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'.,)(&/\- @#$&*=[]";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+		function CheckAlphaNum(strVal)
+		{
+			var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_- ";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+
+
+function isEmail(s)
+{  
+    var i = 1;
+    var sLength = s.length;
+
+    // look for @
+    while ((i < sLength) && (s.charAt(i) != "@"))
+    { i++
+    }
+
+    if ((i >= sLength) || (s.charAt(i) != "@")) return false;
+    else i += 2;
+
+    // look for .
+    while ((i < sLength) && (s.charAt(i) != "."))
+    { i++
+    }
+
+    // there must be at least one character after the .
+    if ((i >= sLength - 1) || (s.charAt(i) != ".")) return false;
+    else return true;
+}
+
+</script>
+<table width="847" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td width="12"><img src="../images/um.gif" width="12" height="1"></td> 
+        <td width="835" valign="top"><br><a href="../login.cfm">Admin Home</a> &gt;&gt; Order Summary<br><br><table border="0" align="center" cellpadding="0" cellspacing="0">
+        <form method="post" name="frmsearch" target="_blank">
+	<input type="hidden" name="FrMnth" value="">
+	<input type="hidden" name="FrDay" value="">	      
+	<input type="hidden" name="FrYr" value="">
+	<input type="hidden" name="ToMnth" value="">
+	<input type="hidden" name="ToDay" value="">	      
+	<input type="hidden" name="ToYr" value=""><tr> 
+      <td colspan="6"><TABLE align="right" CELLPADDING=0 CELLSPACING=0>
+          <TR> 
+            <TD>&nbsp;</TD>
+            <TD><select name="selFrMnth">
+                <script language="javascript">
+			var mnth_names = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+			var myDt = new Date();
+			var currMnth = myDt.getMonth();
+			for(i=0;i<mnth_names.length;i++)
+			{
+																			
+			document.write("<option value="+parseInt(i+1)+">" + mnth_names[i]+"</option>");
+			}
+		        </script>
+              </select></TD>
+            <TD><select name="selFrDay">
+                <script language="javascript">
+		var myDate = myDt.getDate()
+			for(i=1;i<32;i++){
+				if(myDate == i){
+					document.write("<option value="+i+" selected>"+i+"</option>")
+				}else{
+					document.write("<option value="+i+">"+i+"</option>")
+				}	
+
+			}
+		               </script>
+              </select></TD>
+            <TD><select name="selFrYr">
+                <script language="javascript">
+		
+		var BaseYr = 2007;
+		var CurrYr = myDt.getFullYear();
+		var LastYr = BaseYr - 1; 
+		var Yr2 = BaseYr + 1
+		var Yr3 = BaseYr + 2
+		var Yr4 = BaseYr + 3
+		var Yr5 = BaseYr + 4
+		var Yr6 = BaseYr + 5
+		var Yr7 = BaseYr + 6
+		var Yr8 = BaseYr + 7
+		var Yr9 = BaseYr + 8
+		var Yr10 = BaseYr + 9
+		var Yr11 = BaseYr + 10
+
+		  document.write("<option value="+Yr11+">"+Yr11+"</option>");
+		  document.write("<option value="+Yr10+">"+Yr10+"</option>");
+		  document.write("<option value="+Yr9+">"+Yr9+"</option>");
+		  document.write("<option value="+Yr8+">"+Yr8+"</option>");
+		  document.write("<option value="+Yr7+">"+Yr7+"</option>");
+		  document.write("<option value="+Yr6+">"+Yr6+"</option>");
+		  document.write("<option value="+Yr5+">"+Yr5+"</option>");
+		  document.write("<option value="+Yr4+">"+Yr4+"</option>");
+		  document.write("<option value="+Yr3+">"+Yr3+"</option>");
+		  document.write("<option value="+CurrYr+" selected>"+CurrYr+"</option>");
+		  document.write("<option value="+BaseYr+">"+BaseYr+"</option>");
+		  document.write("<option value="+LastYr+">"+LastYr+"</option>");
+		                </script>
+              </select></TD>
+            <TD width="70" align="center">&#8212;</TD>
+            <TD><select name="selToMnth">
+                <script language="javascript">
+		var mnth_names = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+		var myDt = new Date();
+		var currMnth = myDt.getMonth();
+			for(i=0;i<mnth_names.length;i++){
+				 if(mnth_names[currMnth] == mnth_names[i]){
+							document.write("<option value="+parseInt(i+1)+" selected>" + mnth_names[i]+"</option>");
+				 }else{										
+					document.write("<option value="+parseInt(i+1)+">" + mnth_names[i]+"</option>");
+				}	
+				}				    </script>
+              </select></TD>
+            <TD><select name="selToDay">
+                <script language="javascript">
+		var myDate = myDt.getDate()
+			for(i=1;i<32;i++){
+				if(myDate == i){
+					document.write("<option value="+i+" selected>"+i+"</option>")
+				}else{
+					document.write("<option value="+i+">"+i+"</option>")
+				}	
+			}
+		                </script>
+              </select></TD>
+            <TD colspan="2"><select name="selToYr">
+                <script language="javascript">
+		var BaseYr = 2007;
+		var CurrYr = myDt.getFullYear();
+		var LastYr = BaseYr - 1; 
+		var Yr2 = BaseYr + 1
+		var Yr3 = BaseYr + 2
+		var Yr4 = BaseYr + 3
+		var Yr5 = BaseYr + 4
+		var Yr6 = BaseYr + 5
+		var Yr7 = BaseYr + 6
+		var Yr8 = BaseYr + 7
+		var Yr9 = BaseYr + 8
+		var Yr10 = BaseYr + 9
+		var Yr11 = BaseYr + 10
+
+		  document.write("<option value="+Yr11+">"+Yr11+"</option>");
+		  document.write("<option value="+Yr10+">"+Yr10+"</option>");
+		  document.write("<option value="+Yr9+">"+Yr9+"</option>");
+		  document.write("<option value="+Yr8+">"+Yr8+"</option>");
+		  document.write("<option value="+Yr7+">"+Yr7+"</option>");
+		  document.write("<option value="+Yr6+">"+Yr6+"</option>");
+		  document.write("<option value="+Yr5+">"+Yr5+"</option>");
+		  document.write("<option value="+Yr4+">"+Yr4+"</option>");
+		  document.write("<option value="+Yr3+">"+Yr3+"</option>");
+		  document.write("<option value="+CurrYr+" selected>"+CurrYr+"</option>");
+		  document.write("<option value="+BaseYr+">"+BaseYr+"</option>");
+		  document.write("<option value="+LastYr+">"+LastYr+"</option>");
+		              </script>
+              </select> </TD>
+          </TR>
+        </TABLE>
+        <input name="sDate" type="hidden" value=""> <input name="eDate" type="hidden" value=""> 
+        </td>
+    </tr>
+	<tr>
+      <td colspan="6"><img src="../images/um.gif" width="1" height="5"></td>
+	  </tr>
+    <tr align="right"> 
+      <td colspan="6"><table width="100" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td nowrap><strong>Word Search</strong></td>
+            <td nowrap>&nbsp;</td>
+            <td nowrap><input name="search" type="text" id="search" size="21" maxlength="30"></td>
+            <td nowrap>&nbsp;</td>
+            <td nowrap><strong>Status</strong></td>
+            <td nowrap>&nbsp;</td>
+            <td><select name="status" class="BeBold" id="status">
+              <option value="">All</option>
+		<option value="New">New</option>
+		<option value="Pending Qualification">Pending Qualification</option>
+		<option value="Qualified Lead">Qualified Lead</option>
+		<option value="Referred to Distributor">Referred to Distributor</option>
+		<option value="Rejected-No Response">Rejected-No Response</option>
+		<option value="Rejected-No Fit">Rejected-No Fit</option>
+		<option value="Sample Shipped">Sample Shipped</option>
+		<option value="Sample Back Ordered">Sample Back Ordered</option>
+		<option value="Sales Contact - Pending">Sales Contact - Pending</option>
+		<option value="Working Sale">Working Sale</option>
+		<option value="Won Deal">Won Deal</option>
+		<option value="Project Cancelled">Project Cancelled</option>
+		<option value="Lost Deal">Lost Deal</option>
+		<option value="Sent Email/Left Message">Sent Email / Left Message</option>
+		<option value="Rejected - No Credit Card">Rejected - No Credit Card</option>
+            </select></td>
+          </tr>
+      </table></td>
+      </tr>
+    <tr>
+      <td colspan="6"><img src="../images/um.gif" width="1" height="5"></td>
+    </tr>
+    <tr align="right"> 
+      <td colspan="6">   <input type="submit" name="Submit2" value="Submit" onClick="return (Check('srch'))"></td>
+    </tr>
+    <tr align="right"> 
+      <td></td>
+      <td align="right"></td>
+      <td align="right"></td>
+      <td colspan="3">
+      
+      <!--<input type="submit" name="Submit" value="Export View" onClick="return (Check('export'))"> 
+        <input type="submit" name="Submit" value="Print" onClick="return (Check('print'))">--></td>
+    </tr>
+    <tr> 
+      <td><img src="../images/um.gif" width="1" height="1"></td>
+      <td align="right"><img src="../images/um.gif" width="50" height="1"></td>
+      <td align="right"><img src="../images/um.gif" width="100" height="1"></td>
+      <td><img src="../images/um.gif" width="1" height="1"></td>
+      <td><img src="../images/um.gif" width="20" height="1"></td>
+      <td><img src="../images/um.gif" width="1" height="1"></td>
+    </tr><input type="hidden" name="hFlag" id="hFlag">
+              </form>
+  </table>
+<table width="638" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="477"> 
+			<strong>TOTAL ORDERS : 10</strong>
+   		 
+			  <script language="javascript">
+
+			function Check2(tosubmit)
+			{
+
+				var sflag;
+		
+					sflag = document.getElementById('hFlag');
+
+					if (tosubmit == "print")
+					{
+					document.frmsearch2.target="_blank";
+					document.frmsearch2.action="print.cfm";
+					}
+					if (tosubmit == "export")
+					{
+					document.frmsearch2.target="_blank";
+					document.frmsearch2.action="excel.cfm";
+					}
+
+			}
+			      </script></td>
+                  <td width="245" align="right"><form method="post" name="frmsearch2">
+                    <input type="submit" name="Submit" value="Export View" onClick="return (Check2('export'))">
+                    <input type="submit" name="Submit" value="Print" onClick="return (Check2('print'))">
+                    <input name="eDate" type="hidden" value="">
+		    <input name="sDate" type="hidden" value="">
+                    <input name="status" type="hidden" value="">
+                    <input name="search" type="hidden" value="">
+                    <input name="sort" type="hidden" value="OrderID">
+                    <input name="order" type="hidden" value="desc">
+                    <input type="hidden" name="hFlag" id="hFlag">
+                  </form></td>
+                </tr>
+            </table>
+    	      	<form name="detail" method="post" action="details.cfm?chkval=yes">
+		<input name="orderid" type="hidden" value="">
+		<input name="sDate" type="hidden" value="2014/1/15">
+		<input name="eDate" type="hidden" value="2014/1/22">
+		<input name="status" type="hidden" value="">
+		<input name="search" type="hidden" value="">
+		<input name="sort" type="hidden" value="OrderID">
+		<input name="order" type="hidden" value="desc">
+		
+
+		<input type="hidden" name="FrMnth" value="1">
+		<input type="hidden" name="FrDay" value="15">	      
+		<input type="hidden" name="FrYr" value="2014">
+		<input type="hidden" name="ToMnth" value="1">
+		<input type="hidden" name="ToDay" value="22">	      
+		<input type="hidden" name="ToYr" value="2014">
+		
+		
+		</form>
+
+<form name="frmsearch3" method="post">
+<table width="673" border="1" cellpadding="4" cellspacing="0">
+              <tr>
+                <td valign="top" bgcolor="#DDDDDD"><strong><a href="default.cfm?sort=OrderId&order=asc">Date</a></strong></td>
+                <td valign="top" bgcolor="#DDDDDD"><strong><a href="default.cfm?sort=OrderId&order=asc">Order# </a></strong></td>
+                <td valign="top" nowrap bgcolor="#DDDDDD"><strong><a href="#">Prod<br>
+                Line</a></strong> </td>
+                <td valign="top" bgcolor="#DDDDDD"><a href="default.cfm?sort=Product_Name&order=asc"><strong>Part Number</strong></a></td>
+                <td nowrap valign="top" bgcolor="#DDDDDD"><a href="default.cfm?sort=Eau&order=asc"><strong>EAU</strong></a></td>
+                <td nowrap valign="top" bgcolor="#DDDDDD"><strong><a href="default.cfm?sort=FirstName&order=asc">First<br>
+                Name</a></strong></td>
+                <td nowrap valign="top" bgcolor="#DDDDDD"><strong><a href="default.cfm?sort=LastName&order=asc">Last<br>
+                Name</a></strong></td>
+                <td valign="top" bgcolor="#DDDDDD"><strong><a href="default.cfm?sort=Company&order=asc">Company</a></strong></td>
+                <td valign="top" bgcolor="#DDDDDD"><strong><a href="default.cfm?sort=Status&order=asc">Status</a> </strong></td>
+		</tr>
+		
+                <tr>
+                <td  nowrap valign="top" align="center">01/20/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10081';document.detail.submit()">PO-10081</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">PO125-48D-1238B-2</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">David</td>
+                <td valign="top">Taylor</td>
+                <td nowrap valign="top">Penguan Technol</td>
+                <td valign="top">Referred to Distributor</td>
+              </tr>
+              
+                <tr>
+                <td  nowrap valign="top" align="center">01/20/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10080';document.detail.submit()">PO-10080</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">AND190HBA</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">David</td>
+                <td valign="top">Taylor</td>
+                <td nowrap valign="top">Penguan Technol</td>
+                <td valign="top">New</td>
+              </tr>
+              
+                <tr>
+                <td  nowrap valign="top" align="center">01/19/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10079';document.detail.submit()">PO-10079</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">AND185HAP</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">Pieter</td>
+                <td valign="top">Cake</td>
+                <td nowrap valign="top">TUDelft</td>
+                <td valign="top">Referred to Distributor</td>
+              </tr>
+              
+                <tr>
+                <td  nowrap valign="top" align="center">01/19/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10078';document.detail.submit()">PO-10078</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">AND501WGST-LED</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">duncan</td>
+                <td valign="top">watts</td>
+                <td nowrap valign="top">dewkmultiskille</td>
+                <td valign="top">Referred to Distributor</td>
+              </tr>
+              
+                <tr>
+                <td  nowrap valign="top" align="center">01/19/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10077';document.detail.submit()">PO-10077</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">AND731GST-LED</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">duncan</td>
+                <td valign="top">watts</td>
+                <td nowrap valign="top">dewkmultiskille</td>
+                <td valign="top">Referred to Distributor</td>
+              </tr>
+              
+                <tr>
+                <td  nowrap valign="top" align="center">01/19/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10076';document.detail.submit()">PO-10076</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">AND082GST</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">duncan</td>
+                <td valign="top">watts</td>
+                <td nowrap valign="top">dewkmultiskille</td>
+                <td valign="top">Referred to Distributor</td>
+              </tr>
+              
+                <tr>
+                <td  nowrap valign="top" align="center">01/19/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10075';document.detail.submit()">PO-10075</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">AND081GST</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">duncan</td>
+                <td valign="top">watts</td>
+                <td nowrap valign="top">dewkmultiskille</td>
+                <td valign="top">Referred to Distributor</td>
+              </tr>
+              
+                <tr>
+                <td  nowrap valign="top" align="center">01/19/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10074';document.detail.submit()">PO-10074</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">AND190HBA</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">Nick</td>
+                <td valign="top">Carper</td>
+                <td nowrap valign="top">-</td>
+                <td valign="top">Referred to Distributor</td>
+              </tr>
+              
+                <tr>
+                <td  nowrap valign="top" align="center">01/19/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10073';document.detail.submit()">PO-10073</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">AND190HYP</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">Nick</td>
+                <td valign="top">Carper</td>
+                <td nowrap valign="top">-</td>
+                <td valign="top">Referred to Distributor</td>
+              </tr>
+              
+                <tr>
+                <td  nowrap valign="top" align="center">01/19/14</td>
+		<td nowrap valign="top">
+		<a href="javascript:document.detail.orderid.value='10072';document.detail.submit()">PO-10072</a>
+		<td valign="top">N/A</td>
+		<td nowrap valign="top">AND190CRP</td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top">Nick</td>
+                <td valign="top">Carper</td>
+                <td nowrap valign="top">-</td>
+                <td valign="top">New</td>
+              </tr>
+              
+            </table>
+            </form>
+
+          </td>
+        </tr>
+      </table>

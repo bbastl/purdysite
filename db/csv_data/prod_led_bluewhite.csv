@@ -1,0 +1,55 @@
+Product_ID|Product_Name|Product_Line|News|Type|Led|Lens|Peak|Lmin|Typ|Ifma|Total|Material|Product_Price|Product_SH|PDF|Sort
+1|AND190HBA|AND Optoelectronics|N|T-3 Package (10 mm)|Blue|Clear|430|1,000|1,500|10|10|GaN|0|0|AND190HBA.pdf|1
+2|AND190HBB|AND Optoelectronics|N|T-3 Package (10 mm)|Blue|Clear|470|630|1,250|20|10|InGaN|0|0|AND190HBB.pdf|2
+3|AND410HB|AND Optoelectronics|N|T-1 3/4 Package (5 mm)|Blue|Clear|430|250|400|20|10|GaN|0|0|AND410HB.pdf|3
+4|AND520HB|AND Optoelectronics|N|T-1 3/4 Package (5 mm)|Blue|Clear|475|630|900|20|20|InGaN|0|0|AND520HB.pdf|4
+5|AND262HBA|AND Optoelectronics|N|T-1 Package (3 mm)|Blue|Clear|430|160|250|20|40|GaN|0|0|AND262HBA.pdf|5
+6|AND262HBB|AND Optoelectronics|N|T-1 Package (3 mm)|Blue|Clear|470|150|300|20|45|InGaN|0|0|AND262HBB.pdf|6
+7|AND4BA (Flat)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|430|16|20|20|140|GaN|0|0|AND4BA.pdf|7
+8|AND4BC (Flat)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|468|30|50|20|140|InGaN|0|0|AND4BC.pdf|9
+9|AND4BRA (Rt Angle)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|430|17|22|20|120|GaN|0|0|AND4BRA.pdf|10
+10|AND4BRB (Rt Angle)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|470|23|29|20|120|InGaN|0|0|AND4BRB.pdf|11
+11|AND5BA (Domed)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|430|90|112|20|30|GaN|0|0|AND5BA.pdf|12
+12|AND5BB (Domed)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|470|118|150|20|30|InGaN|0|0|AND5BB.pdf|13
+13|AND6BA (TOP LED)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|430|35|55|20|120|GaN|0|0|AND6BA.pdf|14
+14|AND6BD (TOP LED)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|468|90|135|20|120|InGaN|0|0|AND6BD.pdf|16
+29|AND6BC (TOP LED)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|468|72|80|20|120|InGaN|0|0|AND6BC.pdf|15
+16|AND7BA (Flat LP)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|470|18|30|5|120|InGaN|0|0|AND7BA.pdf|17
+17|AND190HW|AND Optoelectronics|Y|T-3 Package (10 mm) White|White|Clear|420-700|3,600|5,000|20|10|InGaN|0|0|AND190HW.pdf|19
+18|AND420HWA|AND Optoelectronics|Y|T-1 3/4 Package (5 mm) White|White|Clear|420-700|2,500|3,500|20|15|InGaN|0|0|AND420HWA.pdf|20
+20|AND520HW|AND Optoelectronics|Y|T-1 3/4 Package (5 mm) White|White|Clear|420-700|2,850|4,000|20|25|InGaN|0|0|AND520HW.pdf|22
+21|AND720HW NEW!|AND Optoelectronics|y|T-1 3/4 Package (5 mm)  White|White|Clear||||||InGaN|0|10|AND720HW.pdf|23
+22|AND262HW|AND Optoelectronics|Y|T-1 Package (3 mm) White|White|Clear|420-700|1,800|2,250|20|35|InGaN|0|0|AND262HW.pdf|24
+23|AND4WA (TOP LED)|AND Optoelectronics|Y|T-1 Package (3 mm) Surface Mount Package White|White|Clear|420-700|100|160|20|120|InGaN|0|0|AND4WA.pdf|18
+24|AND4WB (Flat)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package White|White|Clear|420-700|90|182|20|150|InGaN|0|0|AND4WB.pdf|27
+25|AND7WA (Flat LP)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package White|White|Clear|420-700|28.5|45|5|130|InGaN|0|0|AND7WA.pdf|28
+26|AND720HW|AND Optoelectronics|Y|T-1 3/4 Package (5 mm) White|White|Clear|420-700|9,000|18,000|20|15|InGaN|0|0|AND720HWnew.pdf|26
+30|AND820HW|AND Optoelectronics|Y|T-1 Package (3 mm) White|White|Water Clear|100|4,800|9,000|20|20|InGaN|0|0|AND820HW.pdf|25
+31|AND420HWC|AND Optoelectronics|Y|T-1 3/4 Package (5 mm) White|White|Clear|420-700|11250|22500|20|20|InGaN|||AND420HWC.pdf|21
+1|AND190HBA|AND Optoelectronics|N|T-3 Package (10 mm)|Blue|Clear|430|1,000|1,500|10|10|GaN|0|0|AND190HBA.pdf|1
+2|AND190HBB|AND Optoelectronics|N|T-3 Package (10 mm)|Blue|Clear|470|630|1,250|20|10|InGaN|0|0|AND190HBB.pdf|2
+3|AND410HB|AND Optoelectronics|N|T-1 3/4 Package (5 mm)|Blue|Clear|430|250|400|20|10|GaN|0|0|AND410HB.pdf|3
+4|AND520HB|AND Optoelectronics|N|T-1 3/4 Package (5 mm)|Blue|Clear|475|630|900|20|20|InGaN|0|0|AND520HB.pdf|4
+5|AND262HBA|AND Optoelectronics|N|T-1 Package (3 mm)|Blue|Clear|430|160|250|20|40|GaN|0|0|AND262HBA.pdf|5
+6|AND262HBB|AND Optoelectronics|N|T-1 Package (3 mm)|Blue|Clear|470|150|300|20|45|InGaN|0|0|AND262HBB.pdf|6
+7|AND4BA (Flat)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|430|16|20|20|140|GaN|0|0|AND4BA.pdf|7
+8|AND4BC (Flat)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|468|30|50|20|140|InGaN|0|0|AND4BC.pdf|9
+9|AND4BRA (Rt Angle)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|430|17|22|20|120|GaN|0|0|AND4BRA.pdf|10
+10|AND4BRB (Rt Angle)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|470|23|29|20|120|InGaN|0|0|AND4BRB.pdf|11
+11|AND5BA (Domed)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|430|90|112|20|30|GaN|0|0|AND5BA.pdf|12
+12|AND5BB (Domed)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|470|118|150|20|30|InGaN|0|0|AND5BB.pdf|13
+13|AND6BA (TOP LED)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|430|35|55|20|120|GaN|0|0|AND6BA.pdf|14
+14|AND6BD (TOP LED)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|468|90|135|20|120|InGaN|0|0|AND6BD.pdf|16
+29|AND6BC (TOP LED)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|468|72|80|20|120|InGaN|0|0|AND6BC.pdf|15
+16|AND7BA (Flat LP)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package|Blue|Clear|470|18|30|5|120|InGaN|0|0|AND7BA.pdf|17
+17|AND190HW|AND Optoelectronics|Y|T-3 Package (10 mm) White|White|Clear|420-700|3,600|5,000|20|10|InGaN|0|0|AND190HW.pdf|19
+18|AND420HWA|AND Optoelectronics|Y|T-1 3/4 Package (5 mm) White|White|Clear|420-700|2,500|3,500|20|15|InGaN|0|0|AND420HWA.pdf|20
+20|AND520HW|AND Optoelectronics|Y|T-1 3/4 Package (5 mm) White|White|Clear|420-700|2,850|4,000|20|25|InGaN|0|0|AND520HW.pdf|22
+21|AND720HW NEW!|AND Optoelectronics|y|T-1 3/4 Package (5 mm)  White|White|Clear||||||InGaN|0|10|AND720HW.pdf|23
+22|AND262HW|AND Optoelectronics|Y|T-1 Package (3 mm) White|White|Clear|420-700|1,800|2,250|20|35|InGaN|0|0|AND262HW.pdf|24
+23|AND4WA (TOP LED)|AND Optoelectronics|Y|T-1 Package (3 mm) Surface Mount Package White|White|Clear|420-700|100|160|20|120|InGaN|0|0|AND4WA.pdf|18
+24|AND4WB (Flat)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package White|White|Clear|420-700|90|182|20|150|InGaN|0|0|AND4WB.pdf|27
+25|AND7WA (Flat LP)|AND Optoelectronics|N|T-1 Package (3 mm) Surface Mount Package White|White|Clear|420-700|28.5|45|5|130|InGaN|0|0|AND7WA.pdf|28
+26|AND720HW|AND Optoelectronics|Y|T-1 3/4 Package (5 mm) White|White|Clear|420-700|9,000|18,000|20|15|InGaN|0|0|AND720HWnew.pdf|26
+30|AND820HW|AND Optoelectronics|Y|T-1 Package (3 mm) White|White|Water Clear|100|4,800|9,000|20|20|InGaN|0|0|AND820HW.pdf|25
+31|AND420HWC|AND Optoelectronics|Y|T-1 3/4 Package (5 mm) White|White|Clear|420-700|11250|22500|20|20|InGaN|||AND420HWC.pdf|21

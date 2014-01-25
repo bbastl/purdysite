@@ -1,0 +1,17 @@
+Product_ID|Product_Name|Product_line|Type|News|Frame|Voltage|Airflow|Inputp|Speed|Noise|Weight|Construction|Guard|Product_Price|Product_SH|PDF|Sort
+1|PM033-115-8025B-4|Interfan|AC Fans|Y|80 x 80 x 25 (3.2 x 3.2 x 1.0)|115|33|10.0|2700|33|8|Aluminum housing,  plastic impeller,  ball sleeve bearing 22AWG wire leads|5508 80FP-45 5505|0|0|PM033.pdf|1
+2|PM033-230-8025B-4|Interfan|AC Fans|Y|80 x 80 x 25 (3.2 x 3.2 x 1.0)|230|33|10.0|2700|33|8|Aluminum housing,  plastic impeller,  ball sleeve bearing 22AWG wire leads|5508<br>80FP-45<br> 5505|0|0|PM033.pdf|2
+3|PM037-115-8038BT-4|Interfan|AC Fans|N|80 x 80 x 38 (3.2 x 3.2 x 1.5)|115|37|12.0|2700|39|10.3|Aluminum alloy housing,  plastic impeller,  sealed ball bearing,  terminal block|5508<br>80FP-45|0|0|PM037.pdf|3
+4|PM037-230-8038BT-4|Interfan|AC Fans|N|80 x 80 x 38 (3.2 x 3.2 x 1.5)|230|37|12.0|2700|39|10.3|Aluminum alloy housing,  plastic impeller,  sealed ball bearing,  terminal block|5508<br>80FP-45|0|0|PM037.pdf|4
+5|PM040-115-9225BT-4|Interfan|AC Fans|N|92 x 92 x 25 (3.6 x 3.6 x 1.0)|115|40|12.0|2400|39|8.0|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5508 92FP-45 5505|0|0|PM040-9225.pdf|5
+6|PM040-230-9225BT-4|Interfan|AC Fans|N|92 x 92 x 25 (3.6 x 3.6 x 1.0)|230|40|12.0|2400|39|8.0|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5508 92FP-45 5505|0|0|PM040-9225.pdf|6
+7|PM053-115-1225BT-4|Interfan|AC Fans|N|120 x 120 x 25 (4.7 x 4.7 x 1.0)|115|53|13.0|1900|38|11.8|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5504 5502 120FP-45 5505|0|0|PM053.pdf|7
+8|PM053-230-1225BT-4|Interfan|AC Fans|N|120 x 120 x 25 (4.7 x 4.7 x 1.0)|230|53|13.0|1900|38|11.8|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5504 5502 120FP-45 5505|0|0|PM053.pdf|8
+9|PM080-115-1225BT-4|Interfan|AC Fans|N|120 x 120 x 25 (4.7 x 4.7 x 1.0)|115|80|18.0|2300|45|11.8|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5504 5502 120FP-45 5505|0|0|PM080.pdf|9
+10|PM080-230-1225BT-4|Interfan|AC Fans|N|120 x 120 x 25 (4.7 x 4.7 x 1.0)|230|80|18.0|2900|45|11.8|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5504 5502 120FP-45 5505|0|0|PM080.pdf|10
+13|PM115-115-1238BT-4|Interfan|AC Fans|N|120 x 120 x 38 (4.7 x 4.7 x 1.5)|115|115|20.0|3000|49|18.2|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5504 5502 120FP-45 5505|0|0|PM115.pdf|11
+14|PM115-230-1238BT-4|Interfan|AC Fans|N|120 x 120 x 38 (4.7 x 4.7 x 1.5)|230|115|20.0|3000|49|18.2|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5504 5502 120FP-45 5505|0|0|PM115.pdf|12
+17|PM238-115-1751BT-4|Interfan|AC Fans|N|172 x 150 x 51 (6.8 x 6.0 x 2.0)|115|238|32.0|3100|55|33.3|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5506 5505|0|0|PM238.pdf|13
+18|PM238-230-1751BT-4|Interfan|AC Fans|N|172 x 150 x 51 (6.8 x 6.0 x 2.0)|230|238|38.0|3100|55|33.3|Aluminum housing,  plastic impeller,  sealed ball bearing,  terminal block|5506 5505|0|0|PM238.pdf|14
+19|PMB24-115-4B|Interfan|AC Radial Blowers|N|120 x 120 x 38 (4.8 x 4.8 x 1.5)|115|24|20.0|2300|53|23|Plastic housing,  plastic wheel,  sealed ball bearing,  20 AWG wire leads||0|0|PMB24.pdf|15
+20|PMB24-230-4B|Interfan|AC Radial Blowers|N|120 x 120 x 38 (4.8 x 4.8 x 1.5)|230|24|20.0|2300|53|23|Plastic housing,  plastic wheel,  sealed ball bearing,  20 AWG wire leads||0|0|PMB24.pdf|16

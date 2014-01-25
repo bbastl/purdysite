@@ -1,0 +1,17 @@
+Product_ID|Product_Name|Product_Line|Type|News|Description|Positions|Available|Maximum|Working|Dimensions|Product_Price|Product_SH|PDF|Sort
+2|B Series|Interswitch||N|Medium size front mounted thumbwheel switch|10, 16|See A Series|pmaximum|42|12.5 x 58 x 57.1|73|10|B-Series.pdf|2
+4|E Series|Interswitch||n|Small size rear mounted thumbwheel switch|10|Dec 0-9, BCD pos & neg, Single pole, Resistance|1|42|16 x 18 x 31.5|49|10||4
+5|G Series|Interswitch||n|Very large size front mounted thumbwheel switch|10|2-pole, BCD pos, BCD + 2 inputs|2|42|20 x 76 x 79|122|10|G-Series.pdf|5
+7|L Series|Interswitch||n|Small size rear mounted thumbwheel switch|10|See E Series|0.5|42|8 x 18 x 31.5|29|10|L-Series.pdf|7
+9|N Series|Interswitch||n|Small size rear mounted thumbwheel switch|10|See E Series||42|7 x 18 x 31.5|29|10||9
+10|P Series|Interswitch||N|Small size rear mounted thumbwheel switch|10, 11, 16|See H Series|pmaximum|42|10 x 24.2 x 38|29|10||10
+11|Q Series|Interswitch||n|Medium size rear mounted IP65 thumbwheel switch|10|Decimal 0-9, BCD pos, 2-pole|2|42|12.7 x 33 x 47|147|10|Q-Series.pdf|11
+12|S Series|Interswitch||n|Small size front mounted thumbwheel switch|10|See H Series|1|42|10 x 33 x 38|61|10|S-Series.pdf|12
+14|V Series|Interswitch||n|Small size front mounted thumbwheel switch|10|Dec 0-9, Single pole, Resistance, BCD pos & neg|0.5|42|8 x 26.5 x 32.5|27|10|V-Series.pdf|14
+15|W Series|Interswitch||n|Medium size front mounted IP65 thumbwheel switch|10|Dec, Single pole, BCD pos & neg|1|42|12.5 x 58 x 57.1|66|10|W-Series.pdf|15
+16|A Series|||N|Medium size rear mounted thumbwheel switch|10, 16|Dec 0-9, BCD ps +cmp, Aiken pos BCD +2 inputs, BCD pos & neg, Single pole|pmaximum|42|11x39x53.6|73|10||1
+17|D Series|||N|Small size front mounted push button thumbwheel switch|10|Dec 0-9, Kelvin, Single pole, BCD pos, BCD neg|1|42|7.62x24x33.5|39|10|D-Series.pdf|3
+18|H Series|||N|Small size front mounted thumbwheel switch|10, 11, 16|Dec 0-9, BCD pos +comp, BCD +2, BCD+comp, Hex, Kelvin, BCD pos & neg, 1-pole|1|42|10x33x38|49|10|H-Series.pdf|6
+19|M Series|||N|Small size front mounted thumbwheel switch|10, 11, 16|Dec 0-9, BCD +comp, BCD +2, BCD +comp, Hex Kelvin, BCD pos & neg, Single pole, Resistance|1|42|7x18x31.5|29|10|M-Series.pdf|8
+20|U Series|||N|Small size front mounted thumbwheel switch|10, 16|Dec 0-9, Kelvin, Hex, Single pole, BCD pos & neg, Resistance|1|42|8x33x38|24|10|U-Series.pdf|13
+21|Z Series|||N|Small size front mounted push button thumbwheel switch|10|Single pole, BCD pos & neg|0.50|50|7.6x15x24|29|10|Z-Series.pdf|16

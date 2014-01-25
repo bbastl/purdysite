@@ -1,0 +1,18 @@
+Product_ID|Product_Name|Porduct_Line|Type|News|Knob|Description|Number|Product_Price|Product_SH|PDF|Sort
+1|RDS10-112|Interswitch||N|Flat/Flush Shaft|BCD Real Code|10|0|0|rotary-flat.pdf|1
+2|RDS10-122|Interswitch||N|Flat/Flush Shaft|BCD Complement|10|0|0|rotary-flat.pdf|2
+3|RDS16-112|Interswitch||N|Flat/Flush Shaft|Hexadecimal|16|0|0|rotary-flat.pdf|3
+4|RDS16-122|Interswitch||N|Flat/Flush Shaft|Hexadecimal Complement|16|0|0|rotary-flat.pdf|4
+5|RDS10-212|Interswitch||N|Exposed Shaft|BCD Real Code|10|0|0|rotary-flat.pdf|5
+6|RDS10-222|Interswitch||N|Exposed Shaft|BCD Complement|10|0|0|rotary-flat.pdf|6
+7|RDS16-212|Interswitch||N|Exposed Shaft|Hexadecimal|16|0|0|rotary-flat.pdf|7
+8|RDS16-222|Interswitch||N|Exposed Shaft|Hexadecimal Complement|16|0|0|rotary-flat.pdf|8
+9|RDS10-312|Interswitch||N|Wheel|BCD Real Code|10|0|0|rotary-wheel.pdf|9
+10|RDS10-322|Interswitch||n|Wheel|BCD Complement|10|0|10|rotary-wheel.pdf|10
+11|RDS16-312|Interswitch||n|Wheel|Hexadecimal|16|0|10|rotary-wheel.pdf|11
+12|RDS16-322|Interswitch||N|Wheel|Hexadecimal Complement|16|0|0|rotary-wheel.pdf|12
+13|RDS10-412|Interswitch||N|Knob|BCD Real Code|10|0|0|rotary-knob.pdf|13
+14|RDS10-422|Interswitch||N|Knob|BCD Complement|10|0|0|rotary-knob.pdf|14
+15|RDS16-412|Interswitch||N|Knob|Hexadecimal|16|0|0|rotary-knob.pdf|15
+16|RDS16-422|Interswitch||N|Knob|Hexadecimal Complement|16|0|0|rotary-knob.pdf|16
+25|AS01-006-390T|Interswitch||N||Right Angle Socket||0|0|rotary-RAS.pdf|17

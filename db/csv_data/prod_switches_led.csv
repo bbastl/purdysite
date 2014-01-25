@@ -1,0 +1,6 @@
+Product_ID|Product_Name|Product_Line|Type|News|Description|Characters|Available|Maximum|Supply|Dimensions|Product_Price|Product_SH|PDF|Sort
+1|100 Series|Interswitch||n|Small size front mounted display module with 9mm character height, compatible with Interswitch Series V thumbwheel switches|0-9|BCD, CMOS and TTL logic|36|5, 12 or 24|8 x 26.5 x 48.5-79|86|10||1
+2|300 Series|Interswitch||n|Small size front mounted display module with 9mm character height, compatible with Interswitch Series U thumbwheel switches|0-9|BCD|40||8 x 33 x 51-66|98|10||2
+3|500 Series|Interswitch||n|Medium size front mounted display module with 9mm character height, compatible with Interswitch Series H thumbwheel switches and combinable with Series H, M and S|0-9|BCD|50||10 x 33 x 40-74|98|10||3
+4|800 Series|Interswitch||n|Large size front mounted display module with 20mm character height, compatible with Interswitch Series H  and M thumbwheel switches|0-9|BCD, CMOS and TTL logic|140|5, 12 or 24|20 x 33 x 40-76|110|10||4
+5|900 Series|Interswitch||n|Very large size front mounted display module with 25, 35 and 45mm character heights, compatible with Interswitch Series G thumbwheel switches|0-9|BCD|95|12 or 24|40 x 76 x 81.5|257|10||5

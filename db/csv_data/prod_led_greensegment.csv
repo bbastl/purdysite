@@ -1,0 +1,20 @@
+Product_ID|Product_Name|Product_Line|News|Type|Led|Face|Display|Characteristics|Luminous|Ifma|Polarity|Material|Product_Price|Product_SH|PDF|Sort
+1|AND2307SAL|AND Optoelectronics|N|7 Segments|Red|Red|2.3|RHDP, 10 pin|7.5|10|C-A|GaAsP|0|0|AND2307.pdf|1
+2|AND2307SCL|AND Optoelectronics|N|7 Segments|Red|Red|2.3|RHDP, 10 pin|7.5|10|C-C|GaAsP|0|0|AND2307.pdf|2
+3|AND1510SAL|AND Optoelectronics|N|7 Segments|Red|Red|1.5|RHDP, 10 pin|4.6|10|C-A|GaAsP|0|0|AND1510.pdf|3
+4|AND1510SCL|AND Optoelectronics|N|7 Segments|Red|Red|1.5|RHDP, 10 pin|4.6|10|C-C|GaAsP|0|0|AND1510.pdf|4
+5|AND4310SAL|AND Optoelectronics|N|7 Segments|Red|Red|0.4|RHDP & LHDP, 14 pin|3.3|10|C-A|GaAsP|0|0|AND4310.pdf|5
+6|AND4310SCL|AND Optoelectronics|N|7 Segments|Red|Red|0.4|RHDP & LHDP, 14 pin|3.3|10|C-C|GaAsP|0|0|AND4310.pdf|6
+7|AND5610SAL|AND Optoelectronics|N|7 Segments|Red|Red|0.5|RHDP, 10 pin|3.3|10|C-A|GaAsP|0|0|AND5610.pdf|8
+8|AND5610SCL|AND Optoelectronics|N|7 Segments|Red|Red|0.5|RHDP, 10 pin|3.3|10|C-C|GaAsP|0|0|AND5610.pdf|7
+9|AND8010SAL|AND Optoelectronics|N|7 Segments|Red|Red|0.8|RHDP, 16 pin|3.80|10|C-C|GaAsP/GaP|0|0|AND8010.pdf|9
+10|AND8010SCL|AND Optoelectronics|N|7 Segments|Red|Red|0.8|RHDP, 16 pin|3.8|10|C-C|GaAsP/GaP|0|0|AND8010.pdf|10
+11|AND5420OALB|AND Optoelectronics|N|16 Segments|Red|Red|0.5|RHDP, 18 pin|3.3|10|C-A|GaAsP|0|0|AND5420.pdf|11
+12|AND5420OCLB|AND Optoelectronics|N|16 Segments|Red|Red|0.5|RHDP, 18 pin|3.3|10|C-C|GaAsP|0|0|AND5420.pdf|12
+13|AND8010SALB|AND Optoelectronics|N|16 Segments|Red|Red|0.8|RHDP, 18 pin|3.8|10|C-C|GaAsP/GaP|0|0|AND8010-B.pdf|13
+14|AND8010SCLB|AND Optoelectronics|N|16 Segments|Red|Red|0.8|RHDP, 18 pin|3.8|10|C-C|GaAsP/GaP|0|0|AND8010-B.pdf|14
+15|AND2307GAL|AND Optoelectronics|N|7 Segments Green|Green|Gray|2.3|RHDP, 10 pin|6.5|10|C-A|GaP|0|0|AND2307.pdf|15
+16|AND2307GCL|AND Optoelectronics|N|7 Segments Green|Green|Gray|2.3|RHDP, 10 pin|6.5|10|C-C|GaP|0|0|AND2307.pdf|16
+17|AND8010GAL|AND Optoelectronics|N|7 Segments Green|Green|Gray|0.8|RHDP & LHDP, 16 pin|3.3|10|C-A|GaP|0|0|AND8010.pdf|17
+18|AND8010GCL|AND Optoelectronics|N|7 Segments Green|Green|Gray|0.8|RHDP & LHDP, 16 pin|3.3|10|C-C|GaP|0|0|AND8010.pdf|18
+19|AND4310GAL|AND Optoelectronics|N|7 Segments Green|Green|Green|0.4|RHDP & LHDP, 14 pin|2.8|10|C-A|GaP|0|0|AND4310.pdf|19

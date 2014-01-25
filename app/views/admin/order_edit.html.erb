@@ -1,0 +1,854 @@
+<script language="JavaScript">
+
+function Update(strID,param)
+{
+		var date;
+		var hDate;
+		var project;
+		var hProject;
+		var eau;
+		var fBuying_Criteria;
+		var fCompetition1;
+		var fCompetition2;
+		var fCompetition3;
+		var fCompetition4;
+		var fTarget_Price;
+		var fHow_Did;
+		var fPrototype_Date;
+		var prProtduction_Date;
+		var status;
+		var hStatus;
+		var sales;
+		var hSales;
+		var shipping;
+		var hShippings;
+		var priority;
+		var carrier;
+		var method;
+		var note;
+		var note2;
+		var hNotes;
+		var hNotes2;
+		var fauthby;
+		var hAuthStatus;
+		var Authstatus;
+		var title;
+		var maker;
+
+
+		var frmName;
+		
+		var txt1
+		txt1 = "txt1Project" + strID;
+		var txt2
+		txt2 = "txt2Status" + strID;
+		var txt3;
+		txt3 = "txt3Sales" + strID;
+		var txt4;
+		txt4 = "txt4Note" + strID;
+		var txt5;
+		txt5 = "txt5Note" + strID;
+		var txt6
+		txt6 = "txt6AuthStatus" + strID
+		
+		var ship;
+		ship = "txtShipping" + strID;
+		
+if(param == "project")
+	{
+		
+		project = document.getElementById(txt1);
+		hProject = document.getElementById('hProject');
+		eau = document.getElementById('tEau');
+		fHow_Did = document.getElementById('tEau');
+		fBuying_Criteria = document.getElementById('Buying_Criteria');
+		fCompetition1 = document.getElementById('Competition1');
+		fCompetition2 = document.getElementById('Competition2');
+		fCompetition3 = document.getElementById('Competition3');
+		fCompetition4 = document.getElementById('Competition4');
+		fTarget_Price = document.getElementById('Target_Price');
+		maker = document.getElementById('mmaker');
+		title = document.getElementById('ttitle');
+
+
+		Today = document.getElementById('selToDay').value;
+		Tomnth = document.getElementById('selToMnth').value;
+		Toyr = document.getElementById('selToYr').value;
+
+		if (Today == "")
+		{
+			alert("Please select Proto day");
+			return;
+		}
+		
+		if (Tomnth == "")
+		{
+			alert("Please select Proto type Month");
+			return;
+		}
+		if (Today == "")
+		{
+			alert("Please enter Proto type year");
+			return;
+		}
+
+		Proto_Date = Tomnth+"/"+Today+"/"+Toyr;
+		document.getElementById('Prototype_Date').value=Proto_Date;
+		fPrototype_Date = document.getElementById('Prototype_Date');
+
+		prToday = document.getElementById('selprToDay').value;
+		prTomnth = document.getElementById('selprToMnth').value;
+		prToyr = document.getElementById('selprToYr').value;
+		
+		if (prToday == "")
+		{
+			alert("Please select Production day");
+			return;
+		}
+		
+		if (prTomnth == "")
+		{
+			alert("Please select Production Month");
+			return;
+		}
+		if (prToyr == "")
+		{
+			alert("Please enter Production year");
+			return;
+		}
+
+		Pr_Date = prTomnth+"/"+prToday+"/"+prToyr;
+		document.getElementById('Production_Start').value=Pr_Date;
+		prProduction_Date = document.getElementById('Production_Start');
+
+
+		hProject.value = project.value;
+		
+		document.getElementById('hFlag').value = "project";
+		document.getElementById('hOrderID').value = strID;
+		document.frmUpdate.submit();
+	}
+
+if(param == "ship")
+	{
+		shipping = document.getElementById(ship);
+		hShippings = document.getElementById('hShipping');
+		priority = document.getElementById('sPriority');
+		carrier = document.getElementById('sCarrier');
+		method = document.getElementById('sMethod');
+		
+		hShippings.value = shipping.value;
+
+		document.getElementById('hFlag').value = "ship";
+		document.getElementById('hOrderID').value = strID;
+		document.frmUpdate.submit();
+	}
+	
+if(param == "status")
+	{
+		
+		status = document.getElementById(txt2);
+		hStatus = document.getElementById('hStatus');
+
+		hStatus.value = status.value;
+		
+		document.getElementById('hFlag').value = "status";
+		document.getElementById('hOrderID').value = strID;
+		document.frmUpdate.submit();
+	}
+
+	if(param == "sn")
+	{
+		document.getElementById('hFlag').value = "sn";
+		document.getElementById('hOrderID').value = strID;
+		document.frmUpdate.submit();
+	}
+	
+	if(param == "note")
+	{
+		note = document.getElementById(txt4);
+		hNotes = document.getElementById('hNote');
+		
+		hNotes.value = note.value;
+		
+		if(note.value == "")
+		{
+			alert("Invalid Note");
+			note.focus;
+			return;
+		}
+			
+		document.getElementById('hFlag').value = "note";
+		document.getElementById('hOrderID').value = strID;
+		document.frmUpdate.submit();
+	}
+	if(param == "note2")
+	{
+		note2 = document.getElementById(txt5);
+		hNotes2 = document.getElementById('hNote2');
+		
+		hNotes2.value = note2.value;
+		
+		if(note2.value == "")
+		{
+			alert("Invalid Note");
+			note.focus;
+			return;
+		}
+			
+		document.getElementById('hFlag').value = "note2";
+		document.getElementById('hOrderID').value = strID;
+		document.frmUpdate.submit();
+	}
+
+	if(param == "auth")
+	{
+
+		AuthStatus = document.getElementById(txt6);
+		hAuthStatus = document.getElementById('hAuthStatus');
+		fauthby = document.getElementById('fauthby');
+		hAuthStatus.value = AuthStatus.value;
+
+		document.getElementById('hFlag').value = "auth";
+		document.getElementById('hOrderID').value = strID;
+		document.frmUpdate.submit();
+	}
+
+}
+function ReList(Num)
+{
+	if(Num == "0")
+	{
+		document.getElementById('hFlag').value = "complete";
+	}
+	if(Num == "1")
+	{
+		document.getElementById('hFlag').value = "pending";
+	}
+}
+function Check(tosubmit)
+{
+		
+		var sflag;
+		var order;
+		
+		sflag = document.getElementById('eFlag');
+		order = document.getElementById('#orderid#');
+
+		sflag.value = "yes"
+
+		if (tosubmit == "print")
+		{
+		document.frmsearch.target="_blank";
+		document.frmsearch.action="print_detail.cfm";
+		}
+		if (tosubmit == "export")
+		{
+		document.frmsearch.target="_blank";
+		document.frmsearch.action="excel_detail.cfm";
+		}
+		
+}
+
+function asgdate()
+{
+pdate=document.getElementById("P_Date").value
+arrdate=pdate.split("-")
+document.getElementById("selToYr").value = arrdate[0]
+document.getElementById("selToMnth").value =arrdate[1]
+document.getElementById("selToDay").value = arrdate[2]
+
+prdate=document.getElementById("Pr_Date").value
+
+arrdate=prdate.split("-")
+document.getElementById("selPrToYr").value = arrdate[0]
+document.getElementById("selPrToMnth").value =arrdate[1]
+document.getElementById("selPrToDay").value = arrdate[2]
+
+}
+
+		
+		
+		
+		function CheckNumeric(strVal)
+		{
+			var strValidChars = "0123456789 -";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+		function CheckAlpha(strVal)
+		{
+			var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+		function CheckAlphaNumeric(strVal)
+		{
+			var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'.,)(&/\- @#$&*=[]";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+		function CheckAlphaNum(strVal)
+		{
+			var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_- ";//<-- put the the list of characters allowed
+  		    var strChar;
+			var blnResult = true;
+
+			for (i = 0; i < strVal.length && blnResult == true; i++)
+			{
+				strChar = strVal.charAt(i);
+				if (strValidChars.indexOf(strChar) == -1)
+				{
+					blnResult = false;
+				}
+			}
+			
+			return blnResult;
+		}
+
+
+function isEmail(s)
+{  
+    var i = 1;
+    var sLength = s.length;
+
+    // look for @
+    while ((i < sLength) && (s.charAt(i) != "@"))
+    { i++
+    }
+
+    if ((i >= sLength) || (s.charAt(i) != "@")) return false;
+    else i += 2;
+
+    // look for .
+    while ((i < sLength) && (s.charAt(i) != "."))
+    { i++
+    }
+
+    // there must be at least one character after the .
+    if ((i >= sLength - 1) || (s.charAt(i) != ".")) return false;
+    else return true;
+}
+
+
+</script>
+
+
+<table width="646" border="0" cellspacing="0" cellpadding="0" align="center">
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td align="right">&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td width="443"><a href="#Account">Account Info</a>   | <a href="#Sales">Sales 
+                      Opportunity</a>  
+                      | <a href="#Shipping">Shipping & Authorization</a> 
+                      | <a href="#History">History</a></td>
+                    <td width="203" align="right"><form name="frmsearch" method="post">
+                      <input type="submit" name="Submit2" value="Export View" onClick="return (Check('export'))">
+                      <input type="submit" name="Submit" value="Print" onClick="return (Check('print'))">
+                      <input type="hidden" name="orderid" value="10081">
+                      <input type="hidden" name="eFlag" id="eFlag">
+                    </form> </td>
+                  </tr>
+                </table>
+<form name="frmUpdate" action="details.cfm?id=10081" method="post">
+		<input name="orderid" type="hidden" value="10081">
+		<input name="eDate" type="hidden" value="2014/1/22">
+		<input name="sDate" type="hidden" value="2014/1/15">
+		<input name="status" type="hidden" value="">
+		<input name="search" type="hidden" value="">
+		<input name="sort" type="hidden" value="OrderID">
+		<input name="order" type="hidden" value="asc">
+		<input type="hidden" name="FrMnth" value="1">
+		<input type="hidden" name="FrDay" value="15">	      
+		<input type="hidden" name="FrYr" value="2014">
+		<input type="hidden" name="ToMnth" value="1">
+		<input type="hidden" name="ToDay" value="22">	      
+		<input type="hidden" name="ToYr" value="2014">
+
+
+		<input type="hidden" name="FrMnth">
+		<input type="hidden" name="FrDay">	      
+		<input type="hidden" name="FrYr">
+		<input type="hidden" name="ToMnth">
+		<input type="hidden" name="ToDay">	      
+		<input type="hidden" name="ToYr">
+	
+
+<table width="646" height="57" border="0" cellpadding="4" cellspacing="0" align="center">
+                  <tr> 
+                    <td colspan="4" bgcolor="#CCCCCC"><table width="100" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td><strong>Status</strong></td>
+                        <td>&nbsp;</td>
+                        <td><select name="txt2Status10081" id="txt2Status10081">
+				<option value="New" >New</option>
+				<option value="Pending Qualification" >Pending Qualification</option>
+				<option value="Qualified Lead" >Qualified Lead</option>
+				<option value="Referred to Distributor" >Referred to Distributor</option>
+				<option value="Rejected-No Response" >Rejected-No Response</option>
+				<option value="Rejected-No Fit" >Rejected-No Fit</option>
+				<option value="Sample Shipped" >Sample Shipped</option>
+				<option value="Sample Back Ordered" >Sample Back Ordered</option>
+				<option value="Sales Contact - Pending" >Sales Contact - Pending</option>
+				<option value="Working Sale" >Working Sale</option>
+				<option value="Won Deal" >Won Deal</option>
+				<option value="Project Cancelled" >Project Cancelled</option>
+				<option value="Lost Deal" >Lost Deal</option>
+				<option value="Sent Email/Left Message" >Sent Email/Left Message</option>
+				<option value="Rejected - No Credit Card" >Rejected - No Credit Card</option>
+				</select></td>
+                        <td>&nbsp;</td>
+                        <td><a href="javascript:Update(10081,'status')"><img src="../images/but_update.gif" border="0"></a></td>
+                      </tr>
+                    </table>                        
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2">&nbsp;</td>
+                    <td colspan="2" align="right"><a href="dist/viewdist.cfm?str=Dist_ID" target="_blank">View 
+                      Distributor List</a></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="4"><table width="100" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td nowrap><strong>Add to Notes</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>
+                          <input name="txt5Note10081" type="text" id="txt5Note10081" size="50">
+                        </strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong><a href="javascript:Update(10081,'note2')"><img src="../images/but_update.gif" border="0"></a></strong></td>
+                      </tr>
+                    </table>                      </td>
+                  </tr>
+                  <tr> 
+                    <td width="50%" colspan="2">&nbsp;</td>
+                    <td width="50%" colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr bgcolor="#CCCCCC"> 
+                    <td width="50%" colspan="2"><strong>Account Contact & Payment 
+                      Information</strong></td>
+                    <td width="50%" colspan="2"><div align="right"><a name="Account"></a><a href="#Top">Top</a></div></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="4"><table width="646" height="57" border="1" align="center" cellpadding="4" cellspacing="0">
+                      <tr>
+                        <td width="19%"><strong>FirstName </strong></td>
+                        <td width="29%">David</td>
+                        <td width="22%"><strong>Phone</strong></td>
+                        <td width="30%">5854589809</td>
+                      </tr>
+                      <tr>
+                        <td width="19%"><strong>LastName </strong></td>
+                        <td width="29%">Taylor</td>
+                        <td width="22%"><strong>Fax</strong></td>
+                        <td width="30%">4589809</td>
+                      </tr>
+                      <tr>
+                        <td width="19%"><strong>Company</strong></td>
+                        <td width="29%">Penguan Technol</td>
+                        <td width="22%"><strong>Email</strong></td>
+                        <td width="30%">davidt.mp3@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td width="19%"><strong>Address1</strong></td>
+                        <td width="29%">49 Lark Street</td>
+                        <td width="22%"><strong>Card Holder</strong></td>
+                        <td width="30%">NA</td>
+                      </tr>
+                      <tr>
+                        <td width="19%"><strong>Address2</strong></td>
+                        <td width="29%">&nbsp;</td>
+                        <td width="22%"><strong>Credit Card Number</strong></td>
+                        <td width="30%">NA</td>
+                      </tr>
+                      <tr>
+                        <td width="19%"><strong>City</strong></td>
+                        <td width="29%">Rochester</td>
+                        <td width="22%"><strong>Card Type</strong></td>
+                        <td width="30%">NA</td>
+                      </tr>
+                      <tr>
+                        <td width="19%"><strong>State</strong></td>
+                        <td width="29%">New York</td>
+                        <td width="22%"><strong>Expiry Date</strong></td>
+                        <td width="30%"> - NA</td>
+                      </tr>
+                      <tr>
+                        <td width="19%"><strong>Country</strong></td>
+                        <td width="29%">United States</td>
+                        <td colspan="2" rowspan="2">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="19%"><strong>Zip/Postal Code</strong></td>
+                        <td width="29%">14613</td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr> 
+                    <td width="50%" colspan="2">&nbsp;</td>
+                    <td width="50%" colspan="2"></td>
+                  </tr>
+                  <tr bgcolor="#CCCCCC"> 
+                    <td width="50%" colspan="2"><strong>Sales Opportunity Details</strong></td>
+                    <td width="50%" colspan="2"><a name="Sales"></a></td>
+                  </tr>
+                  <tr> 
+                    <td width="50%" colspan="2"><strong>Order Number: </strong>PO- 10081</td>
+                    <td width="50%" colspan="2"><strong>Order Date : </strong>01/20/14 
+                      <strong>&nbsp;&nbsp;</strong></td>
+                  </tr>
+                  <tr> 
+                    <td width="50%" colspan="2" valign="top"><strong>Part Number: </strong>PO125-48D-1238B-2</td>
+                    <td width="50%" colspan="2" valign="top"><strong>Price: </strong>$0</td>
+                  </tr>
+                  <tr> 
+                    <td width="50%" colspan="2" valign="top"><strong>Project/Application</strong>:<br> 
+                      <textarea name="txt1Project10081" cols="30" rows="3" id="txt1Project10081"></textarea>
+		      <p><strong>EAU</strong>:<br><input type="text" name="tEau" cols="30" id="tEau" value=""></p>
+		      </td>
+                    <td width="50%" colspan="2" valign="top" align="top"><strong>Product Line: 
+                      </strong>N/A <p><strong>Decision Maker Name</strong><br><input type="text" name="mmaker" id="maker" value=""></p>
+		    <p><strong>Decision Maker Title</strong><br><input type="text" name="ttitle" id="ttitle" value=""></p></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2" width="50%"><p><strong>Prototype Date</strong>
+		    <br>
+<input name="Prototype_Date" type="hidden" id="Prototype_Date" value="">
+<input name="P_Date" type="hidden" id="P_Date" value="2014-1-22">
+
+		<select name="selToMnth" id="selToMnth">
+                              <script language="javascript">
+					var mnth_names = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+					var myDt = new Date();
+					var currMnth = myDt.getMonth();
+						for(i=0;i<mnth_names.length;i++){
+							 document.write("<option value="+parseInt(i+1)+">" + mnth_names[i]+"</option>");
+						}
+						</script>
+                        </select>
+
+			  <select name="selToDay" id="selToDay">
+                              <script language="javascript">
+		var myDate = myDt.getDate()
+			for(i=1;i<32;i++){
+				if(myDate == i){
+					document.write("<option value="+i+" selected>"+i+"</option>")
+				}else{
+					document.write("<option value="+i+">"+i+"</option>")
+				}	
+			}
+		                </script>
+                        </select>
+
+			  <select name="selToYr" id="selToYr">
+                              <script language="javascript">
+		var CurrYr = myDt.getFullYear();
+		var LastYr = CurrYr - 1; 
+		var PlusYr1 = CurrYr + 1; 
+		var PlusYr2 = CurrYr + 2; 
+		var PlusYr3 = CurrYr + 3; 
+		var PlusYr4 = CurrYr + 4; 
+		var PlusYr5 = CurrYr + 5; 
+		var PlusYr6 = CurrYr + 6; 
+		var PlusYr7 = CurrYr + 7; 
+		var PlusYr8 = CurrYr + 8; 
+		var PlusYr9 = CurrYr + 9; 
+		  
+		  document.write("<option value="+PlusYr9+" selected>"+PlusYr9+"</option>");
+		  document.write("<option value="+PlusYr8+" selected>"+PlusYr8+"</option>");
+		  document.write("<option value="+PlusYr7+" selected>"+PlusYr7+"</option>");
+		  document.write("<option value="+PlusYr6+" selected>"+PlusYr6+"</option>");
+		  document.write("<option value="+PlusYr5+" selected>"+PlusYr5+"</option>");
+		  document.write("<option value="+PlusYr4+" selected>"+PlusYr4+"</option>");
+		  document.write("<option value="+PlusYr3+" selected>"+PlusYr3+"</option>");
+		  document.write("<option value="+PlusYr2+" selected>"+PlusYr2+"</option>");
+		  document.write("<option value="+PlusYr1+" selected>"+PlusYr1+"</option>");
+		  document.write("<option value="+CurrYr+" selected>"+CurrYr+"</option>");
+		  document.write("<option value="+LastYr+">"+LastYr+"</option>");
+
+		              </script>
+                        </select>
+		    </p> 
+		    <p>
+		    		    <strong>Production Start Date</strong>:<br> <input name="Production_Start" type="hidden" id="Production_Start" value="">
+                      <input name="Pr_Date" type="hidden" id="Pr_Date" value="2014-1-22">
+
+				<select name="selprToMnth" id="selprToMnth">
+                              <script language="javascript">
+					var mnth_names = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+					var myDt = new Date();
+					var currMnth = myDt.getMonth();
+						for(i=0;i<mnth_names.length;i++){
+							 document.write("<option value="+parseInt(i+1)+">" + mnth_names[i]+"</option>");
+						}
+						</script>
+                        </select>
+
+			  <select name="selprToDay" id="selprToDay">
+                              <script language="javascript">
+		var myDate = myDt.getDate()
+			for(i=1;i<32;i++){
+				if(myDate == i){
+					document.write("<option value="+i+" selected>"+i+"</option>")
+				}else{
+					document.write("<option value="+i+">"+i+"</option>")
+				}	
+			}
+		                </script>
+                        </select>
+
+			  <select name="selprToYr" id="selprToYr">
+                              <script language="javascript">
+		var CurrYr = myDt.getFullYear();
+		var LastYr = CurrYr - 1; 
+		var PlusYr1 = CurrYr + 1; 
+		var PlusYr2 = CurrYr + 2; 
+		var PlusYr3 = CurrYr + 3; 
+		var PlusYr4 = CurrYr + 4; 
+		var PlusYr5 = CurrYr + 5; 
+		var PlusYr6 = CurrYr + 6; 
+		var PlusYr7 = CurrYr + 7; 
+		var PlusYr8 = CurrYr + 8; 
+		var PlusYr9 = CurrYr + 9; 
+		  
+		  document.write("<option value="+PlusYr9+" selected>"+PlusYr9+"</option>");
+		  document.write("<option value="+PlusYr8+" selected>"+PlusYr8+"</option>");
+		  document.write("<option value="+PlusYr7+" selected>"+PlusYr7+"</option>");
+		  document.write("<option value="+PlusYr6+" selected>"+PlusYr6+"</option>");
+		  document.write("<option value="+PlusYr5+" selected>"+PlusYr5+"</option>");
+		  document.write("<option value="+PlusYr4+" selected>"+PlusYr4+"</option>");
+		  document.write("<option value="+PlusYr3+" selected>"+PlusYr3+"</option>");
+		  document.write("<option value="+PlusYr2+" selected>"+PlusYr2+"</option>");
+		  document.write("<option value="+PlusYr1+" selected>"+PlusYr1+"</option>");
+		  document.write("<option value="+CurrYr+" selected>"+CurrYr+"</option>");
+		  document.write("<option value="+LastYr+">"+LastYr+"</option>");
+		              </script>
+                        </select></p>
+		    </td>
+                    <td width="50%" colspan="2" valign="top"><strong>Buying Criteria</strong><br>
+		    <textarea name="Buying_Criteria" id="Buying_Criteria"></textarea>
+		    </td> 
+                  </tr>
+                  <tr valign="top"> 
+                    <td colspan="2"><strong>Target Price<br> 
+                      <input name="Target_Price" type="text" id="Target_Price" value="" size="10">
+                      </strong></td>
+                    <td colspan="2" align="left"><p><strong>How Did You Hear About 
+                        Us<br>
+                        </strong><strong> 
+                        <select name="How_Did" id="How_Did">
+                          <option value="Web Search - Google" >Web 
+                          Search - Google</option>
+                          <option value="Web Search - Yahoo" >Web 
+                          Search - Yahoo</option>
+                          <option value="Web Search - Other" >Web 
+                          Search - Other</option>
+                          <option value="Magazine Ad - Electronic Design" >Magazine 
+                          Ad - Electronic Design</option>
+                          <option value="Magazine Ad - EDN" >Magazine 
+                          Ad - EDN</option>
+                          <option value="Magazine Ad - Electronic Products" >Magazine 
+                          Ad - Electronic Products</option>
+                          <option value="Magazine Ad - Medical Design" >Magazine 
+                          Ad - Medical Design</option>
+                          <option value="Magazine Ad - Other" >Magazine 
+                          Ad - Other</option>
+                          <option value="Catalog Ad - Allied Catalog" >Catalog Ad - Allied Catalog</option>
+                          <option value="Catalog Ad - EEM Catalog" >Catalog Ad - EEM Catalog</option>
+                          <option value="Catalog Ad - Newark Catalog" >Catalog Ad - Newark Catalog</option>
+			  <option value="Current Customer" >Current 
+                          Customer</option>
+                          <option value="Previous Customer" >Previous 
+                          Customer</option>
+                          <option value="Referral" >Referral</option>
+                          <option value="Other" >Other</option>
+                        </select>
+                        </strong></p>
+                    </td>
+                  </tr>
+  		<tr valign="top">
+                    <td colspan="2" align="left"><strong>Competition - Name</strong><br><input type="text" width="50" name="Competition1" id="Competition1" value=""><br><br><input type="text" width="50" name="Competition2" id="Competition2" value=""></td>                  
+                    <td colspan="2" align="left"><strong>Competition - Part Number. </strong><br><input type="text" name="Competition3" id="Competition3" value=""><br><br><input type="text" name="Competition4" id="Competition4" value=""></td>
+                  </tr>
+
+                  <tr valign="top"> 
+                    <td colspan="2"><p>&nbsp;</p>
+                    </td>
+                    <td colspan="2" align="right"><a href="dist/viewdist.cfm?str=Dist_ID" target="_blank">View 
+                      Distributor</a> <a href="javascript:Update(10081,'project')"><img src="../images/but_update.gif" border="0"></a></td>
+                  </tr>
+                  <tr> 
+                    <td width="50%" colspan="2">&nbsp;</td>
+                    <td width="50%" colspan="2"></td>
+                  </tr>
+                  <tr bgcolor="#CCCCCC"> 
+                    <td width="50%" colspan="2"><strong>Free Sample Authorization & Shipping Information</strong></td>
+                    <td width="50%" colspan="2"><div align="right"><a name="Shipping" id="Shipping"></a><a href="#Top">Top</a></div></td>
+                  </tr>
+                  <tr> 
+                    <td width="50%"><strong>Authorized</strong></td>
+                    <td width="50%"> <select name="txt6AuthStatus10081" id="txt6AuthStatus10081">
+                        <option value="Pending">Pending</option>
+                        <option value="No">No</option>
+                        <option value="Yes" >Yes</option>
+                      </select> </td>
+                    <td width="50%"><strong>Authorized Date</strong> </td>
+                    <td width="50%"></td>
+                  </tr>
+                  <tr> 
+                    <td width="50%"><strong>Authorized By</strong></td>
+                    <td width="50%"> <input type="text" name="fauthby" id="fauthby" value=""> 
+                    </td>
+                    <td width="50%"><strong>Authorized Time</strong> </td>
+                    <td width="50%"></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2">&nbsp;</td>
+                    <td colspan="2" align="right"><a href="javascript:Update(10081,'auth')"><img src="../images/but_update.gif" border="0"></a></td>
+                  </tr>
+                  <tr> 
+                    <td width="50%" colspan="2">&nbsp;</td>
+                    <td width="50%" colspan="2" align="right">&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td width="50%"><strong>Sales Order No.</strong></td>
+                    <td width="50%"> <input type="text" name="sPriority" cols="20" id="sPriority" value="hellothere"> 
+                    </td>
+                    <td width="50%"><strong>Tracking Number</strong></td>
+                    <td width="50%"> <input type="text" name="txtShipping10081" cols="20" id="txtShipping10081" value=""> 
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td width="50%"><strong>Shipping Carrier</strong></td>
+                    <td width="50%"> <select name="sCarrier" id="sCarrier">
+                        <option value="UPS" selected>UPS</option>
+                        <option value="FedEx" >FedEx</option>
+                        <option value="DHL" >DHL</option>
+                      </select> </td>
+                    <td width="50%"><strong>Shipping Method</strong></td>
+                    <td width="50%"> <select name="sMethod" id="sMethod">
+                        <option value="Domestic Overnight" >Domestic 
+                        Overnight</option>
+                        <option value="Domestic 2 Day" >Domestic 
+                        2 Day</option>
+                        <option value="Domestic 3 Day" >Domestic 
+                        3 Day</option>
+                        <option value="International Priority Air" >International 
+                        Priority Air</option>
+                        <option value="International Standard" selected>International 
+                        Standard</option>
+                      </select> </td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2">&nbsp;</td>
+                    <td colspan="2" align="right"><a href="javascript:Update(10081,'ship')"><img src="../images/but_update.gif" border="0"></a></td>
+                  </tr>
+                  <tr> 
+                    <td width="50%" colspan="2">&nbsp;</td>
+                    <td width="50%" colspan="2" align="right">&nbsp;</td>
+                  </tr>
+                </table>
+              
+                  <table width="646" height="57" border="0" cellpadding="4" cellspacing="0" align="center">
+                    <tr bgcolor="#CCCCCC"> 
+                      <td width="17%"><strong>Notes</strong></td>
+                      <td width="68%"></td>
+                      <td width="15%"><div align="right"><a name="History"></a><a href="#Top">Top</a></div></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3"><table width="100" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td nowrap><strong>Add to Notes</strong></td>
+                          <td>&nbsp;</td>
+                          <td><strong>
+                            <input name="txt4Note10081" type="text" id="txt4Note10081" size="50">
+                          </strong></td>
+                          <td>&nbsp;</td>
+                          <td><a href="javascript:Update(10081,'note')"><img src="../images/but_update.gif" border="0"></a></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+		    <tr> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr bgcolor="#CCCCCC"> 
+                      <td><strong>History</strong></td>
+                      <td></td>
+                      <td><div align="right"><a name="History" id="History"></a><a href="#Top">Top</a></div></td>
+                    </tr>
+			</table>
+				  
+					
+		<table width="646" height="57" border="0" cellpadding="4" cellspacing="0" align="center">
+                    <tr> 
+                      <td width="20%">&nbsp;</td>
+                      <td width="70%">&nbsp;</td>
+                      <td width="10%">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td><strong>Date/Time</strong></td>
+                      <td><strong>Notes </strong></td>
+                      <td><strong>User</strong></td>
+                    </tr>
+		    <tr> 
+                      <td colspan="3" align="center">01/20/14 - 11:50:00 -- Sample order</td>
+                    </tr>
+		    
+                    <tr> 
+                      <td>01/22/14 - 08:12:00</td>
+                      <td>Status Changed To: "Referred to Distributor"</td>
+                      <td>admin</td>
+                    </tr> 
+			  </table>
+					
+					<input type="hidden" name="hFlag" id="hFlag" value="false">
+					<input type="hidden" name="hOrderID" id="hOrderID">
+					<input type="hidden" name="hProject" id="hProject">
+					<input type="hidden" name="hStatus" id="hStatus">
+					<input type="hidden" name="hSales" id="hSales">
+					<input type="hidden" name="hNote" id="hNote">
+					<input type="hidden" name="hNote2" id="hNote2">
+					<input type="hidden" name="hShipping" id="hShipping">
+					<input type="hidden" name="hAuthStatus" id="hAuthStatus">
+					</form>
+          </td>
+        </tr>
+      </table>

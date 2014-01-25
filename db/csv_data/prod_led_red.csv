@@ -1,0 +1,35 @@
+Product_ID|Product_Name|Product_Line|News|Type|Led|Lens|Peak|Lmin|Typ|Ifma|Total|Material|Product_Price|Product_SH|PDF|Sort
+1|AND190CRP|AND Optoelectronics|N|T-3 Package (10mm)|Red|Clear|660|6000|11000|20|8|GaAlAs|0|0|AND190CRP.pdf|2
+2|AND191CRP|AND Optoelectronics|N|T-3 Package (10mm)|Red|White Diffused|660|180|600|20|20|GaAlAs|0|0|AND191CRP.pdf|3
+3|AND190HRP|AND Optoelectronics|n|T-3 Package (10mm)|Red|Clear|644|5600|10000|20|8|InGaAlP|0|10|AND190HRP.pdf|4
+4|AND113R|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Red, Clear|700|5|18|10|30|GaP|0|0|AND113R.pdf|1
+5|AND113RP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Red, Clear|700|5|18|10|30|GaP|0|0|AND113R-RP.pdf|5
+6|AND114R|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Red, Diffused|700|2|5|10|60|GaP|0|0|AND114R-RP.pdf|6
+7|AND114RP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Red, Diffused|700|2|5|10|60|GaP|0|0|AND114R-RP.pdf|7
+39|AND186CRP|AND Optoelectronics|Y|T-1 3/4 Package (5mm)|Red|Water clear|632|2393|3589|20|6|AlGaInP|||AND186CRP.pdf|23
+9|AND130CR|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Clear|660|1200|2000|20|16|GaAlAs|0|0|AND130CR.pdf|9
+10|AND120CRP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Clear|660|1200|2000|20|22|GaAlAs|0|0|AND120CRP.pdf|10
+11|AND120CR|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Clear|660|1200|2000|20|22|GaAlAs|0|0|AND120CR.pdf|11
+12|AND155CRP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Clear|660|630|1250|20|20|GaAlAs|0|0|AND155CRP.pdf|12
+13|AND120BR|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Clear|660|500|1100|20|35|GaAlAs|0|0|AND120BR.pdf|13
+14|AND134CRP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Red Diffused|660|360|600|20|40|GaAlAs|0|0|AND134CRP.pdf|14
+15|AND116CR|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Milky Diffused|660|56|130|20|60|GaAlAs|0|0|AND116CR.pdf|15
+16|AND180HRP|AND Optoelectronics|Y|T-1 3/4 Package (5mm)|Red|Clear|644|3,200|6,000|20|8|AIGaInP|0|0|AND180HRPnew.pdf|16
+17|AND157HRP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Clear|644|700|1800|20|20|InGaAIP|0|0|AND157HRP.pdf|17
+18|AND113S|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Red, Clear|625|50|150|10|30|GaAsP|0|0|AND113S.pdf|18
+19|AND114S|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Red, Diffused|625|20|50|10|60|GaAsP|0|0|AND1145R-SP.pdf|19
+20|AND114SP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Red, Diffused|625|20|50|10|60|GaAsP|0|0|AND1145R-SP.pdf|20
+21|AND180HSP|AND Optoelectronics|N|T-1 3/4 Package (5mm)|Red|Clear|623|3200|6000|20|8|InGaAIP|0|0|AND180HSP.pdf|21
+22|AND157HSP|AND Optoelectronics|Y|T-1 3/4 Package (5mm)|Red|Clear|632|4,500|5,650|20|30|InGaAIP|0|0|AND157HSP.pdf|22
+23|AND123R|AND Optoelectronics|Y|T-1 Package (3mm)|Bright Red|Red Transparent|700|5|12|20|50|GaP|0|0|AND123R.pdf|24
+24|AND124R|AND Optoelectronics|N|T-1 Package (3mm)|Red|Red, Diffused|700|1.3|3|10|60|GaP|0|0|AND124R.pdf|25
+25|AND125CRP|AND Optoelectronics|N|T-1 Package (3mm)|Red|Clear|660|360|600|20|36|GaAlAs|0|0|AND125CRP.pdf|26
+26|AND126CR|AND Optoelectronics|n|T-1 Package (3mm)|Red|Milky Diffused|660|75|180|20|65|GaAlAs|0|10|AND126CR.pdf|27
+27|AND262HS|AND Optoelectronics|N|T-1 Package (3mm)|Red|Clear|632|400|630|20|10|InGaAIP|0|0|AND262HS.pdf|28
+28|AND4RA (Flat)|AND Optoelectronics|N|T-1 Package (3mm) Surface Mount Package|Red|Clear|660|20|40|20|140|GaAIAs|0|0|AND4RA.pdf|29
+29|AND4RRA (Rt Angle)|AND Optoelectronics|N|T-1 Package (3mm) Surface Mount Package|Red|Clear|632|90|139|20|120|InGaAIP|0|0|AND4RRA.pdf|30
+30|AND4SA (Flat)|AND Optoelectronics|N|T-1 Package (3mm) Surface Mount Package|Red|Clear|640|1.53|5|20|140|GaAsP|0|0|AND4SA.pdf|31
+31|AND5RA (Domed)|AND Optoelectronics|N|T-1 Package (3mm) Surface Mount Package|Red|Clear|660|290|480|20|30|GaAIAs|0|0|AND5RA.pdf|32
+32|AND5SA (Domed)|AND Optoelectronics|N|T-1 Package (3mm) Surface Mount Package|Red|Clear|640|24|40|20|30|GaAsP|0|0|AND5SA.pdf|33
+33|AND7RA (Flat LP)|AND Optoelectronics|N|T-1 Package (3mm) Surface Mount Package|Red|Clear|624|90|135|20|120|InGaAIP|0|0|AND7RA.pdf|34
+40|AND180CRP-B|AND Optoelectronics|Y|T-1 3/4 Package (5mm)|Super Bright Red|Water Clear|660|5000|8000|20|20|AlGaInP|Call||AND180CRP-B.pdf|8

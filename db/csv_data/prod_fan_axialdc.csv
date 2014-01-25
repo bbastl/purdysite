@@ -1,0 +1,37 @@
+Product_ID|Product_Name|Product_Line|Type|News|Frame|Voltage|Airflow|Inputp|Inputc|Speed|Noise|Weight|Construction|Guard|Product_Price|Product_SH|PDF|Sort
+2|PO002-05D-2510B-4|Interfan|DC Fans (Brushless)|N|25 x 25 x 10 (1.0 x 1.0 x 0.4)|5|2.3|0.35|80|10000|25|0.3|Plastic housing and impeller, sealed ball bearing, 28AWG wire leads|N/A|0|0|PO002(25x10).pdf|1
+3|PO002-12D-2510B-4|Interfan|DC Fans (Brushless)|N|25 x 25 x 10 (1.0 x 1.0 x 0.4)|12|2.3|0.96|80|10000|25|0.3|Plastic housing and impeller, sealed ball bearing, 28AWG wire leads|N/A|0|0|PO002(25x10).pdf|2
+4|PO004-05D-3010B-4|Interfan|DC Fans (Brushless)|N|30 x 30 x 10|5|4.1|0.35|70|8000|24|0.3|Plastic housing and impeller, sealed ball bearing, 28AWG wire leads|N/A|0|0|PO004.pdf|3
+5|PO004-12D-3010B-4|Interfan|DC Fans (Brushless)|N|30 x 30 x 10|12|4.1|0.72|60|8000|24|0.3|Plastic housing and impeller, sealed ball bearing, 28AWG wire leads|N/A|0|0|PO004.pdf|4
+9|PO006-12D-1B-2|Interfan|DC Fans (Brushless)|N|40 x 40 x 13 (1.6 x 1.6 x 0.5)|12|6.4|1.5|95|6000|31|1.2|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|40FP-45|0|0|PO006.pdf|5
+10|PO006-24D-1B-2|Interfan|DC Fans (Brushless)|N|40 x 40 x 13 (1.6 x 1.6 x 0.5)|24|6.4|1.5|50|6000|31|1.2|Plastic housing and impeller,  sealed ball bearing|40FP-45|0|0|PO006.pdf|6
+11|PO005-12D-1B-3|Interfan|DC Fans (Brushless)|N|40 x 40 x 20 (1.6 x 1.6 x 0.8)|12|5|1.8|150|6000|34|1.2|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|40FP-45|0|0|PO005.pdf|7
+12|PO005-24D-1B-3|Interfan|DC Fans (Brushless)|N|40 x 40 x 20 (1.6 x 1.6 x 0.8)|24|5|2.4|100|6000|34|1.2|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|40FP-45|0|0|PO005.pdf|8
+13|PO012-12D-2B-2|Interfan|DC Fans (Brushless)|Y|60 x 60 x 25 (2.4 x 2.4 x 1.0)|12|12|0.9|80|2750|41|2.7|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5516 60FP-45 60FGM|0|0|PO012.pdf|9
+14|PO012-24D-2B-2|Interfan|DC Fans (Brushless)|Y|60 x 60 x 25 (2.4 x 2.4 x 1.0)|24|12|0.9|40|2750|41|2.7|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5516 60FP-45 60FGM|0|0|PO012.pdf|10
+15|PO019-12D-2B-2|Interfan|DC Fans (Brushless)|N|60 x 60 x 25 (2.4 x 2.4 x 1.0)|12|19|1.8|140|4300|34|2.7|Plastic housing and impeller,  sealed ball bearing|5516 60FP-45 60FGM|0|0|PO019.pdf|11
+16|PO019-24D-2B-2|Interfan|DC Fans (Brushless)|N|60 x 60 x 25 (2.4 x 2.4 x 1.0)|24|19|1.8|80|4300|34|2.7|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5516 60FP-45 60FGM|0|0|PO019.pdf|12
+17|PO014-12D-2B-3|Interfan|DC Fans (Brushless)|N|62 x 62 x 15 (2.5 x 2.5 x 0.6)|12|14|2.4|200|3700|30|1.5|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5516 60FP-45|0|0|PO014.pdf|13
+39|PO125-12D-1238B-2|Interfan|DC Fans (Brushless)|N|120 x 120 x 38.5 (4.7 x 4.7 x 1.5)|12|125|10.0|710|3000|52|8.8|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5507 5502 120FP-45 5505|0|0|PO125.pdf|28
+42|HS-12D-4508S-4|Interfan|DC Heat Sink Fans|N|45 x 45 x 7 (1.7 x 1.7 x 0.3)|12|-|0.72|60|8000|27|0.6|Aluminum alloy housing, plastic impeller,ball bear,28AWG wire leads|N/A|0|0|HS-05D-4508S-4.pdf|32
+45|POB28-12D-5B-2|Interfan|DC Radial Blowers|Y|126 x 127 x 31 (4.96 x 5.0 x 1.54)|12|28|8|490|2500|47|9.4|Plastic housing and impeller, sealed ball bearing, 24AWG wire leads|N/A|0|0|POB28.pdf|35
+18|PO014-24D-2B-3|Interfan|DC Fans (Brushless)|N|62 x 62 x 15 (2.5 x 2.5 x 0.6)|24|14|2.4|100|3700|30|1.5|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5516 60FP-45|0|0|PO014.pdf|14
+19|PO025-12D-3B-2|Interfan|DC Fans (Brushless)|N|80 x 80 x 25 (3.2 x 3.2 x 1.0)|12|27|1|80|2150|25|3|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5508 80FP-45 80FGM|0|0|PO025.pdf|15
+20|PO025-24D-3B-2|Interfan|DC Fans (Brushless)|N|80 x 80 x 25 (3.2 x 3.2 x 1.0)|24|27|1|40|2150|25|3|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5508 80FP-45 80FGM|0|0|PO025.pdf|16
+21|PO035-12D-3B-2|Interfan|DC Fans (Brushless)|N|80 x 80 x 25 (3.2 x 3.2 x 1.0)|12|35|2.4|200|2950|31|3.6|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5508 80FP-45 80FGM|0|0|PO035.pdf|17
+22|PO035-24D-3B-2|Interfan|DC Fans (Brushless)|N|80 x 80 x 25 (3.2 x 3.2 x 1.0)|24|35|2.4|100|2950|31|3.6|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5508 80FP-45 80FGM|0|0|PO035.pdf|18
+23|PO042-12D-3B-2|Interfan|DC Fans (Brushless)|N|80 x 80 x 25 (3.2 x 3.2 x 1.0)|12|42|2.4|160|3500|37|3|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5508 80FP-45 80FGM|0|0|PO042.pdf|19
+24|PO042-24D-3B-2|Interfan|DC Fans (Brushless)|N|80 x 80 x 25 (3.2 x 3.2 x 1.0)|24|42|2.4|100|3500|37|3|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5508 80FP-45 80FGM|0|0|PO042.pdf|20
+47|PO125-48D-1238B-2||DC Fans (Brushless)|N|120 x 120 x 38.5 (4.7 x 4.7 x 1.5)|48|125|10.0|210|3000|52|8.8|Plastic Housing and impeller, sealed ball bearing, 24AWG wire leads|5504, 5502, 120FP-45, 5505|0|0|PO125.pdf|30
+48|PO045-12D-9225B-4T|Interfan|DC Fans (Brushless)|N|92 x 92 x 25 (3.6 x 3.6 x 1.0)|12|45|2.4|170|2400|32|3.6|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5520, 92FP-45, 92FGM|0|0|PO045.pdf|21
+27|PO053-12D-3B-2|Interfan|DC Fans (Brushless)|N|92 x 92 x 32 (3.6 x 3.6 x 1.3)|12|53|3.5|280|3200|39|5.1|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5520 92FP-45|0|0|PO053.pdf|22
+28|PO053-24D-3B-2|Interfan|DC Fans (Brushless)|N|92 x 92 x 32 (3.6 x 3.6 x 1.3)|24|53|3.5|140|3200|39|5.1|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5520 92FP-45|0|0|PO053.pdf|23
+29|PO078-12D-4B-2|Interfan|DC Fans (Brushless)|N|120 x 120 x 25 (4.7 x 4.7 x 1.0)|12|78|4.5|370|2650|42|6.4|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5504 5502 120FP-45|0|0|PO078.pdf|24
+31|PM082-12D-4B|Interfan|DC Fans (Brushless)|N|120 x 120 x 25 (4.7 x 4.7 x 1.0)|12|82|6.7|560|3200|45|9|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5504 5502 120FP-45|0|0|PM082.pdf|25
+32|PM082-24D-4B|Interfan|DC Fans (Brushless)|N|120 x 120 x 25 (4.7 x 4.7 x 1.0)|24|82|7.2|300|3250|45|9|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5504 5502 120FP-45|0|0|PM082.pdf|26
+40|PO125-24D-1238B-2|Interfan|DC Fans (Brushless)|N|120 x 120 x 38.5 (4.7 x 4.7 x 1.5)|48|125|10.0|370|3000|52|8.8|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5508 5502 120FP-45 5505|0|0|PO125.pdf|29
+36|PO106-12D-4BT-7|Interfan|DC Fans (Brushless)|N|120 x 120 x 38 (4.7 x 4.7 x 1.5)|12|108|6.6|550|2950|43|9.2|Plastic housing and impeller, sealed ball bearing, 26AWG wire leads|5504 5502 120FP-45 5505|0|0|PO106.pdf|27
+41|HS-05D-4508S-4|Interfan|DC Heat Sink Fans|N|45 x 45 x 8 (1.7 x 1.7 x 0.3)|5|-|0.45|90|8000|24|0.6|Aluminum alloy housing, plastic impeller,ball bear,28AWG wire leads|N/A|0|0|HS-05D-4508S-4.pdf|31
+43|POB19-12D-9733B-2|Interfan|DC Radial Blowers|Y|97 x 95 x 33 (3.88 x 3.8 x 1.32|12|18.7|3.7|300|2450|43|3.8|Plastic housing and impeller, sealed ball bearing, 24AWG wire leads|N/A|0|0|POB19.pdf|33
+44|POB19-24D-9733B-2|Interfan|DC Radial Blowers|Y|97 x 95 x 33 (3.88 x 3.8 x 1.32|24|18.7|3.7|165|2450|43|3.8|Plastic housing and impeller, sealed ball bearing, 24AWG wire leads|N/A|0|0|POB19.pdf|34
+46|POB28-24D-5B-2|Interfan|DC Radial Blowers|Y|126 x 127 x 31 (4.96 x 5.0 x 1.54)|24|28|8|280|2500|47|9.4|Plastic housing and impeller, sealed ball bearing, 24AWG wire leads|N/A|0|0|POB28.pdf|36
