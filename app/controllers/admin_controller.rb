@@ -32,7 +32,10 @@ class AdminController < ApplicationController
  	end
 
  	def order_edit
+ 		current_order_id = params[:orderid]
 
+ 		@order_item = OrderDetail.find(current_order_id)
+ 		@order_notes = OrderNote.where(:order_id => current_order_id).all
  	end
 
  	def order_update

@@ -1,3 +1,6 @@
+
+<%= params %>
+
 <script language="JavaScript">
 
 function Update(strID,param)
@@ -380,13 +383,13 @@ function isEmail(s)
                     <td width="203" align="right"><form name="frmsearch" method="post">
                       <input type="submit" name="Submit2" value="Export View" onClick="return (Check('export'))">
                       <input type="submit" name="Submit" value="Print" onClick="return (Check('print'))">
-                      <input type="hidden" name="orderid" value="10081">
+                      <input type="hidden" name="orderid" value="<%= @order_item.orderid %>">
                       <input type="hidden" name="eFlag" id="eFlag">
                     </form> </td>
                   </tr>
                 </table>
-<form name="frmUpdate" action="details.cfm?id=10081" method="post">
-		<input name="orderid" type="hidden" value="10081">
+<form name="frmUpdate" action="details.cfm?id=<%= @order_item.orderid %>" method="post">
+		<input name="orderid" type="hidden" value="<%= @order_item.orderid %>">
 		<input name="eDate" type="hidden" value="2014/1/22">
 		<input name="sDate" type="hidden" value="2014/1/15">
 		<input name="status" type="hidden" value="">
@@ -415,7 +418,7 @@ function isEmail(s)
                       <tr>
                         <td><strong>Status</strong></td>
                         <td>&nbsp;</td>
-                        <td><select name="txt2Status10081" id="txt2Status10081">
+                        <td><select name="txt2Status<%= @order_item.orderid %>" id="txt2Status<%= @order_item.orderid %>">
 				<option value="New" >New</option>
 				<option value="Pending Qualification" >Pending Qualification</option>
 				<option value="Qualified Lead" >Qualified Lead</option>
@@ -433,7 +436,7 @@ function isEmail(s)
 				<option value="Rejected - No Credit Card" >Rejected - No Credit Card</option>
 				</select></td>
                         <td>&nbsp;</td>
-                        <td><a href="javascript:Update(10081,'status')"><img src="../images/but_update.gif" border="0"></a></td>
+                        <td><a href="javascript:Update(<%= @order_item.orderid %>,'status')"><%= image_tag "admin/images/but_update.gif" %></a></td>
                       </tr>
                     </table>                        
                     </td>
@@ -449,10 +452,10 @@ function isEmail(s)
                         <td nowrap><strong>Add to Notes</strong></td>
                         <td>&nbsp;</td>
                         <td><strong>
-                          <input name="txt5Note10081" type="text" id="txt5Note10081" size="50">
+                          <input name="txt5Note<%= @order_item.orderid %>" type="text" id="txt5Note<%= @order_item.orderid %>" size="50">
                         </strong></td>
                         <td>&nbsp;</td>
-                        <td><strong><a href="javascript:Update(10081,'note2')"><img src="../images/but_update.gif" border="0"></a></strong></td>
+                        <td><strong><a href="javascript:Update(<%= @order_item.orderid %>,'note2')"><%= image_tag "admin/images/but_update.gif" %></a></strong></td>
                       </tr>
                     </table>                      </td>
                   </tr>
@@ -469,54 +472,54 @@ function isEmail(s)
                     <td colspan="4"><table width="646" height="57" border="1" align="center" cellpadding="4" cellspacing="0">
                       <tr>
                         <td width="19%"><strong>FirstName </strong></td>
-                        <td width="29%">David</td>
+                        <td width="29%"><%= @order_item.firstname %></td>
                         <td width="22%"><strong>Phone</strong></td>
-                        <td width="30%">5854589809</td>
+                        <td width="30%"><%= @order_item.phone %></td>
                       </tr>
                       <tr>
                         <td width="19%"><strong>LastName </strong></td>
-                        <td width="29%">Taylor</td>
+                        <td width="29%"><%= @order_item.lastname %></td>
                         <td width="22%"><strong>Fax</strong></td>
-                        <td width="30%">4589809</td>
+                        <td width="30%"><%= @order_item.fax %></td>
                       </tr>
                       <tr>
                         <td width="19%"><strong>Company</strong></td>
-                        <td width="29%">Penguan Technol</td>
+                        <td width="29%"><%= @order_item.company %></td>
                         <td width="22%"><strong>Email</strong></td>
-                        <td width="30%">davidt.mp3@gmail.com</td>
+                        <td width="30%"><%= @order_item.email %></td>
                       </tr>
                       <tr>
                         <td width="19%"><strong>Address1</strong></td>
-                        <td width="29%">49 Lark Street</td>
-                        <td width="22%"><strong>Card Holder</strong></td>
-                        <td width="30%">NA</td>
+                        <td width="29%"><%= @order_item.address1 %></td>
+                        <td width="22%">Card holder</strong></td>
+                        <td width="30%"><%= @order_item.cardholder %></td>
                       </tr>
                       <tr>
                         <td width="19%"><strong>Address2</strong></td>
-                        <td width="29%">&nbsp;</td>
+                        <td width="29%"><%= @order_item.address2 %></td>
                         <td width="22%"><strong>Credit Card Number</strong></td>
-                        <td width="30%">NA</td>
+                        <td width="30%"><%= @order_item.ccnumber %></td>
                       </tr>
                       <tr>
                         <td width="19%"><strong>City</strong></td>
-                        <td width="29%">Rochester</td>
+                        <td width="29%"><%= @order_item.city %></td>
                         <td width="22%"><strong>Card Type</strong></td>
-                        <td width="30%">NA</td>
+                        <td width="30%"><%= @order_item.cctype %></td>
                       </tr>
                       <tr>
                         <td width="19%"><strong>State</strong></td>
-                        <td width="29%">New York</td>
+                        <td width="29%"><%= @order_item.state %></td>
                         <td width="22%"><strong>Expiry Date</strong></td>
-                        <td width="30%"> - NA</td>
+                        <td width="30%"> <%= @order_item.expirymonth %>/<%= @order_item.expiryyear %></td>
                       </tr>
                       <tr>
                         <td width="19%"><strong>Country</strong></td>
-                        <td width="29%">United States</td>
+                        <td width="29%"><%= @order_item.country %></td>
                         <td colspan="2" rowspan="2">&nbsp;</td>
                       </tr>
                       <tr>
                         <td width="19%"><strong>Zip/Postal Code</strong></td>
-                        <td width="29%">14613</td>
+                        <td width="29%"><%= @order_item.zip %></td>
                       </tr>
                     </table></td>
                   </tr>
@@ -529,28 +532,28 @@ function isEmail(s)
                     <td width="50%" colspan="2"><a name="Sales"></a></td>
                   </tr>
                   <tr> 
-                    <td width="50%" colspan="2"><strong>Order Number: </strong>PO- 10081</td>
-                    <td width="50%" colspan="2"><strong>Order Date : </strong>01/20/14 
+                    <td width="50%" colspan="2"><strong>Order Number: </strong>PO- <%= @order_item.orderid %></td>
+                    <td width="50%" colspan="2"><strong>Order Date : </strong><%= @order_item.orderid %>
                       <strong>&nbsp;&nbsp;</strong></td>
                   </tr>
                   <tr> 
-                    <td width="50%" colspan="2" valign="top"><strong>Part Number: </strong>PO125-48D-1238B-2</td>
-                    <td width="50%" colspan="2" valign="top"><strong>Price: </strong>$0</td>
+                    <td width="50%" colspan="2" valign="top"><strong>Part Number: </strong><%= @order_item.product_name %></td>
+                    <td width="50%" colspan="2" valign="top"><strong>Price: </strong>$<%= @order_item.orderprice %></td>
                   </tr>
                   <tr> 
                     <td width="50%" colspan="2" valign="top"><strong>Project/Application</strong>:<br> 
-                      <textarea name="txt1Project10081" cols="30" rows="3" id="txt1Project10081"></textarea>
+                      <textarea name="txt1Project<%= @order_item.orderid %>" cols="30" rows="3" id="txt1Project<%= @order_item.orderid %>"></textarea>
 		      <p><strong>EAU</strong>:<br><input type="text" name="tEau" cols="30" id="tEau" value=""></p>
 		      </td>
                     <td width="50%" colspan="2" valign="top" align="top"><strong>Product Line: 
-                      </strong>N/A <p><strong>Decision Maker Name</strong><br><input type="text" name="mmaker" id="maker" value=""></p>
-		    <p><strong>Decision Maker Title</strong><br><input type="text" name="ttitle" id="ttitle" value=""></p></td>
+                      </strong><%= @order_item.product_line %><p><strong>Decision Maker Name</strong><br><input type="text" name="mmaker" id="maker" value="<%= @order_item.decision_maker %>"></p>
+		    <p><strong>Decision Maker Title</strong><br><input type="text" name="ttitle" id="ttitle" value="<%= @order_item.decision_title %>"></p></td>
                   </tr>
                   <tr> 
                     <td colspan="2" width="50%"><p><strong>Prototype Date</strong>
 		    <br>
 <input name="Prototype_Date" type="hidden" id="Prototype_Date" value="">
-<input name="P_Date" type="hidden" id="P_Date" value="2014-1-22">
+<input name="P_Date" type="hidden" id="P_Date" value="<%= @order_item.prototype_date %>">
 
 		<select name="selToMnth" id="selToMnth">
                               <script language="javascript">
@@ -607,7 +610,7 @@ function isEmail(s)
 		    </p> 
 		    <p>
 		    		    <strong>Production Start Date</strong>:<br> <input name="Production_Start" type="hidden" id="Production_Start" value="">
-                      <input name="Pr_Date" type="hidden" id="Pr_Date" value="2014-1-22">
+                      <input name="Pr_Date" type="hidden" id="Pr_Date" value="<%= @order_item.production_start %>">
 
 				<select name="selprToMnth" id="selprToMnth">
                               <script language="javascript">
@@ -667,7 +670,7 @@ function isEmail(s)
                   </tr>
                   <tr valign="top"> 
                     <td colspan="2"><strong>Target Price<br> 
-                      <input name="Target_Price" type="text" id="Target_Price" value="" size="10">
+                      <input name="Target_Price" type="text" id="Target_Price" value="<%= @order_item.target_price %>" size="10">
                       </strong></td>
                     <td colspan="2" align="left"><p><strong>How Did You Hear About 
                         Us<br>
@@ -703,15 +706,15 @@ function isEmail(s)
                     </td>
                   </tr>
   		<tr valign="top">
-                    <td colspan="2" align="left"><strong>Competition - Name</strong><br><input type="text" width="50" name="Competition1" id="Competition1" value=""><br><br><input type="text" width="50" name="Competition2" id="Competition2" value=""></td>                  
-                    <td colspan="2" align="left"><strong>Competition - Part Number. </strong><br><input type="text" name="Competition3" id="Competition3" value=""><br><br><input type="text" name="Competition4" id="Competition4" value=""></td>
+                    <td colspan="2" align="left"><strong>Competition - Name</strong><br><input type="text" width="50" name="Competition1" id="Competition1" value="<%= @order_item.competition1 %>"><br><br><input type="text" width="50" name="Competition2" id="Competition2" value="<%= @order_item.competition2 %>"></td>                  
+                    <td colspan="2" align="left"><strong>Competition - Part Number. </strong><br><input type="text" name="Competition3" id="Competition3" value="<%= @order_item.competition3 %>"><br><br><input type="text" name="Competition4" id="Competition4" value="<%= @order_item.competition4 %>"></td>
                   </tr>
 
                   <tr valign="top"> 
                     <td colspan="2"><p>&nbsp;</p>
                     </td>
-                    <td colspan="2" align="right"><a href="dist/viewdist.cfm?str=Dist_ID" target="_blank">View 
-                      Distributor</a> <a href="javascript:Update(10081,'project')"><img src="../images/but_update.gif" border="0"></a></td>
+                    <td colspan="2" align="right"><a href="/distributors" target="_blank">View 
+                      Distributor</a> <a href="javascript:Update(<%= @order_item.orderid %>,'project')"><%= image_tag "admin/images/but_update.gif" %></a></td>
                   </tr>
                   <tr> 
                     <td width="50%" colspan="2">&nbsp;</td>
@@ -723,7 +726,8 @@ function isEmail(s)
                   </tr>
                   <tr> 
                     <td width="50%"><strong>Authorized</strong></td>
-                    <td width="50%"> <select name="txt6AuthStatus10081" id="txt6AuthStatus10081">
+                    <td width="50%"> Current: <%= @order_item.auth_status %><br/>
+                    <select name="txt6AuthStatus<%= @order_item.orderid %>" id="txt6AuthStatus<%= @order_item.orderid %>">
                         <option value="Pending">Pending</option>
                         <option value="No">No</option>
                         <option value="Yes" >Yes</option>
@@ -740,7 +744,7 @@ function isEmail(s)
                   </tr>
                   <tr> 
                     <td colspan="2">&nbsp;</td>
-                    <td colspan="2" align="right"><a href="javascript:Update(10081,'auth')"><img src="../images/but_update.gif" border="0"></a></td>
+                    <td colspan="2" align="right"><a href="javascript:Update(<%= @order_item.orderid %>,'auth')"><%= image_tag "admin/images/but_update.gif" %></a></td>
                   </tr>
                   <tr> 
                     <td width="50%" colspan="2">&nbsp;</td>
@@ -748,21 +752,25 @@ function isEmail(s)
                   </tr>
                   <tr> 
                     <td width="50%"><strong>Sales Order No.</strong></td>
-                    <td width="50%"> <input type="text" name="sPriority" cols="20" id="sPriority" value="hellothere"> 
+                    <td width="50%"> <input type="text" name="sPriority" cols="20" id="sPriority" value="<%= @order_item.shippingpriority %>"> 
                     </td>
                     <td width="50%"><strong>Tracking Number</strong></td>
-                    <td width="50%"> <input type="text" name="txtShipping10081" cols="20" id="txtShipping10081" value=""> 
+                    <td width="50%"> <input type="text" name="txtShipping<%= @order_item.orderid %>" cols="20" id="txtShipping<%= @order_item.orderid %>" value="<%= @order_item.shippingnumber %>"> 
                     </td>
                   </tr>
                   <tr> 
                     <td width="50%"><strong>Shipping Carrier</strong></td>
-                    <td width="50%"> <select name="sCarrier" id="sCarrier">
+                    <td width="50%"> 
+                    Current: <%= @order_item.shippingcarrier %><br/>
+                     <select name="sCarrier" id="sCarrier">
                         <option value="UPS" selected>UPS</option>
                         <option value="FedEx" >FedEx</option>
                         <option value="DHL" >DHL</option>
                       </select> </td>
                     <td width="50%"><strong>Shipping Method</strong></td>
-                    <td width="50%"> <select name="sMethod" id="sMethod">
+                    <td width="50%">
+                    	Current: <%= @order_item.shippingmethod %><br/> 
+                    	<select name="sMethod" id="sMethod">
                         <option value="Domestic Overnight" >Domestic 
                         Overnight</option>
                         <option value="Domestic 2 Day" >Domestic 
@@ -777,7 +785,7 @@ function isEmail(s)
                   </tr>
                   <tr> 
                     <td colspan="2">&nbsp;</td>
-                    <td colspan="2" align="right"><a href="javascript:Update(10081,'ship')"><img src="../images/but_update.gif" border="0"></a></td>
+                    <td colspan="2" align="right"><a href="javascript:Update(<%= @order_item.orderid %>,'ship')"><%= image_tag "admin/images/but_update.gif" %></a></td>
                   </tr>
                   <tr> 
                     <td width="50%" colspan="2">&nbsp;</td>
@@ -797,10 +805,10 @@ function isEmail(s)
                           <td nowrap><strong>Add to Notes</strong></td>
                           <td>&nbsp;</td>
                           <td><strong>
-                            <input name="txt4Note10081" type="text" id="txt4Note10081" size="50">
+                            <input name="txt4Note<%= @order_item.orderid %>" type="text" id="txt4Note<%= @order_item.orderid %>" size="50">
                           </strong></td>
                           <td>&nbsp;</td>
-                          <td><a href="javascript:Update(10081,'note')"><img src="../images/but_update.gif" border="0"></a></td>
+                          <td><a href="javascript:Update(<%= @order_item.orderid %>,'note')"><%= image_tag "admin/images/but_update.gif" %></a></td>
                         </tr>
                       </table></td>
                     </tr>
@@ -831,12 +839,13 @@ function isEmail(s)
 		    <tr> 
                       <td colspan="3" align="center">01/20/14 - 11:50:00 -- Sample order</td>
                     </tr>
-		    
+		    		<% @order_notes.each do |note| %>
                     <tr> 
-                      <td>01/22/14 - 08:12:00</td>
-                      <td>Status Changed To: "Referred to Distributor"</td>
-                      <td>admin</td>
+                      <td><%= note.note_date %>- <%= note.note_time %></td>
+                      <td><%= note.details %></td>
+                      <td><%= note.role %></td>
                     </tr> 
+                    <% end %>
 			  </table>
 					
 					<input type="hidden" name="hFlag" id="hFlag" value="false">

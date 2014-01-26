@@ -13,6 +13,8 @@ PurdySite::Application.routes.draw do
   get 'sitemap' => 'about#sitemap'
 
   patch 'admin/product_update' => 'admin#product_update'
+
+  post 'admin/order_edit' => 'admin#order_edit'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

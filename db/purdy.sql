@@ -462,7 +462,8 @@ CREATE TABLE product_led_blue_white (
     material character varying(100),
     product_price character varying(10),
     product_sh character varying(10),
-    pdf character varying(255)
+    pdf character varying(255),
+    sort character varying(10)
 );
 
 
