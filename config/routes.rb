@@ -14,7 +14,9 @@ PurdySite::Application.routes.draw do
 
   patch 'admin/product_update' => 'admin#product_update'
 
+  post 'admin/order_index' => 'admin#order_index'
   post 'admin/order_edit' => 'admin#order_edit'
+  post 'admin/order_update' => 'admin#order_update'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

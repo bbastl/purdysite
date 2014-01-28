@@ -1,3 +1,5 @@
+<%= params %>
+
 <script language="JavaScript">
 
 function Check(tosubmit)
@@ -46,7 +48,7 @@ function Check(tosubmit)
 		document.frmsearch.ToDay.value=document.frmsearch.selToDay.value
 		document.frmsearch.ToYr.value=document.frmsearch.selToYr.value
 
-		document.frmsearch.action="search.cfm?sort=OrderId&order=asc&chkval=yes";
+		document.frmsearch.action="/admin/order_index?sort=OrderId&order=asc&chkval=yes";
 		document.frmsearch.submit();
 		}
 		if (tosubmit == "print")
@@ -455,135 +457,20 @@ function isEmail(s)
                 <td valign="top" bgcolor="#DDDDDD"><strong><a href="default.cfm?sort=Status&order=asc">Status</a> </strong></td>
 		</tr>
 		
+		<% @od.each do |order|%>
                 <tr>
-                <td  nowrap valign="top" align="center">01/20/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10081';document.detail.submit()">PO-10081</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">PO125-48D-1238B-2</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">David</td>
-                <td valign="top">Taylor</td>
-                <td nowrap valign="top">Penguan Technol</td>
-                <td valign="top">Referred to Distributor</td>
+                	<td  nowrap valign="top" align="center"><%= order.fld_date%></td>
+					<td nowrap valign="top">
+					<a href="javascript:document.detail.orderid.value='<%= order.orderid%>';document.detail.submit()">PO-<%= order.orderid%></a>
+					<td valign="top"><%= order.product_line%></td>
+					<td nowrap valign="top"><%= order.product_name%></td>
+			                <td valign="top"><%= order.eau %></td>
+			                <td valign="top"><%= order.firstname %></td>
+			                <td valign="top"><%= order.lastname %></td>
+			                <td nowrap valign="top"><%= order.company %></td>
+			                <td valign="top"><%= order.status %></td>
               </tr>
-              
-                <tr>
-                <td  nowrap valign="top" align="center">01/20/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10080';document.detail.submit()">PO-10080</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">AND190HBA</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">David</td>
-                <td valign="top">Taylor</td>
-                <td nowrap valign="top">Penguan Technol</td>
-                <td valign="top">New</td>
-              </tr>
-              
-                <tr>
-                <td  nowrap valign="top" align="center">01/19/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10079';document.detail.submit()">PO-10079</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">AND185HAP</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">Pieter</td>
-                <td valign="top">Cake</td>
-                <td nowrap valign="top">TUDelft</td>
-                <td valign="top">Referred to Distributor</td>
-              </tr>
-              
-                <tr>
-                <td  nowrap valign="top" align="center">01/19/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10078';document.detail.submit()">PO-10078</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">AND501WGST-LED</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">duncan</td>
-                <td valign="top">watts</td>
-                <td nowrap valign="top">dewkmultiskille</td>
-                <td valign="top">Referred to Distributor</td>
-              </tr>
-              
-                <tr>
-                <td  nowrap valign="top" align="center">01/19/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10077';document.detail.submit()">PO-10077</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">AND731GST-LED</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">duncan</td>
-                <td valign="top">watts</td>
-                <td nowrap valign="top">dewkmultiskille</td>
-                <td valign="top">Referred to Distributor</td>
-              </tr>
-              
-                <tr>
-                <td  nowrap valign="top" align="center">01/19/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10076';document.detail.submit()">PO-10076</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">AND082GST</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">duncan</td>
-                <td valign="top">watts</td>
-                <td nowrap valign="top">dewkmultiskille</td>
-                <td valign="top">Referred to Distributor</td>
-              </tr>
-              
-                <tr>
-                <td  nowrap valign="top" align="center">01/19/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10075';document.detail.submit()">PO-10075</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">AND081GST</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">duncan</td>
-                <td valign="top">watts</td>
-                <td nowrap valign="top">dewkmultiskille</td>
-                <td valign="top">Referred to Distributor</td>
-              </tr>
-              
-                <tr>
-                <td  nowrap valign="top" align="center">01/19/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10074';document.detail.submit()">PO-10074</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">AND190HBA</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">Nick</td>
-                <td valign="top">Carper</td>
-                <td nowrap valign="top">-</td>
-                <td valign="top">Referred to Distributor</td>
-              </tr>
-              
-                <tr>
-                <td  nowrap valign="top" align="center">01/19/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10073';document.detail.submit()">PO-10073</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">AND190HYP</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">Nick</td>
-                <td valign="top">Carper</td>
-                <td nowrap valign="top">-</td>
-                <td valign="top">Referred to Distributor</td>
-              </tr>
-              
-                <tr>
-                <td  nowrap valign="top" align="center">01/19/14</td>
-		<td nowrap valign="top">
-		<a href="javascript:document.detail.orderid.value='10072';document.detail.submit()">PO-10072</a>
-		<td valign="top">N/A</td>
-		<td nowrap valign="top">AND190CRP</td>
-                <td valign="top">&nbsp;</td>
-                <td valign="top">Nick</td>
-                <td valign="top">Carper</td>
-                <td nowrap valign="top">-</td>
-                <td valign="top">New</td>
-              </tr>
+        <% end %>    
               
             </table>
             </form>
