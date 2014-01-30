@@ -8,13 +8,12 @@
 <style type="text/css">
 <!--
 body {
-	background-image:    url("../images/bg/bg.gif");
+	background-image:    url("<%=  asset_path "bg/bg.gif" %>");
 	background-repeat: repeat-y;
 }
 -->
 </style>
-<link href="../css/purdy.css" rel="stylesheet" type="text/css">
-<script language="JavaScript1.2" src="../js/over.js" ></script>
+<%= stylesheet_link_tag    "application", :media => "all" %>
 <meta name="title" content="The contact information for Purdy Electronics Corporation in Sunnyvale, CA.">
 <meta name="description" content="You can phone Purdy Electronics at 408-523-8200 or fax at 408-733-1287 or email at customerservice@purdyectronics.com. Mail can be sent to Purdy Electronics at 720 Palomar Avenue, Sunnyvale, CA 94085. We also list distributors by the region for local sales and support of our products.">
 <meta name="keywords" content="TFT color LCD display, Graphic LCD display, Alphanumeric LCD display, 7 segment display, LED lamp, LED SMD, LED segment display, Fiber optic modem, Rotary DIP coded switch, Thumbwheel coded switch, LCD flat panel display, TFT color LCD display, TFT color LCD module, TFT color LCD monitor, Poly-silicon LCD display, Graphic LCD display, Alphanumeric LCD display, 7 segment LCD display, LCD high bright backlight, LED lamp, LED SMD, LED segment display, Special shape LED lamp, Dual color LED lamp, AC tube axial cooling fan, AC centrifugal radial blower, DC tube axial cooling fan, DC centrifugal radial blower, Heat sink fan, Fan filter finger guard, Thumbwheel switch, Rotary DIP code switch, Sealed rugged keypad, Fiber optic modem, Fiber optic patch cable, Value added services">
@@ -44,7 +43,7 @@ body {
     <td colspan="2" bgcolor="#FFFFFF"><%= image_tag "admin/images/um.gif" %></td>
   </tr>
   <tr>
-    <td colspan="2" background="../images/bg_dotted.gif"><%= image_tag "admin/images/um.gif" %></td>
+    <td colspan="2" background="<%=  asset_path "admin/images/bg_dotted.gif" %>"><%= image_tag "admin/images/um.gif" %></td>
   </tr>
 </table>
   <table width="765" border="0" cellspacing="0" cellpadding="0">

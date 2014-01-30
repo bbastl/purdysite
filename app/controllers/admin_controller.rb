@@ -21,6 +21,21 @@ class AdminController < ApplicationController
 		@product_data = class_to_load.where(:product_id => item).first
  	end
 
+ 	def product_new
+ 		@product = params[:product_type]
+ 		class_to_load = "#{@product}".camelize.constantize
+		@product_data = class_to_load.new
+ 	end
+
+ 	def product_create
+ 		product_type = params[:product_type]
+ 		class_to_load = product_type.camelize.constantize
+ 		product = class_to_load.new
+ 		filtered_params = params.require(product_type.to_sym).permit(product.attribute_names)
+ 		product = class_to_load.create(filtered_params)
+ 		redirect_to "/admin/product_edit_item?product_type=#{params[:product_type]}&product_id=#{product.product_id}"
+ 	end
+
  	def product_update
  		Rails.logger.debug params
 
