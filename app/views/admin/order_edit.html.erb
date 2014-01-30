@@ -419,6 +419,7 @@ function isEmail(s)
                         <td width="200"><strong>Status is: <%= @order_item.status %></strong></td>
                         <td>&nbsp;</td>
                         <td> Set to: <select name="txt2Status<%= @order_item.orderid %>" id="txt2Status<%= @order_item.orderid %>">
+                <option value="" >Pick One</option>
 				<option value="New" >New</option>
 				<option value="Pending Qualification" >Pending Qualification</option>
 				<option value="Qualified Lead" >Qualified Lead</option>
@@ -550,7 +551,7 @@ function isEmail(s)
 		    <p><strong>Decision Maker Title</strong><br><input type="text" name="ttitle" id="ttitle" value="<%= @order_item.decision_title %>"></p></td>
                   </tr>
                   <tr> 
-                    <td colspan="2" width="50%"><p><strong>Prototype Date</strong>
+                    <td colspan="2" width="50%"><p><strong>Prototype Date: <%= @order_item.prototype_date %></strong>
 		    <br>
 <input name="Prototype_Date" type="hidden" id="Prototype_Date" value="">
 <input name="P_Date" type="hidden" id="P_Date" value="<%= @order_item.prototype_date %>">
@@ -609,7 +610,7 @@ function isEmail(s)
                         </select>
 		    </p> 
 		    <p>
-		    		    <strong>Production Start Date</strong>:<br> <input name="Production_Start" type="hidden" id="Production_Start" value="">
+		    		    <strong>Production Start Date: <%= @order_item.production_start %></strong>:<br> <input name="Production_Start" type="hidden" id="Production_Start" value="">
                       <input name="Pr_Date" type="hidden" id="Pr_Date" value="<%= @order_item.production_start %>">
 
 				<select name="selprToMnth" id="selprToMnth">
@@ -665,7 +666,7 @@ function isEmail(s)
                         </select></p>
 		    </td>
                     <td width="50%" colspan="2" valign="top"><strong>Buying Criteria</strong><br>
-		    <textarea name="Buying_Criteria" id="Buying_Criteria"></textarea>
+		    <textarea name="Buying_Criteria" id="Buying_Criteria"><%= @order_item.buying_criteria %></textarea>
 		    </td> 
                   </tr>
                   <tr valign="top"> 
@@ -674,8 +675,9 @@ function isEmail(s)
                       </strong></td>
                     <td colspan="2" align="left"><p><strong>How Did You Hear About 
                         Us<br>
-                        </strong><strong> 
+                        </strong><%= @order_item.how_did %><strong> 
                         <select name="How_Did" id="How_Did">
+                          <option value="" >Pick One</option>
                           <option value="Web Search - Google" >Web 
                           Search - Google</option>
                           <option value="Web Search - Yahoo" >Web 
@@ -728,6 +730,7 @@ function isEmail(s)
                     <td width="50%"><strong>Authorized</strong></td>
                     <td width="50%"> Current: <%= @order_item.auth_status %><br/>
                     <select name="txt6AuthStatus<%= @order_item.orderid %>" id="txt6AuthStatus<%= @order_item.orderid %>">
+                    	<option value="">Pick One</option>
                         <option value="Pending">Pending</option>
                         <option value="No">No</option>
                         <option value="Yes" >Yes</option>
@@ -737,7 +740,7 @@ function isEmail(s)
                   </tr>
                   <tr> 
                     <td width="50%"><strong>Authorized By</strong></td>
-                    <td width="50%"> <input type="text" name="fauthby" id="fauthby" value=""> 
+                    <td width="50%"> <input type="text" name="fauthby" id="fauthby" value="<%= @order_item.auth_by %>"> 
                     </td>
                     <td width="50%"><strong>Authorized Time</strong> </td>
                     <td width="50%"></td>
@@ -763,7 +766,8 @@ function isEmail(s)
                     <td width="50%"> 
                     Current: <%= @order_item.shippingcarrier %><br/>
                      <select name="sCarrier" id="sCarrier">
-                        <option value="UPS" selected>UPS</option>
+                     	<option value="">Pick One</option>
+                        <option value="UPS">UPS</option>
                         <option value="FedEx" >FedEx</option>
                         <option value="DHL" >DHL</option>
                       </select> </td>
@@ -771,6 +775,7 @@ function isEmail(s)
                     <td width="50%">
                     	Current: <%= @order_item.shippingmethod %><br/> 
                     	<select name="sMethod" id="sMethod">
+                    	<option value="">Pick One</option>
                         <option value="Domestic Overnight" >Domestic 
                         Overnight</option>
                         <option value="Domestic 2 Day" >Domestic 
@@ -779,7 +784,7 @@ function isEmail(s)
                         3 Day</option>
                         <option value="International Priority Air" >International 
                         Priority Air</option>
-                        <option value="International Standard" selected>International 
+                        <option value="International Standard">International 
                         Standard</option>
                       </select> </td>
                   </tr>

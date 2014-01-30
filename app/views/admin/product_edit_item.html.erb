@@ -8,7 +8,10 @@
 	<tr>
 	<% if attribute %>
 		<td><%= attribute %></td>
-			<td><%= f.text_field attribute.to_sym %></td>
+			<td>
+				<%= f.text_field attribute.to_sym unless attribute == 'product_id' %>
+				<%= @product_data.product_id if attribute == 'product_id' %>
+			</td>
 	<% end %>
 	</tr>
 	<tr>
