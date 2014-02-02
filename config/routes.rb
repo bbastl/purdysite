@@ -9,12 +9,14 @@ PurdySite::Application.routes.draw do
   get 'contact' => 'about#contact'
   get 'warranty' => 'about#warranty'
   get 'privacy' => 'about#privacy'
-  get 'feedback' => 'about#feedback'
+  get 'feedback' => 'about#feedback' 
   get 'sitemap' => 'about#sitemap'
+  get 'distributors' => 'about#distributors'
 
   patch 'admin/product_update' => 'admin#product_update'
   post 'admin/product_create' => 'admin#product_create'
 
+  get 'admin' => 'admin#index'
   post 'admin/order_index' => 'admin#order_index'
   post 'admin/order_edit' => 'admin#order_edit'
   post 'admin/order_update' => 'admin#order_update'

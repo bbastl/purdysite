@@ -32,6 +32,8 @@
       <p><strong>If you would like to download a data sheet:</strong></p>
 
         <a href="/pdf/FAN-SFC.pdf" target="_blank"><strong><font size="2">Fan Short Form Catalog</a> – Download Complete Short Form Catalog</font></strong></p>
+      </div>
+      <div id="catalog"> 
            <table border="0" cellspacing="1">
             <tr> 
               <td class="TableTextHeader">Product Type</td>
@@ -45,7 +47,7 @@
           <% ProductFansAccessory.to_display.each do |product| %>    
                  <tr align="left" bgcolor="#ffffff"> 
               <td class="TableTextBold"><%= product.item_type %></td>
-              <td class="TableText"><center><strong><A HREF="/pdf/<%= product.pdf %><" target="_blank"><%= product.product_name %></a><span class="TableTextNEW"> 
+              <td class="TableText"><center><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a><span class="TableTextNEW"> 
             </strong></center></td>
               <td class="TableText"><center><%= product.fan_compat %></center></td>
               <td class="TableText"><center><%= product.construction %></center></td>
@@ -59,5 +61,6 @@
 
           </table>
 
-    </div>
+</div>
+
 </div>
