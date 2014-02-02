@@ -26,4 +26,53 @@ All (AND Displays, Interfan, AND Optoelectronics, Interswitch, or Interoptics) p
 
 
             </div>
+
+            <div id="catalog">
+
+              <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="TableBorderColor">
+                <table border="0" cellspacing="1" cellpadding="1">
+                  <tr>
+                     <td width="68" class="TableTextHeader">Part Number<br>
+Click for PDF</td>
+                      <td width="178" class="TableTextHeader">Description</td>
+                      <td width="67" align="center" class="TableTextHeader">Characters Available</td>
+                      <td width="65" align="center" class="TableTextHeader">Available Input Coding</td>
+                      <td width="53" align="center" class="TableTextHeader">Max. Current (mA)DC</td>
+                      <td width="53" align="center" class="TableTextHeader">Supply Voltage VDC</td>
+                      <td width="84" align="center" class="TableTextHeader">Dimensions WxHxD(mm)</td>
+                      <td width="84" align="center" class="TableTextHeader">Sample Price</td>
+      <td align="center" class="TableTextHeader">Stock Check</td>
+                        <td width="10%" class="TableTextHeader"><div align="center">Order<br>Sample</div></td>
+                  </tr>
+                         
+             
+              <%  ProductSwitchesLed.to_display.each do |product| %>
+                <tr align="left" bgcolor="#ffffff"> 
+                    <td class="TableTextBold"><A HREF="/pdf/<%= product.pdf%>" target="_blank"><%= product.product_name%></a><span class="TableTextNEW"> 
+                        
+                        </span></td>
+                    <td class="TableText"><%= product.description %></td>
+                    <td class="TableText"><%= product.characters %></td>
+                    <td class="TableText"><%= product.available %></td>
+                    <td class="TableText"><%= product.maximum %></td>
+                    <td class="TableText"><%= product.supply %></td>
+                    <td class="TableText"><%= product.dimensions %></td>
+          
+                    <td class="TableText" align="right"><div align="center">$<%= product.product_price %></div></td>
+                    <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name%>&pq=Search" target="_blank">Inventory</a></td>
+                    <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id %>&prod_type=switchled"><%= image_tag "buts/order.gif" %></a></div></td>
+      
+              </tr>
+
+
+              <% end %>
+
+            </table>
+          </td>
+          </tr>
+          </table>
+
+          </div>
         </div>
