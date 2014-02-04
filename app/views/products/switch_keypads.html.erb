@@ -24,12 +24,75 @@
                 </div>
 
           <div id="catalog">
-
-              <%  ProductSwitchesKeypads.to_display.each do |product| %>
-
+              <p><strong>Keypads</strong></p>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="TableBorderColor">
+            <table width="100%" border="0" cellpadding="0" cellspacing="1">
+              <tr> 
+                <td class="TableTextHeader">Part Number<br>
+                  Click for PDF</td>
+                <td class="TableTextHeader">Description</td>
+                <td class="TableTextHeader"><div align="center">Key Configuration</div></td>
+                <td class="TableTextHeader"><div align="center">Key Type</div></td>
+                <td class="TableTextHeader"><div align="center">Dimensions WxHxD 
+                    (mm)</div></td>
+                <td class="TableTextHeader"><div align="center">Sample Price</div></td>
+      <td align="center" class="TableTextHeader">Stock Check</td>
+                        <td width="10%" class="TableTextHeader"><div align="center">Order<br>Sample</div></td>
+              </tr>
+              <%  ProductSwitchesKeypad.to_display.each do |product| %>
+                  <tr align="left" bgcolor="#ffffff"> 
+                  <td class="TableTextBold"><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a>
+                  <span class="TableTextNEW"> 
+                                
+                                </span></td>
+                              <td class="TableText"><%= product.description %></td>
+                              <td class="TableText"><%= product.key_config %></td>
+                              <td class="TableText"><%= product.key_type %></td>
+                              <td class="TableText" align="right"><%= product.dimensions %></td>
+              
+                  <td class="TableText" align="right"><div align="center">$<%= product.product_price %></td></div></td>
+                  <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&pq=Search" target="_blank">Inventory</a></td>
+                  <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id %>&&prod_type=keypads"><%= image_tag "buts/order.gif" %></a></div></td>
+      
+                </tr>
 
               <% end %>
-
-
+            </table>
+            </td>
+            </tr>
+            </table>
+            <p align="left"><strong>Keypad Accessories</strong></p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="TableBorderColor">
+            <table width="100%" border="0" cellpadding="1" cellspacing="1">
+              <tr> 
+                <td class="TableTextHeader">Part Number</td>
+                <td class="TableTextHeader">Description</td>
+                <td class="TableTextHeader">For Keypad Number</td>
+                <td class="TableTextHeader"><div align="center">Sample Price</div></td>
+      <td align="center" class="TableTextHeader">Stock Check</td>
+                        <td width="10%" class="TableTextHeader"><div align="center">Order<br>Sample</div></td>
+              </tr>
+             <%  ProductSwitchesKeypads2.to_display.each do |product| %>
+             <tr align="left" bgcolor="#ffffff"> 
+                  <td class="TableTextBold"><%= product.product_name %><span class="TableTextNEW"> 
+                    
+                    </span></td>
+                  <td class="TableText"><%= product.description %></td>
+                  <td class="TableText"><%= product.forp %></td>
+  
+      <td class="TableText" align="right"><div align="center">$<%= product.product_price %></div></td>
+      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&pq=Search" target="_blank">Inventory</a></td>
+      <td class="TableText"><div align="center"><a href="https://ssl32.chi.us.securedata.net/purdyelectronics.com/orderdetails.cfm?prod_sel=<%= product.product_id %>&&prod_type=keypads2"><%= image_tag "buts/order.gif" %></div></td>
+      
+                </tr>
+                <% end %>
+                </table>
+              </td>
+              </tr>
+              </table>
           </div>
 </div>
