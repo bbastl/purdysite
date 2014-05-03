@@ -1,0 +1,30 @@
+<VirtualHost 192.168.0.1:443>
+DocumentRoot /var/www/
+SSLEngine on
+SSLCertificateFile /home/ubuntu/certs/27834ad31e783f.crt
+SSLCertificateKeyFile /home/ubuntu/certs/server.key
+SSLCertificateChainFile /home/ubuntu/certs/gd_bundle-g2-g1.crt
+</VirtualHost>
+
+-rw-r--r-- 1 ubuntu rvm 1879 May  3 14:12 27834ad31e783f.crt
+-rw-r--r-- 1 ubuntu rvm 4795 May  3 14:12 gd_bundle-g2-g1.crt
+-rw-r--r-- 1 ubuntu rvm 1679 May  3 19:06 server.key
+/home/ubuntu/certs/
+
+
+
+<VirtualHost *:443>
+    RailsEnv development
+    ServerName www.purdyelectronics.com
+    DocumentRoot /home/ubuntu/purdysite/public
+    <Directory /home/ubuntu/purdysite/public>
+        Allow from all
+    </Directory>
+
+    SSLEngine on
+	SSLCertificateFile /home/ubuntu/certs/27834ad31e783f.crt
+	SSLCertificateKeyFile /home/ubuntu/certs/server.key
+	SSLCertificateChainFile /home/ubuntu/certs/gd_bundle-g2-g1.crt
+</VirtualHost>
+
+sudo a2enmod ssl
