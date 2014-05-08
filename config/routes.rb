@@ -13,6 +13,10 @@ PurdySite::Application.routes.draw do
   get 'sitemap' => 'about#sitemap'
   get 'distributors' => 'about#distributors'
 
+  get 'displays' => 'products#displays'
+  get 'leds' => 'products#and_opto'
+  get 'fans' => 'products#interfan'
+
   patch 'admin/product_update' => 'admin#product_update'
   post 'admin/product_create' => 'admin#product_create'
 
