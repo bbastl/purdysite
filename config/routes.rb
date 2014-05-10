@@ -1,6 +1,5 @@
 PurdySite::Application.routes.draw do
   get 'products/index'
-  get ':controller/:action'
   get 'vas/index'
   get 'wnew/index'
 
@@ -24,6 +23,30 @@ PurdySite::Application.routes.draw do
   post 'admin/order_index' => 'admin#order_index'
   post 'admin/order_edit' => 'admin#order_edit'
   post 'admin/order_update' => 'admin#order_update'
+
+
+  ##################3
+  # Old site redircts
+  ####################3
+  get "/products/displays/default.cfm", :to => redirect("/products/displays")
+  get "/products/displays/intgraph.cfm", :to => redirect("/products/displays_graphic_lcd")
+  get "/products/displays/tftmodul.cfm", :to => redirect("/products/monitors_tft_lcd_color")
+
+  get "/products/interfan/default.cfm", :to => redirect("/products/interfan")
+  get "/products/interfan/axialac.cfm", :to => redirect("/products/interfan_ac_fans")
+  get "/products/interfan/accessories.cfm", :to => redirect("/products/interfan_fan_accessories")
+
+  get "/products/opto/*d", :to => redirect("/products/and_opto")
+  get "/products/displays/*d", :to => redirect("/products/displays")
+  get "/products/interfan/*d", :to => redirect("/products/interfan")
+
+  get "/about/default.cfm", :to => redirect("/about_us")
+  get "/Products", :to => redirect("/products/index")
+  get "/vas/default.cfm", :to => redirect("/vas/index")
+  get "/wnew/default.cfm", :to => redirect("wnew/index")
+
+  get ':controller/:action'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
