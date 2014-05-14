@@ -3,6 +3,6 @@ class ProductDisplaysTftmodule < ActiveRecord::Base
 	#self.table_name = "product_displays_tftmonitors"
 
 	def self.to_display
-		self.all.order("sort")
+		self.where(is_active: true).order("sort")
 	end
 end
