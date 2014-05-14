@@ -90,7 +90,7 @@
             <% ProductDisplaysTftmonitor.to_display.each do |product| %>
              <tr bgcolor="#ffffff">
                     
-                          <td width="170" class="TableTextBold"><A HREF="/pdf/ANDpSi020TD-LED.pdf" target="_blank"><%= product.product_name %></a>
+                          <td width="170" class="TableTextBold"><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a>
                           </td>
                           <td class="TableText"><div align="center"><%= product.screen %></div></td>
                           <td class="TableText"><div align="center"><%= product.pixel %></div></td>
