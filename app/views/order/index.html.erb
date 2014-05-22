@@ -281,82 +281,82 @@ function validate()
 		}
 	}
 
-	if(document.getElementById('txtHolder').value == "")
-	{
-		alert("Please put in the Card Holder's Name");
-		document.getElementById('txtHolder').focus();
-		return;
-	}
-	else if(CheckAlpha(document.getElementById('txtHolder').value) == false)
-	{
-		alert("Invalid Card Holder's Name");
-		document.getElementById('txtHolder').focus();
-		return;
-	}
-	if(document.getElementById('txtCCNumber').value == "")
-	{
-		alert("Credit Card Number cannot be blank");
-		document.getElementById('txtCCNumber').focus();
-		return;
-	}
+	// if(document.getElementById('txtHolder').value == "")
+	// {
+	// 	alert("Please put in the Card Holder's Name");
+	// 	document.getElementById('txtHolder').focus();
+	// 	return;
+	// }
+	// else if(CheckAlpha(document.getElementById('txtHolder').value) == false)
+	// {
+	// 	alert("Invalid Card Holder's Name");
+	// 	document.getElementById('txtHolder').focus();
+	// 	return;
+	// }
+	// if(document.getElementById('txtCCNumber').value == "")
+	// {
+	// 	alert("Credit Card Number cannot be blank");
+	// 	document.getElementById('txtCCNumber').focus();
+	// 	return;
+	// }
 
-	if(strYear < strCurrDate.getYear())
-	{
-		if(strMonth < strCurrDate.getMonth())
-		{
-			alert("Your card has already expired.\n\n Please check the expiry date");
-			document.getElementById('ExpiryMonth').focus();
-			return;
-		}
-	}
-	if(strMonth == "0")
-	{
-		document.getElementById('hMonth').value = "January";
-	}
-	if(strMonth == "1")
-	{
-		document.getElementById('hMonth').value = "February";
-	}
-	if(strMonth == "2")
-	{
-		document.getElementById('hMonth').value = "March";
-	}
-	if(strMonth == "3")
-	{
-		document.getElementById('hMonth').value = "April";
-	}
-	if(strMonth == "4")
-	{
-		document.getElementById('hMonth').value = "May";
-	}
-	if(strMonth == "5")
-	{
-		document.getElementById('hMonth').value = "June";
-	}
-	if(strMonth == "6")
-	{
-		document.getElementById('hMonth').value = "July";
-	}
-	if(strMonth == "7")
-	{
-		document.getElementById('hMonth').value = "August";
-	}
-	if(strMonth == "8")
-	{
-		document.getElementById('hMonth').value = "September";
-	}
-	if(strMonth == "9")
-	{
-		document.getElementById('hMonth').value = "October";
-	}
-	if(strMonth == "10")
-	{
-		document.getElementById('hMonth').value = "Novermber";
-	}
-	if(strMonth == "11")
-	{
-		document.getElementById('hMonth').value = "December";
-	}
+	// if(strYear < strCurrDate.getYear())
+	// {
+	// 	if(strMonth < strCurrDate.getMonth())
+	// 	{
+	// 		alert("Your card has already expired.\n\n Please check the expiry date");
+	// 		document.getElementById('ExpiryMonth').focus();
+	// 		return;
+	// 	}
+	// }
+	// if(strMonth == "0")
+	// {
+	// 	document.getElementById('hMonth').value = "January";
+	// }
+	// if(strMonth == "1")
+	// {
+	// 	document.getElementById('hMonth').value = "February";
+	// }
+	// if(strMonth == "2")
+	// {
+	// 	document.getElementById('hMonth').value = "March";
+	// }
+	// if(strMonth == "3")
+	// {
+	// 	document.getElementById('hMonth').value = "April";
+	// }
+	// if(strMonth == "4")
+	// {
+	// 	document.getElementById('hMonth').value = "May";
+	// }
+	// if(strMonth == "5")
+	// {
+	// 	document.getElementById('hMonth').value = "June";
+	// }
+	// if(strMonth == "6")
+	// {
+	// 	document.getElementById('hMonth').value = "July";
+	// }
+	// if(strMonth == "7")
+	// {
+	// 	document.getElementById('hMonth').value = "August";
+	// }
+	// if(strMonth == "8")
+	// {
+	// 	document.getElementById('hMonth').value = "September";
+	// }
+	// if(strMonth == "9")
+	// {
+	// 	document.getElementById('hMonth').value = "October";
+	// }
+	// if(strMonth == "10")
+	// {
+	// 	document.getElementById('hMonth').value = "Novermber";
+	// }
+	// if(strMonth == "11")
+	// {
+	// 	document.getElementById('hMonth').value = "December";
+	// }
 
 	document.form1.submit();
 }
@@ -374,7 +374,7 @@ function validate()
   Please note that this sample offer is available only to design engineers with a current design project and is subject to qualification by our staff. If you do not fit this requirement, please contact one of our <a href="/distributors" target="_blank">Distributors</a> to order the product, or call us (408-523-8283) or email us at <A href="mailto:customerservice@purdyelectronics.com">customerservice@purdyelectronics.com</A> for further assistance.</p>
             <p> Please fill in the following form to complete your purchase:<BR>
             </p>
-            <form name="form1" method="post" action="orderprocess.cfm">
+            <form name="form1" method="post" action="/order/process_order">
               <table width="454" border="0">
                 <tr>
                   <td colspan="2"><span class="TableTextNEW">Order Details</span><br>

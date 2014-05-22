@@ -19,6 +19,8 @@ PurdySite::Application.routes.draw do
   patch 'admin/product_update' => 'admin#product_update'
   post 'admin/product_create' => 'admin#product_create'
 
+  post 'order/process_order' => 'order#process_order'
+
   get 'admin' => 'admin#index'
   post 'admin/order_index' => 'admin#order_index'
   post 'admin/order_edit' => 'admin#order_edit'
