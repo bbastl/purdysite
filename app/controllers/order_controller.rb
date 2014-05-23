@@ -23,7 +23,7 @@ class OrderController < ApplicationController
 							zip: params[:txtZip],
 							phone: params[:txtPhone],
 							fax: params[:txtFax],
-							email: params[:email],
+							email: params[:txtEmail],
 							status: "New"
 						)
 
