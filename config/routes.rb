@@ -22,6 +22,10 @@ PurdySite::Application.routes.draw do
   post 'order/process_order' => 'order#process_order'
 
   get 'admin' => 'admin#index'
+  post 'admin_new_order_details/order_index' => 'admin_new_order_details#order_index'
+  post 'admin_new_order_details/order_edit' => 'admin_new_order_details#order_edit'
+  post 'admin_new_order_details/order_update' => 'admin_new_order_details#order_update'
+  
   post 'admin/order_index' => 'admin#order_index'
   post 'admin/order_edit' => 'admin#order_edit'
   post 'admin/order_update' => 'admin#order_update'

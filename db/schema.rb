@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140522211653) do
+ActiveRecord::Schema.define(version: 20140523032631) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,14 @@ ActiveRecord::Schema.define(version: 20140522211653) do
     t.string "dist_monitors", limit: 100
   end
 
+  create_table "new_notes", force: true do |t|
+    t.integer  "new_order_detail_id"
+    t.text     "detail"
+    t.string   "role"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "new_order_details", force: true do |t|
     t.string   "firstname"
     t.string   "lastname"
@@ -55,6 +63,38 @@ ActiveRecord::Schema.define(version: 20140522211653) do
     t.string   "product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "cardholder"
+    t.string   "ccnumber"
+    t.string   "cctype"
+    t.string   "expirymonth"
+    t.string   "expiryyear"
+    t.string   "status"
+    t.string   "shippingnumber"
+    t.string   "shippingmethod"
+    t.string   "shippingpriority"
+    t.string   "shippingcarrier"
+    t.string   "auth_status"
+    t.string   "auth_by"
+    t.string   "auth_date"
+    t.string   "auth_time"
+    t.string   "note"
+    t.string   "sn_flag"
+    t.string   "product"
+    t.string   "eau"
+    t.string   "production_start"
+    t.string   "decision_maker"
+    t.string   "decision_title"
+    t.string   "prototype_date"
+    t.string   "buying_criteria"
+    t.string   "target_price"
+    t.string   "how_did"
+    t.string   "competition1"
+    t.string   "competition2"
+    t.string   "competition3"
+    t.string   "competition4"
+    t.string   "product_line"
+    t.string   "orderprice"
+    t.string   "project"
   end
 
   create_table "notes", primary_key: "notes_id", force: true do |t|

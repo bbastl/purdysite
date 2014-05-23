@@ -23,9 +23,9 @@ class OrderController < ApplicationController
 							zip: params[:txtZip],
 							phone: params[:txtPhone],
 							fax: params[:txtFax],
-							email: params[:email]
+							email: params[:email],
+							status: "New"
 						)
-		render :inline => "test submit"
 
 # 		{"txtFName"=>"Shayne", "txtLName"=>"DeFazio", "company"=>"-", "txtAdd1"=>"1171 Holmes Ave", "txtAdd2"=>"1171 Holmes Ave", 
 #    "txtCity"=>"Campbell", "txtState"=>"California", "txtCountry"=>"usa", "txtZip"=>"95008", "txtPhone"=>"4083942959",
