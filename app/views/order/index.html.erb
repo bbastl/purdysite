@@ -567,10 +567,10 @@ Shipping and handling charges cover only domestic orders shipped UPS Ground.&nbs
     <input type="hidden" name="hMonth" id="hMonth">
     <input type="hidden" name="servertype" id="servertype" value="New">
     
-      <input type="hidden" name="hTotal" id="hTotal" value="57">
-      <input type="hidden" name="hProd_id" id="hProd_id" value="41">
-      <input type="hidden" name="hProd_name" id="hProd_name" value="ANDpSi020TD-LED">
-     <input type="hidden" name="hProd_price" id="hProd_name" value="47">
+      <input type="hidden" name="hTotal" id="hTotal" value="0">
+      <input type="hidden" name="hProd_id" id="hProd_id" value="<%= @product_data.product_id %>">
+      <input type="hidden" name="hProd_name" id="hProd_name" value="<%= @product_data.product_name %>">
+     <input type="hidden" name="hProd_price" id="hProd_name" value="<%= @product_data.product_price %>">
       <input type="hidden" name="hprodline" value="" id="hprodline">
     
     <p>&nbsp;</p>
