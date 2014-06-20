@@ -381,8 +381,8 @@ function isEmail(s)
                       | <a href="#Shipping">Shipping & Authorization</a> 
                       | <a href="#History">History</a></td>
                     <td width="203" align="right"><form name="frmsearch" method="post">
-                      <input type="submit" name="Submit2" value="Export View" onClick="return (Check('export'))">
-                      <input type="submit" name="Submit" value="Print" onClick="return (Check('print'))">
+                      <input type="submit" name="Submit2" value="Export View" onClick="alert('Coming soon');">
+                      <input type="button" name="print" value="Print" onClick="window.print()">
                       <input type="hidden" name="orderid" value="<%= @order_item.orderid %>">
                       <input type="hidden" name="eFlag" id="eFlag">
                     </form> </td>
