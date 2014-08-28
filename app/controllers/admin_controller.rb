@@ -38,6 +38,21 @@ class AdminController < ApplicationController
  		redirect_to "/admin/product_edit_item?product_type=#{params[:product_type]}&product_id=#{product.product_id}"
  	end
 
+ 	def product_delete_item
+ 		# https://www.purdyelectronics.com/admin/product_delete_item?product_type=product_displays_segment&product_id=11
+ 		@product = params[:product_type]
+ 		item = params[:product_id]
+
+ 		class_to_load = "#{@product}".camelize.constantize
+		@product_data = class_to_load.where(:product_id => item).first
+
+		@product_data.is_active = false
+
+		@product_data.save
+
+		redirect_to "/admin/product_edit?product=#{@product}"
+ 	end
+
  	def create_pdf
  		product_type = params[:product_type]
  		product_id = params[:product_id]
