@@ -12,9 +12,9 @@ class ProductsController < ApplicationController
 
 	end
 
-	def monitors_tft_lcd_color
+	# def monitors_tft_lcd_color
 
-	end
+	# end
 
 	def displays_graphic_lcd
 
