@@ -2,9 +2,9 @@
 
   <h1>Load pdf for: <%= @product_data.product_name %></h1>
 
-  <%= file_field_tag 'pdf' %>
+  <%= file_field_tag 'file' %>
   <%= hidden_field_tag(:product_id, params[:product_id]) %>
   <%= hidden_field_tag(:product_type, params[:product_type]) %>
   </br>
-  <%= submit_tag "upload pdf" %>
+  <%= submit_tag "upload pdf file" %>
 <% end %>

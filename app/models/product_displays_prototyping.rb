@@ -5,4 +5,8 @@ class ProductDisplaysPrototyping < ActiveRecord::Base
 	def self.to_display
 		self.where(is_active: true).order("sort")
 	end
+	
+	def self.display_all_sorted
+    self.order("is_active desc").order("sort")
+  end
 end

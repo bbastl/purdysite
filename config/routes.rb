@@ -23,8 +23,10 @@ PurdySite::Application.routes.draw do
 
   get 'admin' => 'admin#index'
   get 'admin/load_pdf/:product_type/:product_id' => 'admin#create_pdf'
+  get 'admin/load_html/:product_type/:product_id' => 'admin#create_html_file'
 
   post 'admin/pdf_upload' => 'admin#pdf_upload'
+  post 'admin/html_upload' => 'admin#html_upload'
 
   post 'admin_new_order_details/order_index' => 'admin_new_order_details#order_index'
   post 'admin_new_order_details/order_edit' => 'admin_new_order_details#order_edit'

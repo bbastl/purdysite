@@ -12,9 +12,17 @@
 		<td><%= prod.description if prod.try(:description) %>
     <td><%= prod.pdf %></td>
     <td><a href="/admin/load_pdf/<%= params[:product] %>/<%= prod.product_id%>">change pdf</a></td>
+    <td><%= prod.html_file %></td>
+    <td><a href="/admin/load_html/<%= params[:product] %>/<%= prod.product_id%>">change html file</a></td>
 		<td><%= prod.product_line %></td>
 		<td><a href="/admin/product_edit_item?product_type=<%=@product%>&product_id=<%= prod.product_id %>">edit</a></td>
-		<td><a href="/admin/product_delete_item?product_type=<%=@product%>&product_id=<%= prod.product_id %>">delete</a></td>
+		<td>
+			<% if prod.is_active %>
+			<a href="/admin/product_delete_item?product_type=<%=@product%>&product_id=<%= prod.product_id %>">delete</a>
+			<% else %>
+				deleted
+			<% end %>
+		</td>
 	</tr>
 <% end %>
 </table> 

@@ -13,7 +13,7 @@ class AdminController < ApplicationController
 	def product_edit
 		@product = params[:product]
 		class_to_load = "#{@product}".camelize.constantize
-		@products = class_to_load.all
+		@products = class_to_load.display_all_sorted
  	end
 
  	def product_edit_item
@@ -61,6 +61,15 @@ class AdminController < ApplicationController
 		class_to_load = "#{product_type}".camelize.constantize
 		@product_data = class_to_load.where(:product_id => product_id).first
  	end
+ 	
+ 	def create_html_file
+    product_type = params[:product_type]
+    product_id = params[:product_id]
+    @product = params[:product_type]
+
+    class_to_load = "#{product_type}".camelize.constantize
+    @product_data = class_to_load.where(:product_id => product_id).first
+  end
 
  	def pdf_upload
  		pdf = params[:pdf]
@@ -83,6 +92,28 @@ class AdminController < ApplicationController
 		
  		redirect_to "/admin/product_edit?product=#{ product_type}"
  	end
+ 	
+ 	def html_upload
+    pdf = params[:pdf]
+    product_type = params[:product_type]
+    product_id = params[:product_id]
+
+    if pdf
+
+      File.open(Rails.root.join('public', 'html_files', pdf.original_filename), 'wb') do |file|
+          file.write(pdf.read)
+      end
+
+      class_to_load = "#{product_type}".camelize.constantize
+      product_data = class_to_load.where(:product_id => product_id).first
+
+      product_data.html_file = pdf.original_filename
+      product_data.save
+
+    end
+    
+    redirect_to "/admin/product_edit?product=#{ product_type}"
+  end
 
  	def product_update
  		Rails.logger.debug params
