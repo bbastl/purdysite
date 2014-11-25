@@ -47,8 +47,9 @@
           <% ProductFansAccessory.to_display.each do |product| %>    
                  <tr align="left" bgcolor="#ffffff"> 
               <td class="TableTextBold"><%= product.item_type %></td>
-              <td class="TableText"><center><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a><span class="TableTextNEW"> 
-            </strong></center></td>
+              <td class="TableText"><center><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a>
+              	<% if product.is_new %><span class="TableTextNEW">NEW!</span><% end %> 
+              	</center></td>
               <td class="TableText"><center><%= product.fan_compat %></center></td>
               <td class="TableText"><center><%= product.construction %></center></td>
                               

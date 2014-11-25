@@ -50,9 +50,8 @@
                     <% ProductDisplaysSegment.to_display.each do |product| %>
                     <tr bgcolor="#ffffff">
                           <td align="center" class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a><span class="TableTextNEW">
-                            <span class="TableTextNEW">
-                            
-                            </span></strong></td>
+                            <% if product.is_new %><span class="TableTextNEW">NEW!</span><% end %>
+                            </strong></td>
                           <td align="center" class="TableText"><%= image_tag "displays/#{product.display}" %></td>
                           <td align="center" class="TableText"><div align="center"><%= product.digit %></div></td>
                           <td align="center" class="TableText"><div align="center"><%= product.package %></div></td>

@@ -83,9 +83,11 @@
            <% ProductFansAc.to_display.each do |product| %>
             <tr align="left" bgcolor="#ffffff">
             <td  class="TableText"><%= product.frame %></td>
-            <td nowrap class="TableTextBold"><a href="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a>  
-                  NEW!
-                </td>
+            <td nowrap class="TableTextBold"><a href="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a> 
+            	
+            	<% if product.is_new %><span class="TableTextNEW">NEW!</span><% end %>
+            	  
+            </td>
             <td align="center" class="TableText"><%= product.voltage %></td>
             <td align="center" class="TableText"><%= product.airflow %></td>
             <td align="center" class="TableText"><%= product.inputp %></td>

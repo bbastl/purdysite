@@ -55,10 +55,9 @@
                       </tr>
                       <% ProductDisplaysIntchar.to_display.each do |product| %>
                       <tr> 
-                          <td nowrap class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a><span class="TableTextNEW">
-                            <span class="TableTextNEW"> 
-                            
-                              NEW! </strong></td>
+                          <td nowrap class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a>
+                          	<% if product.is_new %><span class="TableTextNEW">NEW!</span><% end %>
+                            </strong></td>
                           <!--<td align="center"><div align="center"></div></td>-->
                           <td align="center" class="TableText"><div align="center"><%= product.lines %></div></td>
                           <td align="center" class="TableText"><div align="center"><%= product.character_size %></div></td>

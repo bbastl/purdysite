@@ -20,7 +20,8 @@
                 <td class="TableBorderColor"><table width="100%" border="0" cellspacing="1" cellpadding="1">
                       <tr>
                         <td width="20%" class="TableTextHeader">PART NUMBER<br>
-                          Click for PDF </td>
+                          </td>
+                        <td width="7%">Click for PDF</td>
                         <td width="50%" class="TableTextHeader">DESCRIPTION</td>
                         <td width="10%" class="TableTextHeader"><div align="center">Sample
                             Price</div></td>
@@ -29,12 +30,17 @@
                       </tr>
                       <% ProductDisplaysPrototyping.to_display.each do |product| %>
                        <tr bgcolor="#ffffff">
-                          <td valign="top" class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a><span class="TableTextNEW">
-                            <span class="TableTextNEW">
-                            
-                              NEW!
-                            
-                            </span></strong></td>
+                          <td valign="top" class="TableTextBold">
+                          	<strong>
+                          		<% if product.html_file %>
+	                          		<A HREF="/html_files/<%= product.html_file %>" target="_blank"><%= product.product_name %></a>
+	                          	<% else %>
+	                          		<%= product.product_name %>
+	                          	<% end %>
+	                            <% if product.is_new%><span class="TableTextNEW">NEW!</span><% end %>
+                           	</strong>
+                           </td>
+                           <td><A HREF="/pdf/<%= product.pdf %>" target="_blank">pdf</a></td>
                           <td valign="top" class="TableText"><%= product.description %></td>
                           
                             <td class="TableText" align="right"><div align="center">$<%= product.product_price %></div></td>

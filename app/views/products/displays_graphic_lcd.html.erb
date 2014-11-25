@@ -72,6 +72,7 @@
               <% ProductDisplaysIntgraph.to_display.each do |product| %>        
              <tr bgcolor="#ffffff">
                           <td nowrap class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></A>
+                          	<% if product.is_new %><span class="TableTextNEW">NEW!</span><% end %>
                           </td>
                           <td align="center" class="TableText"><div align="center"><%= product.pixel %></div></td>
                           <td align="center" class="TableText"><div align="center"><%= product.pixel_pitch %></div></td>

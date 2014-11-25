@@ -74,7 +74,7 @@
           <% ProductLedsBlue.to_display.each do |product| %>   
              <tr align="left" bgcolor="#ffffff"> 
                     <td align="center" class="TableText"><%= product.item_type%></td>
-                    <td nowrap class="TableTextBold"><a href="/pdf/<%= product.pdf%>" target="_blank"><%= product.product_name%></a> </td>
+                    <td nowrap class="TableTextBold"><a href="/pdf/<%= product.pdf%>" target="_blank"><%= product.product_name%></a> <% if product.is_new %><span class="TableTextNEW">NEW!</span><% end %> </td>
                     <td align="center" class="TableText"><%= product.led%></td>
                     <td align="center" class="TableText"><%= product.lens%></td>
                     <td align="center" class="TableText"><%= product.peak%></td>

@@ -44,9 +44,7 @@
               <%  ProductSwitchesKeypad.to_display.each do |product| %>
                   <tr align="left" bgcolor="#ffffff"> 
                   <td class="TableTextBold"><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a>
-                  <span class="TableTextNEW"> 
-                                
-                                </span></td>
+                  <% if product.is_new %><span class="TableTextNEW">NEW!</span><% end %></td>
                               <td class="TableText"><%= product.description %></td>
                               <td class="TableText"><%= product.key_config %></td>
                               <td class="TableText"><%= product.key_type %></td>

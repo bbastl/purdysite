@@ -83,7 +83,9 @@
                           </tr>
           <% ProductDisplaysTftmodule.to_display.each do |product| %>
              <tr bgcolor="#ffffff">
-                          <td width="170" class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a></td>
+                          <td width="170" class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></a>
+                          	<% if product.is_new %><span class="TableTextNEW">NEW!</span><% end %>
+                          </td>
 
                           <td class="TableText"><div align="center"><%= product.screen %></div></td>
                           <td class="TableText"><div align="center"><%= product.pixel %></div></td>
