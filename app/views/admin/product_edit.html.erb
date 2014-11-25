@@ -12,7 +12,7 @@
 		<td><%= prod.description if prod.try(:description) %>
     <td><%= prod.pdf %></td>
     <td><a href="/admin/load_pdf/<%= params[:product] %>/<%= prod.product_id%>">change pdf</a></td>
-    <% if prod.try(:html_file) %>
+    <% if prod.methods.include? :html_file %>
     <td><%= prod.html_file %></td>
     <td><a href="/admin/load_html/<%= params[:product] %>/<%= prod.product_id%>">change html file</a></td>
     <% end %>
