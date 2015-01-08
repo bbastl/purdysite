@@ -31,8 +31,8 @@
                 <td class="TableBorderColor"><table border="0" cellspacing="1">
                       <tr>
                         <td width="120" rowspan="2" class="TableTextHeader">Part
-                          Number<br>
-                          Click for PDF </td>
+                          Number<br></td>
+                        <td rowspan="2" align="center" class="TableTextHeader">Click for PDF</td>
                         <td rowspan="2" align="center" class="TableTextHeader">Pixel
                           Count<br>
                           W x H</td>
@@ -71,9 +71,17 @@
                       </tr>                      
               <% ProductDisplaysIntgraph.to_display.each do |product| %>        
              <tr bgcolor="#ffffff">
-                          <td nowrap class="TableTextBold"><strong><A HREF="/pdf/<%= product.pdf %>" target="_blank"><%= product.product_name %></A>
-                          	<% if product.is_new %><span class="TableTextNEW">NEW!</span><% end %>
+                          <td nowrap class="TableTextBold">
+                            <strong>
+                              <% if product.html_file %>
+                                <A HREF="/html_files/<%= product.html_file %>" target="_blank"><%= product.product_name %></a>
+                              <% else %>
+                                <%= product.product_name %>
+                              <% end %>
+                              <% if product.is_new%><span class="TableTextNEW">NEW!</span><% end %>
+                            </strong>
                           </td>
+                          <td><A HREF="/pdf/<%= product.pdf %>" target="_blank">pdf</a></td>
                           <td align="center" class="TableText"><div align="center"><%= product.pixel %></div></td>
                           <td align="center" class="TableText"><div align="center"><%= product.pixel_pitch %></div></td>
                           <td align="center" class="TableText"><div align="center"><%= product.viewing %></div></td>
