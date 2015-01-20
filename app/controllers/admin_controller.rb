@@ -87,7 +87,7 @@ class AdminController < ApplicationController
 
 			product_data.pdf = pdf.original_filename
 			product_data.save
-
+			Rails.logger.info product_data.errors.full_messages
 		end
 		
  		redirect_to "/admin/product_edit?product=#{ product_type}"
