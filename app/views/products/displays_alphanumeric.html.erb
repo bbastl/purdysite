@@ -28,7 +28,8 @@
         <div id="catalog">
           <table border="0" cellspacing="0" cellpadding="0">
               <tr> 
-                <td class="TableBorderColor"><table border="0" cellspacing="1" id="thetable">
+                <td class="TableBorderColor">
+                    <table border="0" cellspacing="1" id="thetable">
                       <tr> 
                         <td nowrap class="TableTextHeader">Part Number<br>
                           Click for PDF </td>
@@ -69,13 +70,14 @@
                           <td align="center" class="TableText"><div align="center"><%= product.built %></div></td>
                           
                             <td align="right" class="TableText"><div align="center">$<%= product.product_price %></div></td>
-      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&pq=Search" target="_blank">Inve</td>
+      <td align="center" class="TableText"><a href="http://dilp.netcomponents.com/cgi-bin/purdyelectronics.asp?partnumber1=<%= product.product_name %>&pq=Search" target="_blank">Inventory</td>
                             <td class="TableText"><div align="center"><a href="https://www.purdyelectronics.com/order/index?prod_sel=<%= product.product_id %>&prod_type=product_displays_intchar"><%= image_tag "buts/order.gif" %></a></div></td>
           
                         </tr>
 
                       <% end %>
                   </table>
+              </td></tr></table>
 
         </div>
 </div>
